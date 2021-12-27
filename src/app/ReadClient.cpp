@@ -22,14 +22,56 @@
  *
  */
 
-#include "lib/core/CHIPTLVTypes.h"
 #include <app/AppBuildConfig.h>
 #include <app/InteractionModelEngine.h>
 #include <app/ReadClient.h>
 #include <app/StatusResponse.h>
+#include <lib/core/CHIPTLVTypes.h>
+#include <lib/support/FibonacciUtils.h>
 
 namespace chip {
 namespace app {
+
+/**
+ * @brief The default resubscibe policy will pick a random timeslot
+ * with millisecond resolution over an ever increasing window,
+ * following a fibonacci sequence upto CHIP_RESUBSCRIBE_MAX_FIBONACCI_STEP_INDEX.
+ * Average of the randomized wait time past the CHIP_RESUBSCRIBE_MAX_FIBONACCI_STEP_INDEX
+ * will be around one hour.
+ * When the retry count resets to 0, the sequence starts from the beginning again.
+ */
+static void DefaultResubscribePolicy(uint32_t aNumCumulativeRetries, uint32_t & aNextSubscriptionIntervalMsec,
+                                     bool & aShouldResubscribe)
+{
+    uint32_t fibonacciNum      = 0;
+    uint32_t maxWaitTimeInMsec = 0;
+    uint32_t waitTimeInMsec    = 0;
+    uint32_t minWaitTimeInMsec = 0;
+
+    if (aNumCumulativeRetries <= CHIP_RESUBSCRIBE_MAX_FIBONACCI_STEP_INDEX)
+    {
+        fibonacciNum      = GetFibonacciForIndex(aNumCumulativeRetries);
+        maxWaitTimeInMsec = fibonacciNum * CHIP_RESUBSCRIBE_WAIT_TIME_MULTIPLIER_MS;
+    }
+    else
+    {
+        maxWaitTimeInMsec = CHIP_RESUBSCRIBE_MAX_RETRY_WAIT_INTERVAL_MS;
+    }
+
+    if (maxWaitTimeInMsec != 0)
+    {
+        minWaitTimeInMsec = (CHIP_RESUBSCRIBE_MIN_WAIT_TIME_INTERVAL_PERCENT_PER_STEP * maxWaitTimeInMsec) / 100;
+        waitTimeInMsec    = minWaitTimeInMsec + (Crypto::GetRandU32() % (maxWaitTimeInMsec - minWaitTimeInMsec));
+    }
+
+    aNextSubscriptionIntervalMsec = waitTimeInMsec;
+    aShouldResubscribe            = true;
+    ChipLogProgress(DataManagement,
+                    "Computing Resubscribe policy: attempts %" PRIu32 ", max wait time %" PRIu32 " ms, selected wait time %" PRIu32
+                    " ms",
+                    aNumCumulativeRetries, maxWaitTimeInMsec, waitTimeInMsec);
+    return;
+}
 
 ReadClient::ReadClient(InteractionModelEngine * apImEngine, Messaging::ExchangeManager * apExchangeMgr, Callback & apCallback,
                        InteractionType aInteractionType) :
@@ -42,10 +84,23 @@ ReadClient::ReadClient(InteractionModelEngine * apImEngine, Messaging::ExchangeM
 
     mpImEngine = apImEngine;
 
+    ResubscribeClear();
+
     if (aInteractionType == InteractionType::Subscribe)
     {
         mpImEngine->AddReadClient(this);
     }
+}
+
+void ReadClient::ResubscribeClear()
+{
+    mIsInitialReport           = true;
+    mIsPrimingReports          = true;
+    mPendingMoreChunks         = false;
+    mMinIntervalFloorSeconds   = 0;
+    mMaxIntervalCeilingSeconds = 0;
+    mSubscriptionId            = 0;
+    MoveToState(ClientState::Idle);
 }
 
 ReadClient::~ReadClient()
@@ -55,7 +110,8 @@ ReadClient::~ReadClient()
     if (IsSubscriptionType())
     {
         CancelLivenessCheckTimer();
-
+        CancelResubscribeTimer();
+        mpCallback.OnDeallocatePaths(std::move(mReadPrepareParams));
         //
         // Only remove ourselves from the engine's tracker list if we still continue to have a valid pointer to it.
         // This won't be the case if the engine shut down before this destructor was called (in which case, mpImEngine
@@ -70,6 +126,16 @@ ReadClient::~ReadClient()
 
 void ReadClient::Close(CHIP_ERROR aError)
 {
+    if (aError != CHIP_NO_ERROR)
+    {
+        if (mReadPrepareParams.mResubscribePolicy != nullptr && Resubscribe())
+        {
+            ResubscribeClear();
+            return;
+        }
+        mpCallback.OnError(this, aError);
+    }
+
     // OnDone below can destroy us before we unwind all the way back into the
     // exchange code and it tries to close itself.  Make sure that it doesn't
     // try to notify us that it's closing, since we will be dead.
@@ -81,12 +147,6 @@ void ReadClient::Close(CHIP_ERROR aError)
     }
 
     mpExchangeCtx = nullptr;
-
-    if (aError != CHIP_NO_ERROR)
-    {
-        mpCallback.OnError(this, aError);
-    }
-
     mpCallback.OnDone(this);
 }
 
@@ -598,22 +658,29 @@ void ReadClient::CancelLivenessCheckTimer()
         OnLivenessTimeoutCallback, this);
 }
 
+void ReadClient::CancelResubscribeTimer()
+{
+    InteractionModelEngine::GetInstance()->GetExchangeManager()->GetSessionManager()->SystemLayer()->CancelTimer(
+        OnResubscribeTimerCallback, this);
+}
+
 void ReadClient::OnLivenessTimeoutCallback(System::Layer * apSystemLayer, void * apAppState)
 {
-    ReadClient * const client = reinterpret_cast<ReadClient *>(apAppState);
+    ReadClient * const _this = reinterpret_cast<ReadClient *>(apAppState);
 
     //
     // Might as well try to see if this instance exists in the tracked list in the IM.
     // This might blow-up if either the client has since been free'ed (use-after-free), or if the engine has since
     // been shutdown at which point the client wouldn't exist in the active read client list.
     //
-    VerifyOrDie(client->mpImEngine->InActiveReadClientList(client));
+    VerifyOrDie(_this->mpImEngine->InActiveReadClientList(_this));
 
-    ChipLogError(DataManagement, "Subscription Liveness timeout with peer node 0x%" PRIx64 ", shutting down ", client->mPeerNodeId);
+    ChipLogError(DataManagement, "Subscription Liveness timeout with subscription id 0x%" PRIx64 " peer node 0x%" PRIx64,
+                 _this->mSubscriptionId, _this->mPeerNodeId);
 
     // TODO: add a more specific error here for liveness timeout failure to distinguish between other classes of timeouts (i.e
     // response timeouts).
-    client->Close(CHIP_ERROR_TIMEOUT);
+    _this->Close(CHIP_ERROR_TIMEOUT);
 }
 
 CHIP_ERROR ReadClient::ProcessSubscribeResponse(System::PacketBufferHandle && aPayload)
@@ -644,6 +711,17 @@ CHIP_ERROR ReadClient::ProcessSubscribeResponse(System::PacketBufferHandle && aP
     return CHIP_NO_ERROR;
 }
 
+CHIP_ERROR ReadClient::SendAutoResubscribeRequest(ReadPrepareParams && aReadPrepareParams)
+{
+    mReadPrepareParams = std::move(aReadPrepareParams);
+    if (mReadPrepareParams.mResubscribePolicy == nullptr)
+    {
+        mReadPrepareParams.mResubscribePolicy = DefaultResubscribePolicy;
+    }
+
+    return SendSubscribeRequest(mReadPrepareParams);
+}
+
 CHIP_ERROR ReadClient::SendSubscribeRequest(ReadPrepareParams & aReadPrepareParams)
 {
     CHIP_ERROR err = CHIP_NO_ERROR;
@@ -658,7 +736,6 @@ CHIP_ERROR ReadClient::SendSubscribeRequest(ReadPrepareParams & aReadPreparePara
 
     VerifyOrReturnError(aReadPrepareParams.mMinIntervalFloorSeconds <= aReadPrepareParams.mMaxIntervalCeilingSeconds,
                         err = CHIP_ERROR_INVALID_ARGUMENT);
-
     writer.Init(std::move(msgBuf));
 
     ReturnErrorOnFailure(request.Init(&writer));
@@ -717,5 +794,37 @@ CHIP_ERROR ReadClient::SendSubscribeRequest(ReadPrepareParams & aReadPreparePara
     return CHIP_NO_ERROR;
 }
 
-}; // namespace app
-}; // namespace chip
+void ReadClient::OnResubscribeTimerCallback(System::Layer * apSystemLayer, void * apAppState)
+{
+    ReadClient * const _this = reinterpret_cast<ReadClient *>(apAppState);
+    assert(_this != nullptr);
+    _this->SendSubscribeRequest(_this->mReadPrepareParams);
+    _this->mNumRetries++;
+}
+
+bool ReadClient::Resubscribe()
+{
+    bool shouldResubscribe = true;
+    mReadPrepareParams.mResubscribePolicy(mNumRetries, mIntervalMsec, shouldResubscribe);
+    if (!shouldResubscribe)
+    {
+        ChipLogProgress(DataManagement, "Resubscribe has been stopped");
+        return false;
+    }
+    CHIP_ERROR err = InteractionModelEngine::GetInstance()->GetExchangeManager()->GetSessionManager()->SystemLayer()->StartTimer(
+        System::Clock::Milliseconds32(mIntervalMsec), OnResubscribeTimerCallback, this);
+    if (err != CHIP_NO_ERROR)
+    {
+        ChipLogProgress(DataManagement, "Fail to resubscribe with error %s", ErrorStr(err));
+        return false;
+    }
+    else
+    {
+        ChipLogProgress(DataManagement, "Would Resubscribe at retry index %" PRIu32 " after %" PRIu32 "ms", mNumRetries,
+                        mIntervalMsec);
+    }
+    return true;
+}
+
+} // namespace app
+} // namespace chip

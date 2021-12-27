@@ -153,6 +153,19 @@ private:
 
     void OnError(const app::ReadClient * apReadClient, CHIP_ERROR aError) override { mOnError(nullptr, aError); }
 
+    void OnDeallocatePaths(chip::app::ReadPrepareParams && aReadPrepareParams) override
+    {
+        if (aReadPrepareParams.mpAttributePathParamsList != nullptr)
+        {
+            delete[] aReadPrepareParams.mpAttributePathParamsList;
+        }
+
+        if (aReadPrepareParams.mpEventPathParamsList != nullptr)
+        {
+            delete[] aReadPrepareParams.mpEventPathParamsList;
+        }
+    }
+
     void OnDone(app::ReadClient * apReadClient) override { mOnDone(apReadClient, this); }
 
     void OnSubscriptionEstablished(const app::ReadClient * apReadClient) override

@@ -136,6 +136,11 @@ CHIP_ERROR ReadHandler::OnReadInitialRequest(System::PacketBufferHandle && aPayl
     {
         Shutdown();
     }
+    else
+    {
+        // Mark read handler dirty for read/subscribe priming stage
+        mDirty = true;
+    }
 
     return err;
 }

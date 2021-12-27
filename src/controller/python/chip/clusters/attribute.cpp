@@ -157,6 +157,19 @@ public:
         gOnReadErrorCallback(mAppContext, aError.AsInteger());
     }
 
+    void OnDeallocatePaths(chip::app::ReadPrepareParams && aReadPrepareParams) override
+    {
+        if (aReadPrepareParams.mpAttributePathParamsList != nullptr)
+        {
+            delete[] aReadPrepareParams.mpAttributePathParamsList;
+        }
+
+        if (aReadPrepareParams.mpEventPathParamsList != nullptr)
+        {
+            delete[] aReadPrepareParams.mpEventPathParamsList;
+        }
+    }
+
     void OnReportBegin(const ReadClient * apReadClient) override { gOnReportBeginCallback(mAppContext); }
 
     void OnReportEnd(const ReadClient * apReadClient) override { gOnReportEndCallback(mAppContext); }
@@ -359,22 +372,23 @@ chip::ChipError::StorageType pychip_ReadClient_ReadAttributes(void * appContext,
         ReadPrepareParams params(session.Value());
         params.mpAttributePathParamsList    = readPaths.get();
         params.mAttributePathParamsListSize = n;
-
+        params.mIsFabricFiltered = pyParams.isFabricFiltered;
         if (pyParams.isSubscription)
         {
             params.mMinIntervalFloorSeconds   = pyParams.minInterval;
             params.mMaxIntervalCeilingSeconds = pyParams.maxInterval;
+            err                               = readClient->SendAutoResubscribeRequest(std::move(params));
         }
-
-        params.mIsFabricFiltered = pyParams.isFabricFiltered;
-
-        err = readClient->SendRequest(params);
-        SuccessOrExit(err);
+        else
+        {
+            err = readClient->SendRequest(params);
+        }
     }
 
     *pReadClient = readClient.get();
     *pCallback   = callback.get();
 
+    readPaths.release();
     callback.release();
     readClient.release();
 
@@ -424,14 +438,17 @@ chip::ChipError::StorageType pychip_ReadClient_ReadEvents(void * appContext, Dev
 
         if (pyParams.isSubscription)
         {
-            params.mMinIntervalFloorSeconds   = pyParams.minInterval;
-            params.mMaxIntervalCeilingSeconds = pyParams.maxInterval;
+            params.mMinIntervalFloorSeconds   = minInterval;
+            params.mMaxIntervalCeilingSeconds = maxInterval;
+            err                               = readClient->SendAutoResubscribeRequest(std::move(params));
         }
-
-        err = readClient->SendRequest(params);
-        SuccessOrExit(err);
+        else
+        {
+            err = readClient->SendRequest(params);
+        }
     }
 
+    readPaths.release();
     callback.release();
     readClient.release();
 

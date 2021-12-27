@@ -164,6 +164,12 @@ public:
          * @param[in] apReadClient The read client object of the terminated read or subscribe interaction.
          */
         virtual void OnDone(ReadClient * apReadClient) = 0;
+
+        /**
+         * This function is invoked when the ReadClient was configured to auto re-subscribe and the ReadPrepareParams was
+         * moved into this client for management. This will have to be free'ed appropriately by the application.
+         */
+        virtual void OnDeallocatePaths(ReadPrepareParams && aReadPrepareParams) {}
     };
 
     enum class InteractionType : uint8_t
@@ -240,6 +246,11 @@ public:
     ReadClient * GetNextClient() { return mpNext; }
     void SetNextClient(ReadClient * apClient) { mpNext = apClient; }
 
+    // The application has to know to a) allocate a ReadPrepareParams object that will have fields mpEventPathParamsList
+    // and mpAttributePathParamsList with lifetimes as long as the ReadClient itself and
+    // b) free' those up later in the call to OnDeallocatePaths.
+    CHIP_ERROR SendAutoResubscribeRequest(ReadPrepareParams && aReadPrepareParams);
+
 private:
     friend class TestReadInteraction;
     friend class InteractionModelEngine;
@@ -282,14 +293,17 @@ private:
     CHIP_ERROR ProcessSubscribeResponse(System::PacketBufferHandle && aPayload);
     CHIP_ERROR RefreshLivenessCheckTimer();
     void CancelLivenessCheckTimer();
+    void CancelResubscribeTimer();
     void MoveToState(const ClientState aTargetState);
     CHIP_ERROR ProcessAttributePath(AttributePathIB::Parser & aAttributePath, ConcreteDataAttributePath & aClusterInfo);
     CHIP_ERROR ProcessReportData(System::PacketBufferHandle && aPayload);
     const char * GetStateStr() const;
-
+    bool Resubscribe();
     // Specialized request-sending functions.
     CHIP_ERROR SendReadRequest(ReadPrepareParams & aReadPrepareParams);
     CHIP_ERROR SendSubscribeRequest(ReadPrepareParams & aSubscribePrepareParams);
+
+    static void OnResubscribeTimerCallback(System::Layer * apSystemLayer, void * apAppState);
 
     /*
      * Called internally to signal the completion of all work on this object, gracefully close the
@@ -300,6 +314,8 @@ private:
      *
      */
     void Close(CHIP_ERROR aError);
+
+    void ResubscribeClear();
 
     Messaging::ExchangeManager * mpExchangeMgr = nullptr;
     Messaging::ExchangeContext * mpExchangeCtx = nullptr;
@@ -319,6 +335,9 @@ private:
 
     ReadClient * mpNext                 = nullptr;
     InteractionModelEngine * mpImEngine = nullptr;
+    ReadPrepareParams mReadPrepareParams;
+    uint32_t mNumRetries   = 0;
+    uint32_t mIntervalMsec = 0;
 };
 
 }; // namespace app

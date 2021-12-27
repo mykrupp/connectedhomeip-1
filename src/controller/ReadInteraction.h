@@ -45,11 +45,11 @@ template <typename DecodableAttributeType>
 CHIP_ERROR ReportAttribute(Messaging::ExchangeManager * exchangeMgr, EndpointId endpointId, ClusterId clusterId,
                            AttributeId attributeId, ReportAttributeParams<DecodableAttributeType> && readParams)
 {
-    app::AttributePathParams attributePath(endpointId, clusterId, attributeId);
     app::InteractionModelEngine * engine = app::InteractionModelEngine::GetInstance();
     CHIP_ERROR err                       = CHIP_NO_ERROR;
 
-    readParams.mpAttributePathParamsList    = &attributePath;
+    readParams.mpAttributePathParamsList    = new app::AttributePathParams[1];
+    readParams.mpAttributePathParamsList[0] = app::AttributePathParams(endpointId, clusterId, attributeId);
     readParams.mAttributePathParamsListSize = 1;
 
     auto onDone = [](app::ReadClient * apReadClient, TypedReadAttributeCallback<DecodableAttributeType> * callback) {
@@ -64,7 +64,16 @@ CHIP_ERROR ReportAttribute(Messaging::ExchangeManager * exchangeMgr, EndpointId 
     auto readClient =
         chip::Platform::MakeUnique<app::ReadClient>(engine, exchangeMgr, callback->GetBufferedCallback(), readParams.mReportType);
 
-    ReturnErrorOnFailure(readClient->SendRequest(readParams));
+    if (readClient->IsSubscriptionType())
+    {
+        err = readClient->SendAutoResubscribeRequest(std::move(readParams));
+    }
+    else
+    {
+        err = readClient->SendRequest(readParams);
+        delete readParams.mpAttributePathParamsList;
+        readParams.mpAttributePathParamsList = nullptr;
+    }
 
     //
     // At this point, we'll get a callback through the OnDone callback above regardless of success or failure
@@ -177,13 +186,13 @@ template <typename DecodableEventType>
 CHIP_ERROR ReportEvent(Messaging::ExchangeManager * apExchangeMgr, EndpointId endpointId,
                        ReportEventParams<DecodableEventType> && readParams)
 {
-    ClusterId clusterId = DecodableEventType::GetClusterId();
-    EventId eventId     = DecodableEventType::GetEventId();
-    app::EventPathParams eventPath(endpointId, clusterId, eventId);
+    ClusterId clusterId                  = DecodableEventType::GetClusterId();
+    EventId eventId                      = DecodableEventType::GetEventId();
     app::InteractionModelEngine * engine = app::InteractionModelEngine::GetInstance();
     CHIP_ERROR err                       = CHIP_NO_ERROR;
 
-    readParams.mpEventPathParamsList    = &eventPath;
+    readParams.mpEventPathParamsList    = new app::EventPathParams[1];
+    readParams.mpEventPathParamsList[0] = app::EventPathParams(endpointId, clusterId, eventId);
     readParams.mEventPathParamsListSize = 1;
 
     auto onDone = [](app::ReadClient * apReadClient, TypedReadEventCallback<DecodableEventType> * callback) {
@@ -197,7 +206,16 @@ CHIP_ERROR ReportEvent(Messaging::ExchangeManager * apExchangeMgr, EndpointId en
     VerifyOrReturnError(callback != nullptr, CHIP_ERROR_NO_MEMORY);
 
     auto readClient = chip::Platform::MakeUnique<app::ReadClient>(engine, apExchangeMgr, *callback.get(), readParams.mReportType);
-    ReturnErrorOnFailure(readClient->SendRequest(readParams));
+    if (readClient->IsSubscriptionType())
+    {
+        err = readClient->SendAutoResubscribeRequest(std::move(readParams));
+    }
+    else
+    {
+        err = readClient->SendRequest(readParams);
+        delete readParams.mpAttributePathParamsList;
+        readParams.mpAttributePathParamsList = nullptr;
+    }
 
     //
     // At this point, we'll get a callback through the OnDone callback above regardless of success or failure
