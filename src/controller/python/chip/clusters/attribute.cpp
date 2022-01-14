@@ -372,7 +372,7 @@ chip::ChipError::StorageType pychip_ReadClient_ReadAttributes(void * appContext,
         ReadPrepareParams params(session.Value());
         params.mpAttributePathParamsList    = readPaths.get();
         params.mAttributePathParamsListSize = n;
-        params.mIsFabricFiltered = pyParams.isFabricFiltered;
+        params.mIsFabricFiltered            = pyParams.isFabricFiltered;
         if (pyParams.isSubscription)
         {
             params.mMinIntervalFloorSeconds   = pyParams.minInterval;
@@ -438,8 +438,8 @@ chip::ChipError::StorageType pychip_ReadClient_ReadEvents(void * appContext, Dev
 
         if (pyParams.isSubscription)
         {
-            params.mMinIntervalFloorSeconds   = minInterval;
-            params.mMaxIntervalCeilingSeconds = maxInterval;
+            params.mMinIntervalFloorSeconds   = pyParams.minInterval;
+            params.mMaxIntervalCeilingSeconds = pyParams.maxInterval;
             err                               = readClient->SendAutoResubscribeRequest(std::move(params));
         }
         else
