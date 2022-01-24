@@ -58,7 +58,7 @@ public:
     app::BufferedReadCallback & GetBufferedCallback() { return mBufferedReadAdapter; }
 
 private:
-    void OnAttributeData(const app::ReadClient * apReadClient, DataVersion * apVersion,
+    void OnAttributeData(const app::ReadClient * apReadClient, Optional<DataVersion> & aVersion,
                          const app::ConcreteDataAttributePath & aPath, TLV::TLVReader * apData,
                          const app::StatusIB & aStatus) override
     {

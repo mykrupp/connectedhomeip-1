@@ -272,7 +272,10 @@ private:
         (static_cast<Test_TC_BI_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_BI_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_BI_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -305,7 +308,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -325,7 +331,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -353,7 +362,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -366,7 +378,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -504,7 +519,10 @@ private:
         (static_cast<Test_TC_BI_2_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -531,7 +549,10 @@ private:
         (static_cast<Test_TC_BI_2_1 *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_6();
+    }
 
     static void OnFailureCallback_7(void * context, EmberAfStatus status)
     {
@@ -568,7 +589,10 @@ private:
         (static_cast<Test_TC_BI_2_1 *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<Test_TC_BI_2_1 *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
@@ -601,7 +625,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(bool outOfService)
     {
@@ -621,7 +648,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool outOfService)
     {
@@ -643,9 +673,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsBackTheMandatoryNonGlobalAttributeOutOfService_4()
     {
@@ -658,7 +694,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool outOfService)
     {
@@ -678,7 +717,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool presentValue)
     {
@@ -700,9 +742,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsBackTheMandatoryNonGlobalAttributePresentValue_7()
     {
@@ -715,7 +763,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(bool presentValue)
     {
@@ -735,7 +786,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint8_t statusFlags)
     {
@@ -755,7 +809,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t statusFlags)
     {
@@ -785,7 +842,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_10() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_10()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackTheMandatoryNonGlobalAttributeStatusFlags_11()
     {
@@ -798,7 +858,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t statusFlags)
     {
@@ -1037,7 +1100,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(bool presentValue)
     {
@@ -1057,7 +1123,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool outOfService)
     {
@@ -1077,7 +1146,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t statusFlags)
     {
@@ -1097,7 +1169,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool presentValue)
     {
@@ -1117,7 +1192,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool outOfService)
     {
@@ -1137,7 +1215,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t statusFlags)
     {
@@ -1157,7 +1238,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t statusFlags)
     {
@@ -1177,7 +1261,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint8_t statusFlags)
     {
@@ -1285,7 +1372,10 @@ private:
         (static_cast<Test_TC_BOOL_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_BOOL_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_BOOL_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -1318,7 +1408,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -1338,7 +1431,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -1366,7 +1462,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -1379,7 +1478,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -1487,7 +1589,10 @@ private:
         (static_cast<Test_TC_BOOL_2_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_BOOL_2_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_BOOL_2_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -1520,7 +1625,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(bool stateValue)
     {
@@ -1540,7 +1648,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool stateValue)
     {
@@ -1568,7 +1679,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackTheMandatoryNonGlobalAttributeStateValue_4()
     {
@@ -1581,7 +1695,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool stateValue)
     {
@@ -1671,7 +1788,10 @@ private:
         (static_cast<Test_TC_CC_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_CC_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_CC_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -1694,7 +1814,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -1722,7 +1845,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_CC_2_1 : public TestCommand
@@ -2427,7 +2553,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -2464,7 +2593,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
@@ -2501,7 +2633,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_11(status);
     }
 
-    static void OnSuccessCallback_11(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_11(); }
+    static void OnSuccessCallback_11(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_11();
+    }
 
     static void OnFailureCallback_12(void * context, EmberAfStatus status)
     {
@@ -2538,7 +2673,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_15(status);
     }
 
-    static void OnSuccessCallback_15(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_15(); }
+    static void OnSuccessCallback_15(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_15();
+    }
 
     static void OnFailureCallback_16(void * context, EmberAfStatus status)
     {
@@ -2595,7 +2733,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_21(status);
     }
 
-    static void OnSuccessCallback_21(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_21(); }
+    static void OnSuccessCallback_21(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_21();
+    }
 
     static void OnFailureCallback_22(void * context, EmberAfStatus status)
     {
@@ -2632,7 +2773,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_25(status);
     }
 
-    static void OnSuccessCallback_25(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_25(); }
+    static void OnSuccessCallback_25(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_25();
+    }
 
     static void OnFailureCallback_26(void * context, EmberAfStatus status)
     {
@@ -2679,7 +2823,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_30(status);
     }
 
-    static void OnSuccessCallback_30(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_30(); }
+    static void OnSuccessCallback_30(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_30();
+    }
 
     static void OnFailureCallback_31(void * context, EmberAfStatus status)
     {
@@ -2716,7 +2863,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_34(status);
     }
 
-    static void OnSuccessCallback_34(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_34(); }
+    static void OnSuccessCallback_34(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_34();
+    }
 
     static void OnFailureCallback_35(void * context, EmberAfStatus status)
     {
@@ -2753,7 +2903,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_38(status);
     }
 
-    static void OnSuccessCallback_38(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_38(); }
+    static void OnSuccessCallback_38(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_38();
+    }
 
     static void OnFailureCallback_39(void * context, EmberAfStatus status)
     {
@@ -2790,7 +2943,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_42(status);
     }
 
-    static void OnSuccessCallback_42(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_42(); }
+    static void OnSuccessCallback_42(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_42();
+    }
 
     static void OnFailureCallback_43(void * context, EmberAfStatus status)
     {
@@ -2827,7 +2983,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_46(status);
     }
 
-    static void OnSuccessCallback_46(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_46(); }
+    static void OnSuccessCallback_46(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_46();
+    }
 
     static void OnFailureCallback_47(void * context, EmberAfStatus status)
     {
@@ -2864,7 +3023,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_50(status);
     }
 
-    static void OnSuccessCallback_50(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_50(); }
+    static void OnSuccessCallback_50(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_50();
+    }
 
     static void OnFailureCallback_51(void * context, EmberAfStatus status)
     {
@@ -2901,7 +3063,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_54(status);
     }
 
-    static void OnSuccessCallback_54(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_54(); }
+    static void OnSuccessCallback_54(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_54();
+    }
 
     static void OnFailureCallback_55(void * context, EmberAfStatus status)
     {
@@ -2938,7 +3103,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_58(status);
     }
 
-    static void OnSuccessCallback_58(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_58(); }
+    static void OnSuccessCallback_58(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_58();
+    }
 
     static void OnFailureCallback_59(void * context, EmberAfStatus status)
     {
@@ -2965,7 +3133,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_61(status);
     }
 
-    static void OnSuccessCallback_61(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_61(); }
+    static void OnSuccessCallback_61(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_61();
+    }
 
     static void OnFailureCallback_62(void * context, EmberAfStatus status)
     {
@@ -2992,7 +3163,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_64(status);
     }
 
-    static void OnSuccessCallback_64(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_64(); }
+    static void OnSuccessCallback_64(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_64();
+    }
 
     static void OnFailureCallback_65(void * context, EmberAfStatus status)
     {
@@ -3029,7 +3203,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_68(status);
     }
 
-    static void OnSuccessCallback_68(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_68(); }
+    static void OnSuccessCallback_68(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_68();
+    }
 
     static void OnFailureCallback_69(void * context, EmberAfStatus status)
     {
@@ -3056,7 +3233,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_71(status);
     }
 
-    static void OnSuccessCallback_71(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_71(); }
+    static void OnSuccessCallback_71(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_71();
+    }
 
     static void OnFailureCallback_72(void * context, EmberAfStatus status)
     {
@@ -3083,7 +3263,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_74(status);
     }
 
-    static void OnSuccessCallback_74(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_74(); }
+    static void OnSuccessCallback_74(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_74();
+    }
 
     static void OnFailureCallback_75(void * context, EmberAfStatus status)
     {
@@ -3110,7 +3293,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_77(status);
     }
 
-    static void OnSuccessCallback_77(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_77(); }
+    static void OnSuccessCallback_77(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_77();
+    }
 
     static void OnFailureCallback_78(void * context, EmberAfStatus status)
     {
@@ -3137,7 +3323,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_80(status);
     }
 
-    static void OnSuccessCallback_80(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_80(); }
+    static void OnSuccessCallback_80(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_80();
+    }
 
     static void OnFailureCallback_81(void * context, EmberAfStatus status)
     {
@@ -3164,7 +3353,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_83(status);
     }
 
-    static void OnSuccessCallback_83(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_83(); }
+    static void OnSuccessCallback_83(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_83();
+    }
 
     static void OnFailureCallback_84(void * context, EmberAfStatus status)
     {
@@ -3201,7 +3393,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_87(status);
     }
 
-    static void OnSuccessCallback_87(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_87(); }
+    static void OnSuccessCallback_87(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_87();
+    }
 
     static void OnFailureCallback_88(void * context, EmberAfStatus status)
     {
@@ -3228,7 +3423,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_90(status);
     }
 
-    static void OnSuccessCallback_90(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_90(); }
+    static void OnSuccessCallback_90(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_90();
+    }
 
     static void OnFailureCallback_91(void * context, EmberAfStatus status)
     {
@@ -3265,7 +3463,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_94(status);
     }
 
-    static void OnSuccessCallback_94(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_94(); }
+    static void OnSuccessCallback_94(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_94();
+    }
 
     static void OnFailureCallback_95(void * context, EmberAfStatus status)
     {
@@ -3292,7 +3493,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_97(status);
     }
 
-    static void OnSuccessCallback_97(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_97(); }
+    static void OnSuccessCallback_97(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_97();
+    }
 
     static void OnFailureCallback_98(void * context, EmberAfStatus status)
     {
@@ -3329,7 +3533,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_101(status);
     }
 
-    static void OnSuccessCallback_101(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_101(); }
+    static void OnSuccessCallback_101(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_101();
+    }
 
     static void OnFailureCallback_102(void * context, EmberAfStatus status)
     {
@@ -3356,7 +3563,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_104(status);
     }
 
-    static void OnSuccessCallback_104(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_104(); }
+    static void OnSuccessCallback_104(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_104();
+    }
 
     static void OnFailureCallback_105(void * context, EmberAfStatus status)
     {
@@ -3393,7 +3603,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_108(status);
     }
 
-    static void OnSuccessCallback_108(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_108(); }
+    static void OnSuccessCallback_108(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_108();
+    }
 
     static void OnFailureCallback_109(void * context, EmberAfStatus status)
     {
@@ -3420,7 +3633,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_111(status);
     }
 
-    static void OnSuccessCallback_111(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_111(); }
+    static void OnSuccessCallback_111(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_111();
+    }
 
     static void OnFailureCallback_112(void * context, EmberAfStatus status)
     {
@@ -3457,7 +3673,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_115(status);
     }
 
-    static void OnSuccessCallback_115(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_115(); }
+    static void OnSuccessCallback_115(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_115();
+    }
 
     static void OnFailureCallback_116(void * context, EmberAfStatus status)
     {
@@ -3484,7 +3703,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_118(status);
     }
 
-    static void OnSuccessCallback_118(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_118(); }
+    static void OnSuccessCallback_118(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_118();
+    }
 
     static void OnFailureCallback_119(void * context, EmberAfStatus status)
     {
@@ -3521,7 +3743,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_122(status);
     }
 
-    static void OnSuccessCallback_122(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_122(); }
+    static void OnSuccessCallback_122(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_122();
+    }
 
     static void OnFailureCallback_123(void * context, EmberAfStatus status)
     {
@@ -3548,7 +3773,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_125(status);
     }
 
-    static void OnSuccessCallback_125(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_125(); }
+    static void OnSuccessCallback_125(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_125();
+    }
 
     static void OnFailureCallback_126(void * context, EmberAfStatus status)
     {
@@ -3575,7 +3803,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_128(status);
     }
 
-    static void OnSuccessCallback_128(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_128(); }
+    static void OnSuccessCallback_128(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_128();
+    }
 
     static void OnFailureCallback_129(void * context, EmberAfStatus status)
     {
@@ -3602,7 +3833,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_131(status);
     }
 
-    static void OnSuccessCallback_131(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_131(); }
+    static void OnSuccessCallback_131(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_131();
+    }
 
     static void OnFailureCallback_132(void * context, EmberAfStatus status)
     {
@@ -3629,7 +3863,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_134(status);
     }
 
-    static void OnSuccessCallback_134(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_134(); }
+    static void OnSuccessCallback_134(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_134();
+    }
 
     static void OnFailureCallback_135(void * context, EmberAfStatus status)
     {
@@ -3656,7 +3893,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_137(status);
     }
 
-    static void OnSuccessCallback_137(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_137(); }
+    static void OnSuccessCallback_137(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_137();
+    }
 
     static void OnFailureCallback_138(void * context, EmberAfStatus status)
     {
@@ -3683,7 +3923,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_140(status);
     }
 
-    static void OnSuccessCallback_140(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_140(); }
+    static void OnSuccessCallback_140(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_140();
+    }
 
     static void OnFailureCallback_141(void * context, EmberAfStatus status)
     {
@@ -3710,7 +3953,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_143(status);
     }
 
-    static void OnSuccessCallback_143(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_143(); }
+    static void OnSuccessCallback_143(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_143();
+    }
 
     static void OnFailureCallback_144(void * context, EmberAfStatus status)
     {
@@ -3737,7 +3983,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_146(status);
     }
 
-    static void OnSuccessCallback_146(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_146(); }
+    static void OnSuccessCallback_146(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_146();
+    }
 
     static void OnFailureCallback_147(void * context, EmberAfStatus status)
     {
@@ -3764,7 +4013,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_149(status);
     }
 
-    static void OnSuccessCallback_149(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_149(); }
+    static void OnSuccessCallback_149(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_149();
+    }
 
     static void OnFailureCallback_150(void * context, EmberAfStatus status)
     {
@@ -3791,7 +4043,10 @@ private:
         (static_cast<Test_TC_CC_2_1 *>(context))->OnFailureResponse_152(status);
     }
 
-    static void OnSuccessCallback_152(void * context) { (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_152(); }
+    static void OnSuccessCallback_152(void * context)
+    {
+        (static_cast<Test_TC_CC_2_1 *>(context))->OnSuccessResponse_152();
+    }
 
     static void OnFailureCallback_153(void * context, EmberAfStatus status)
     {
@@ -3824,7 +4079,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t currentHue)
     {
@@ -3844,7 +4102,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t currentHue)
     {
@@ -3874,7 +4135,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeCurrentHue_4()
     {
@@ -3887,7 +4151,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t currentHue)
     {
@@ -3907,7 +4174,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t currentSaturation)
     {
@@ -3927,7 +4197,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t currentSaturation)
     {
@@ -3957,7 +4230,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_7() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_7()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeCurrentSaturation_8()
     {
@@ -3970,7 +4246,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint8_t currentSaturation)
     {
@@ -3990,7 +4269,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint16_t currentX)
     {
@@ -4010,7 +4292,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint16_t currentX)
     {
@@ -4040,7 +4325,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_11() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_11()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeCurrentX_12()
     {
@@ -4053,7 +4341,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint16_t currentX)
     {
@@ -4073,7 +4364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint16_t currentY)
     {
@@ -4093,7 +4387,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint16_t currentY)
     {
@@ -4123,7 +4420,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_15() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_15()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeCurrentY_16()
     {
@@ -4136,7 +4436,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(uint16_t currentY)
     {
@@ -4156,7 +4459,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(uint16_t colorTemperature)
     {
@@ -4177,7 +4483,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint8_t colorMode)
     {
@@ -4198,7 +4507,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_19(uint8_t colorControlOptions)
     {
@@ -4218,7 +4530,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_20(uint8_t colorControlOptions)
     {
@@ -4240,9 +4555,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_21() { NextTest(); }
+    void OnSuccessResponse_21()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeOptions_22()
     {
@@ -4255,7 +4576,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_22(uint8_t colorControlOptions)
     {
@@ -4275,7 +4599,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(uint16_t enhancedCurrentHue)
     {
@@ -4295,7 +4622,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_24(uint16_t enhancedCurrentHue)
     {
@@ -4323,7 +4653,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_25() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_25()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeEnhancedCurrentHue_26()
     {
@@ -4336,7 +4669,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(uint16_t enhancedCurrentHue)
     {
@@ -4356,7 +4692,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_27(uint8_t enhancedColorMode)
     {
@@ -4375,7 +4714,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_28(uint8_t colorLoopActive)
     {
@@ -4395,7 +4737,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_29(uint8_t colorLoopActive)
     {
@@ -4423,7 +4768,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_30() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_30()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorLoopActive_31()
     {
@@ -4436,7 +4784,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(uint8_t colorLoopActive)
     {
@@ -4456,7 +4807,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_32(uint8_t colorLoopDirection)
     {
@@ -4476,7 +4830,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(uint8_t colorLoopDirection)
     {
@@ -4504,7 +4861,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_34() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_34()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorLoopDirection_35()
     {
@@ -4517,7 +4877,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_35(uint8_t colorLoopDirection)
     {
@@ -4537,7 +4900,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_36(uint16_t colorLoopTime)
     {
@@ -4557,7 +4923,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_37(uint16_t colorLoopTime)
     {
@@ -4585,7 +4954,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_38() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_38()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorLoopTime_39()
     {
@@ -4598,7 +4970,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(uint16_t colorLoopTime)
     {
@@ -4619,7 +4994,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_40(uint16_t colorLoopStartEnhancedHue)
     {
@@ -4640,7 +5018,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(uint16_t colorLoopStartEnhancedHue)
     {
@@ -4669,7 +5050,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_42() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_42()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorLoopStartEnhancedHue_43()
     {
@@ -4683,7 +5067,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(uint16_t colorLoopStartEnhancedHue)
     {
@@ -4704,7 +5091,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_44(uint16_t colorLoopStoredEnhancedHue)
     {
@@ -4725,7 +5115,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(uint16_t colorLoopStoredEnhancedHue)
     {
@@ -4754,7 +5147,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_46() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_46()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorLoopStoredEnhancedHue_47()
     {
@@ -4768,7 +5164,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_47(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_47(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_47(uint16_t colorLoopStoredEnhancedHue)
     {
@@ -4788,7 +5187,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_48(uint16_t colorCapabilities)
     {
@@ -4808,7 +5210,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_49(uint16_t colorCapabilities)
     {
@@ -4838,7 +5243,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_50() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_50()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorCapabilities_51()
     {
@@ -4851,7 +5259,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_51(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_51(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_51(uint16_t colorCapabilities)
     {
@@ -4871,7 +5282,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_52(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_52(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_52(uint16_t colorTempPhysicalMin)
     {
@@ -4891,7 +5305,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_53(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_53(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_53(uint16_t colorTempPhysicalMin)
     {
@@ -4921,7 +5338,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_54() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_54()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorTempPhysicalMinMireds_55()
     {
@@ -4934,7 +5354,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_55(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_55(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_55(uint16_t colorTempPhysicalMin)
     {
@@ -4954,7 +5377,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_56(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_56(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_56(uint16_t colorTempPhysicalMax)
     {
@@ -4974,7 +5400,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_57(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_57(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_57(uint16_t colorTempPhysicalMax)
     {
@@ -5004,7 +5433,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_58() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_58()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeColorTempPhysicalMaxMireds_59()
     {
@@ -5017,7 +5449,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_59(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_59(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_59(uint16_t colorTempPhysicalMax)
     {
@@ -5070,7 +5505,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_61() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_61()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackOptionalAttributeCoupleColorTempToLevelMinMireds_62()
     {
@@ -5141,7 +5579,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_64() { NextTest(); }
+    void OnSuccessResponse_64()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsBackOptionalAttributeStartUpColorTemperatureMireds_65()
     {
@@ -5234,7 +5675,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_68() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_68()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackOptionalAttributeRemainingTime_69()
     {
@@ -5303,7 +5747,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_71() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_71()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackOptionalAttributeDriftCompensation_72()
     {
@@ -5371,7 +5818,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_74() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_74()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackOptionalAttributeCompensationText_75()
     {
@@ -5407,7 +5857,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_76(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_76(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_76(uint8_t numberOfPrimaries)
     {
@@ -5437,7 +5890,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_77() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_77()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributeNumberOfPrimaries_78()
     {
@@ -5450,7 +5906,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_78(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_78(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_78(uint8_t numberOfPrimaries)
     {
@@ -5470,7 +5929,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_79(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_79(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_79(uint16_t primary1X)
     {
@@ -5500,7 +5962,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_80() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_80()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary1X_81()
     {
@@ -5513,7 +5978,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_81(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_81(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_81(uint16_t primary1X)
     {
@@ -5533,7 +6001,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_82(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_82(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_82(uint16_t primary1Y)
     {
@@ -5563,7 +6034,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_83() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_83()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary1Y_84()
     {
@@ -5576,7 +6050,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_84(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_84(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_84(uint16_t primary1Y)
     {
@@ -5596,7 +6073,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_85(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_85(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_85(uint8_t primary1Intensity)
     {
@@ -5615,7 +6095,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_86(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_86(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_86(uint16_t primary2X)
     {
@@ -5645,7 +6128,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_87() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_87()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary2X_88()
     {
@@ -5658,7 +6144,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_88(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_88(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_88(uint16_t primary2X)
     {
@@ -5678,7 +6167,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_89(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_89(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_89(uint16_t primary2Y)
     {
@@ -5708,7 +6200,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_90() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_90()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary2Y_91()
     {
@@ -5721,7 +6216,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_91(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_91(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_91(uint16_t primary2Y)
     {
@@ -5741,7 +6239,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_92(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_92(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_92(uint8_t primary2Intensity)
     {
@@ -5760,7 +6261,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_93(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_93(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_93(uint16_t primary3X)
     {
@@ -5790,7 +6294,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_94() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_94()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary3X_95()
     {
@@ -5803,7 +6310,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_95(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_95(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_95(uint16_t primary3X)
     {
@@ -5823,7 +6333,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_96(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_96(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_96(uint16_t primary3Y)
     {
@@ -5853,7 +6366,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_97() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_97()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary3Y_98()
     {
@@ -5866,7 +6382,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_98(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_98(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_98(uint16_t primary3Y)
     {
@@ -5886,7 +6405,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_99(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_99(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_99(uint8_t primary3Intensity)
     {
@@ -5905,7 +6427,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_100(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_100(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_100(uint16_t primary4X)
     {
@@ -5935,7 +6460,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_101() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_101()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary4X_102()
     {
@@ -5948,7 +6476,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_102(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_102(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_102(uint16_t primary4X)
     {
@@ -5968,7 +6499,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_103(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_103(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_103(uint16_t primary4Y)
     {
@@ -5998,7 +6532,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_104() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_104()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary4Y_105()
     {
@@ -6011,7 +6548,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_105(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_105(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_105(uint16_t primary4Y)
     {
@@ -6031,7 +6571,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_106(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_106(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_106(uint8_t primary4Intensity)
     {
@@ -6050,7 +6593,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_107(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_107(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_107(uint16_t primary5X)
     {
@@ -6080,7 +6626,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_108() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_108()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary5X_109()
     {
@@ -6093,7 +6642,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_109(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_109(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_109(uint16_t primary5X)
     {
@@ -6113,7 +6665,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_110(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_110(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_110(uint16_t primary5Y)
     {
@@ -6143,7 +6698,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_111() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_111()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary5Y_112()
     {
@@ -6156,7 +6714,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_112(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_112(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_112(uint16_t primary5Y)
     {
@@ -6176,7 +6737,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_113(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_113(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_113(uint8_t primary5Intensity)
     {
@@ -6195,7 +6759,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_114(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_114(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_114(uint16_t primary6X)
     {
@@ -6225,7 +6792,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_115() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_115()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary6X_116()
     {
@@ -6238,7 +6808,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_116(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_116(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_116(uint16_t primary6X)
     {
@@ -6258,7 +6831,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_117(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_117(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_117(uint16_t primary6Y)
     {
@@ -6288,7 +6864,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_118() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_118()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackTheMandatoryAttributePrimary6Y_119()
     {
@@ -6301,7 +6880,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_119(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_119(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_119(uint16_t primary6Y)
     {
@@ -6321,7 +6903,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_120(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_120(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_120(uint8_t primary6Intensity)
     {
@@ -6372,7 +6957,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_122() { NextTest(); }
+    void OnSuccessResponse_122()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeWhitePointX_123()
     {
@@ -6440,7 +7028,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_125() { NextTest(); }
+    void OnSuccessResponse_125()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeWhitePointY_126()
     {
@@ -6508,7 +7099,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_128() { NextTest(); }
+    void OnSuccessResponse_128()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointRX_129()
     {
@@ -6576,7 +7170,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_131() { NextTest(); }
+    void OnSuccessResponse_131()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointRY_132()
     {
@@ -6642,7 +7239,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_134() { NextTest(); }
+    void OnSuccessResponse_134()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointRIntensity_135()
     {
@@ -6710,7 +7310,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_137() { NextTest(); }
+    void OnSuccessResponse_137()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointGX_138()
     {
@@ -6778,7 +7381,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_140() { NextTest(); }
+    void OnSuccessResponse_140()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointGY_141()
     {
@@ -6844,7 +7450,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_143() { NextTest(); }
+    void OnSuccessResponse_143()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointGIntensity_144()
     {
@@ -6912,7 +7521,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_146() { NextTest(); }
+    void OnSuccessResponse_146()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointBX_147()
     {
@@ -6980,7 +7592,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_149() { NextTest(); }
+    void OnSuccessResponse_149()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointBY_150()
     {
@@ -7046,7 +7661,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_152() { NextTest(); }
+    void OnSuccessResponse_152()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackTheOptionalAttributeColorPointBIntensity_153()
     {
@@ -7209,9 +7827,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -7224,7 +7848,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -7257,9 +7884,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveToHueLongestDistanceCommand_4()
     {
@@ -7285,9 +7918,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveToHueUpCommand_5()
     {
@@ -7313,9 +7952,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveToHueDownCommand_6()
     {
@@ -7341,9 +7986,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_7()
     {
@@ -7364,9 +8015,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_8()
     {
@@ -7379,7 +8036,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool onOff)
     {
@@ -7526,9 +8186,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -7541,7 +8207,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -7573,9 +8242,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveHueStopCommand_4()
     {
@@ -7600,9 +8275,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveHueDownCommand_5()
     {
@@ -7627,9 +8308,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveHueStopCommand_6()
     {
@@ -7654,9 +8341,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_7()
     {
@@ -7677,9 +8370,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_8()
     {
@@ -7692,7 +8391,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool onOff)
     {
@@ -7831,9 +8533,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -7846,7 +8554,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -7879,9 +8590,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestStepHueDownCommand_4()
     {
@@ -7907,9 +8624,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_5()
     {
@@ -7930,9 +8653,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -7945,7 +8674,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -8080,9 +8812,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -8095,7 +8833,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -8127,9 +8868,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -8150,9 +8897,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -8165,7 +8918,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -8320,9 +9076,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -8335,7 +9097,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -8367,9 +9132,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveSaturationDownCommand_4()
     {
@@ -8394,9 +9165,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveSaturationUpCommand_5()
     {
@@ -8421,9 +9198,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveSaturationStopCommand_6()
     {
@@ -8448,9 +9231,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveSaturationDownCommand_7()
     {
@@ -8475,9 +9264,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveSaturationStopCommand_8()
     {
@@ -8502,9 +9297,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_9()
     {
@@ -8525,9 +9326,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_10()
     {
@@ -8540,7 +9347,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(bool onOff)
     {
@@ -8679,9 +9489,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -8694,7 +9510,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -8727,9 +9546,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestStepSaturationDownCommand_4()
     {
@@ -8755,9 +9580,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_5()
     {
@@ -8778,9 +9609,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -8793,7 +9630,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -8928,9 +9768,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -8943,7 +9789,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -8976,9 +9825,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -8999,9 +9854,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -9014,7 +9875,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -9149,9 +10013,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -9164,7 +10034,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -9197,9 +10070,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -9220,9 +10099,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -9235,7 +10120,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -9374,9 +10262,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -9389,7 +10283,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -9421,9 +10318,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestStopMoveStepCommand_4()
     {
@@ -9446,9 +10349,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_5()
     {
@@ -9469,9 +10378,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -9484,7 +10399,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -9619,9 +10537,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -9634,7 +10558,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -9667,9 +10594,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -9690,9 +10623,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -9705,7 +10644,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -9840,9 +10782,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -9855,7 +10803,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -9887,9 +10838,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -9910,9 +10867,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -9925,7 +10888,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -10068,9 +11034,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -10083,7 +11055,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -10117,9 +11092,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestStopColorTemperatureCommand_4()
     {
@@ -10146,9 +11127,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestMoveDownColorTemperatureCommand_5()
     {
@@ -10175,9 +11162,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_6()
     {
@@ -10198,9 +11191,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_7()
     {
@@ -10213,7 +11212,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(bool onOff)
     {
@@ -10352,9 +11354,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -10367,7 +11375,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -10402,9 +11413,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestStepDownColorTemperatureCommand_4()
     {
@@ -10432,9 +11449,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_5()
     {
@@ -10455,9 +11478,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -10470,7 +11499,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -10620,9 +11652,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -10635,7 +11673,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -10668,9 +11709,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckRemainingTimeAttributeValueMatchedTheValueSentByTheLastCommand_4()
     {
@@ -10683,7 +11730,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t remainingTime)
     {
@@ -10711,9 +11761,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -10726,7 +11782,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -10873,9 +11932,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -10888,7 +11953,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -10920,9 +11988,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestEnhancedMoveHueStopCommand_4()
     {
@@ -10947,9 +12021,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestEnhancedMoveHueUpCommand_5()
     {
@@ -10974,9 +12054,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestEnhancedMoveHueStopCommand_6()
     {
@@ -11001,9 +12087,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_7()
     {
@@ -11024,9 +12116,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_8()
     {
@@ -11039,7 +12137,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool onOff)
     {
@@ -11178,9 +12279,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -11193,7 +12300,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -11226,9 +12336,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestEnhancedStepHueDownCommand_4()
     {
@@ -11254,9 +12370,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_5()
     {
@@ -11277,9 +12399,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -11292,7 +12420,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -11427,9 +12558,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -11442,7 +12579,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -11475,9 +12615,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestTurnOffLightThatWeTurnedOn_4()
     {
@@ -11498,9 +12644,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_5()
     {
@@ -11513,7 +12665,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -11772,9 +12927,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -11787,7 +12948,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -11822,9 +12986,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckColorLoopDirectionValue_4()
     {
@@ -11837,7 +13007,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t colorLoopDirection)
     {
@@ -11857,7 +13030,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint16_t colorLoopTime)
     {
@@ -11878,7 +13054,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint16_t colorLoopStartEnhancedHue)
     {
@@ -11898,7 +13077,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t colorLoopActive)
     {
@@ -11933,9 +13115,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckColorLoopActiveValue_9()
     {
@@ -11948,7 +13136,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t colorLoopActive)
     {
@@ -11983,9 +13174,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckColorLoopDirectionValue_11()
     {
@@ -11998,7 +13195,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t colorLoopDirection)
     {
@@ -12018,7 +13218,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint16_t colorLoopTime)
     {
@@ -12053,9 +13256,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckColorLoopDirectionValue_14()
     {
@@ -12068,7 +13277,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint8_t colorLoopDirection)
     {
@@ -12096,9 +13308,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_16()
     {
@@ -12111,7 +13329,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(bool onOff)
     {
@@ -12680,9 +13901,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -12695,7 +13922,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -12730,9 +13960,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_4()
     {
@@ -12745,7 +13981,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t colorLoopActive)
     {
@@ -12780,9 +14019,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopDirectionAttributeFromDut_6()
     {
@@ -12795,7 +14040,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t colorLoopDirection)
     {
@@ -12830,9 +14078,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopTimeAttributeFromDut_8()
     {
@@ -12845,7 +14099,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint16_t colorLoopTime)
     {
@@ -12880,9 +14137,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopStartEnhancedHueAttributeFromDut_10()
     {
@@ -12896,7 +14159,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint16_t colorLoopStartEnhancedHue)
     {
@@ -12931,9 +14197,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_12()
     {
@@ -12946,7 +14218,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint8_t colorLoopActive)
     {
@@ -12981,9 +14256,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_14()
     {
@@ -12996,7 +14277,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint8_t colorLoopActive)
     {
@@ -13031,9 +14315,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopDirectionAttributeFromDut_16()
     {
@@ -13046,7 +14336,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(uint8_t colorLoopDirection)
     {
@@ -13081,9 +14374,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_17() { NextTest(); }
+    void OnSuccessResponse_17()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_18()
     {
@@ -13096,7 +14395,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint8_t colorLoopActive)
     {
@@ -13131,9 +14433,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_19() { NextTest(); }
+    void OnSuccessResponse_19()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_20()
     {
@@ -13146,7 +14454,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_20(uint8_t colorLoopActive)
     {
@@ -13179,9 +14490,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_21() { NextTest(); }
+    void OnSuccessResponse_21()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait2000ms_22()
     {
@@ -13200,7 +14517,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(uint16_t enhancedCurrentHue)
     {
@@ -13235,9 +14555,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_24() { NextTest(); }
+    void OnSuccessResponse_24()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopDirectionAttributeFromDut_25()
     {
@@ -13250,7 +14576,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_25(uint8_t colorLoopDirection)
     {
@@ -13285,9 +14614,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_26() { NextTest(); }
+    void OnSuccessResponse_26()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_27()
     {
@@ -13300,7 +14635,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_27(uint8_t colorLoopActive)
     {
@@ -13335,9 +14673,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_28() { NextTest(); }
+    void OnSuccessResponse_28()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_29()
     {
@@ -13350,7 +14694,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_29(uint8_t colorLoopActive)
     {
@@ -13385,9 +14732,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_30() { NextTest(); }
+    void OnSuccessResponse_30()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopDirectionAttributeFromDut_31()
     {
@@ -13400,7 +14753,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(uint8_t colorLoopDirection)
     {
@@ -13435,9 +14791,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_32() { NextTest(); }
+    void OnSuccessResponse_32()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_33()
     {
@@ -13450,7 +14812,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(uint8_t colorLoopActive)
     {
@@ -13485,9 +14850,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_34() { NextTest(); }
+    void OnSuccessResponse_34()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_35()
     {
@@ -13500,7 +14871,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_35(uint8_t colorLoopActive)
     {
@@ -13528,9 +14902,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_36() { NextTest(); }
+    void OnSuccessResponse_36()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_CC_9_2 : public TestCommand
@@ -13809,9 +15189,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestPreconditionCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -13824,7 +15210,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -13859,9 +15248,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_4()
     {
@@ -13874,7 +15269,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t colorLoopActive)
     {
@@ -13894,7 +15292,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t colorLoopDirection)
     {
@@ -13914,7 +15315,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint16_t colorLoopTime)
     {
@@ -13935,7 +15339,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint16_t colorLoopStartEnhancedHue)
     {
@@ -13970,9 +15377,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_9()
     {
@@ -13985,7 +15398,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t colorLoopActive)
     {
@@ -14020,9 +15436,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopDirectionAttributeFromDut_11()
     {
@@ -14035,7 +15457,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t colorLoopDirection)
     {
@@ -14070,9 +15495,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_13()
     {
@@ -14085,7 +15516,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t colorLoopActive)
     {
@@ -14113,9 +15547,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_CC_9_3 : public TestCommand
@@ -14394,9 +15834,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestPreconditionCheckOnOffAttributeValueIsTrueAfterOnCommand_2()
     {
@@ -14409,7 +15855,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -14444,9 +15893,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_4()
     {
@@ -14459,7 +15914,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t colorLoopActive)
     {
@@ -14479,7 +15937,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t colorLoopDirection)
     {
@@ -14499,7 +15960,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint16_t colorLoopTime)
     {
@@ -14520,7 +15984,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint16_t colorLoopStartEnhancedHue)
     {
@@ -14555,9 +16022,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_9()
     {
@@ -14570,7 +16043,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t colorLoopActive)
     {
@@ -14605,9 +16081,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopTimeAttributeFromDut_11()
     {
@@ -14620,7 +16102,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint16_t colorLoopTime)
     {
@@ -14655,9 +16140,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadColorLoopActiveAttributeFromDut_13()
     {
@@ -14670,7 +16161,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t colorLoopActive)
     {
@@ -14698,9 +16192,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_DD_1_5 : public TestCommand
@@ -15456,7 +16956,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t interactionModelVersion)
     {
@@ -15475,7 +16978,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(chip::CharSpan vendorName)
     {
@@ -15495,7 +17001,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::VendorId vendorID)
     {
@@ -15514,7 +17023,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::CharSpan productName)
     {
@@ -15534,7 +17046,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint16_t productID)
     {
@@ -15553,7 +17068,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(chip::CharSpan nodeLabel)
     {
@@ -15573,7 +17091,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(chip::CharSpan location)
     {
@@ -15594,7 +17115,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint16_t hardwareVersion)
     {
@@ -15613,7 +17137,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(chip::CharSpan hardwareVersionString)
     {
@@ -15634,7 +17161,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint32_t softwareVersion)
     {
@@ -15653,7 +17183,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(chip::CharSpan softwareVersionString)
     {
@@ -16054,7 +17587,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(const chip::app::DataModel::DecodableList<
                              chip::app::Clusters::OperationalCredentials::Structs::FabricDescriptor::DecodableType> & fabricsList)
@@ -16081,7 +17617,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t supportedFabrics)
     {
@@ -16102,7 +17641,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t commissionedFabrics)
     {
@@ -16123,7 +17665,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(const chip::app::DataModel::DecodableList<chip::ByteSpan> & trustedRootCertificates)
     {
@@ -16230,7 +17775,10 @@ private:
         (static_cast<Test_TC_EMR_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_EMR_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_EMR_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -16264,7 +17812,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -16285,7 +17836,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -16314,7 +17868,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -16328,7 +17885,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -16418,7 +17978,10 @@ private:
         (static_cast<Test_TC_FLW_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_FLW_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_FLW_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -16441,7 +18004,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -16469,7 +18035,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_FLW_2_1 : public TestCommand
@@ -16615,21 +18184,30 @@ private:
         (static_cast<Test_TC_FLW_2_1 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_FLW_2_1 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_FLW_2_1 *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_6();
+    }
 
     static void OnFailureCallback_7(void * context, EmberAfStatus status)
     {
@@ -16686,7 +18264,10 @@ private:
         (static_cast<Test_TC_FLW_2_1 *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<Test_TC_FLW_2_1 *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -16719,7 +18300,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t measuredValue)
     {
@@ -16738,7 +18322,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(int16_t minMeasuredValue)
     {
@@ -16757,7 +18344,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(int16_t maxMeasuredValue)
     {
@@ -16785,7 +18375,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_4() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_4()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteTheDefaultValueToOptionalAttributeMinMeasuredValue_5()
     {
@@ -16807,7 +18400,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteTheDefaultValueToOptionalAttributeMaxMeasuredValue_6()
     {
@@ -16829,7 +18425,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_6() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_6()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadTheMandatoryAttributeMeasuredValue_7()
     {
@@ -16842,7 +18441,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(int16_t measuredValue)
     {
@@ -16861,7 +18463,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(int16_t minMeasuredValue)
     {
@@ -16880,7 +18485,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(int16_t maxMeasuredValue)
     {
@@ -16955,7 +18563,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_12() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_12()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadTheOptionalAttributeTolerance_13()
     {
@@ -17086,7 +18697,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t measuredValue)
     {
@@ -17105,7 +18719,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(int16_t measuredValue)
     {
@@ -17212,7 +18829,10 @@ private:
         (static_cast<Test_TC_ILL_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_ILL_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_ILL_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -17246,7 +18866,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -17267,7 +18890,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -17296,7 +18922,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -17310,7 +18939,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -17426,7 +19058,10 @@ private:
         (static_cast<Test_TC_LVL_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_LVL_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_LVL_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -17453,7 +19088,10 @@ private:
         (static_cast<Test_TC_LVL_1_1 *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<Test_TC_LVL_1_1 *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<Test_TC_LVL_1_1 *>(context))->OnSuccessResponse_6();
+    }
 
     //
     // Tests methods
@@ -17476,7 +19114,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -17496,7 +19137,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -17524,7 +19168,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -17537,7 +19184,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -17557,7 +19207,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint32_t featureMap)
     {
@@ -17585,7 +19238,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_6() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_6()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_LVL_2_1 : public TestCommand
@@ -17867,9 +19523,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_2()
     {
@@ -17888,7 +19550,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t currentLevel)
     {
@@ -17908,7 +19573,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t remainingTime)
     {
@@ -17928,7 +19596,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t minLevel)
     {
@@ -17948,7 +19619,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t maxLevel)
     {
@@ -17967,7 +19641,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint16_t currentFrequency)
     {
@@ -17987,7 +19664,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint16_t minFrequency)
     {
@@ -18007,7 +19687,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint16_t maxFrequency)
     {
@@ -18027,7 +19710,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint16_t onOffTransitionTime)
     {
@@ -18047,7 +19733,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(const chip::app::DataModel::Nullable<uint8_t> & onLevel)
     {
@@ -18066,7 +19755,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(const chip::app::DataModel::Nullable<uint16_t> & onTransitionTime)
     {
@@ -18085,7 +19777,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(const chip::app::DataModel::Nullable<uint16_t> & offTransitionTime)
     {
@@ -18104,7 +19799,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(const chip::app::DataModel::Nullable<uint8_t> & defaultMoveRate)
     {
@@ -18123,7 +19821,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t options)
     {
@@ -18264,7 +19965,10 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -18281,14 +19985,20 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -18305,7 +20015,10 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
@@ -18322,7 +20035,10 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_9();
+    }
 
     static void OnFailureCallback_10(void * context, EmberAfStatus status)
     {
@@ -18349,7 +20065,10 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -18366,7 +20085,10 @@ private:
         (static_cast<Test_TC_LVL_2_2 *>(context))->OnFailureResponse_14(status);
     }
 
-    static void OnSuccessCallback_14(void * context) { (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_14(); }
+    static void OnSuccessCallback_14(void * context)
+    {
+        (static_cast<Test_TC_LVL_2_2 *>(context))->OnSuccessResponse_14();
+    }
 
     static void OnFailureCallback_15(void * context, EmberAfStatus status)
     {
@@ -18399,7 +20121,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t onOffTransitionTime)
     {
@@ -18422,9 +20147,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheOnOffTransitionTimeAttributeFromTheDut_3()
     {
@@ -18437,7 +20168,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint16_t onOffTransitionTime)
     {
@@ -18460,9 +20194,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheOnLevelAttributeOnTheDut_5()
     {
@@ -18479,9 +20219,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheOnLevelAttributeFromTheDut_6()
     {
@@ -18494,7 +20240,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(const chip::app::DataModel::Nullable<uint8_t> & onLevel)
     {
@@ -18519,9 +20268,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheOnTransitionTimeAttributeFromTheDut_8()
     {
@@ -18534,7 +20289,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(const chip::app::DataModel::Nullable<uint16_t> & onTransitionTime)
     {
@@ -18559,9 +20317,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheOffTransitionTimeAttributeFromTheDut_10()
     {
@@ -18574,7 +20338,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(const chip::app::DataModel::Nullable<uint16_t> & offTransitionTime)
     {
@@ -18595,7 +20362,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(const chip::app::DataModel::Nullable<uint8_t> & defaultMoveRate)
     {
@@ -18620,9 +20390,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheDefaultMoveRateAttributeFromTheDut_13()
     {
@@ -18635,7 +20411,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(const chip::app::DataModel::Nullable<uint8_t> & defaultMoveRate)
     {
@@ -18660,9 +20439,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheStartUpCurrentLevelAttributeFromTheDut_15()
     {
@@ -18675,7 +20460,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(const chip::app::DataModel::Nullable<uint8_t> & startUpCurrentLevel)
     {
@@ -18893,7 +20681,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t currentLevel)
     {
@@ -18913,7 +20704,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t minLevel)
     {
@@ -18933,7 +20727,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t maxLevel)
     {
@@ -18965,9 +20762,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_5()
     {
@@ -18986,7 +20789,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t currentLevel)
     {
@@ -19018,9 +20824,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait200ms_8()
     {
@@ -19039,7 +20851,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t currentLevel)
     {
@@ -19059,7 +20874,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint16_t onOffTransitionTime)
     {
@@ -19091,9 +20909,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait10ms_12()
     {
@@ -19112,7 +20936,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t currentLevel)
     {
@@ -19144,9 +20971,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_15()
     {
@@ -19330,7 +21163,10 @@ private:
         (static_cast<Test_TC_LVL_4_1 *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<Test_TC_LVL_4_1 *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<Test_TC_LVL_4_1 *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
@@ -19373,7 +21209,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t currentLevel)
     {
@@ -19393,7 +21232,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t maxLevel)
     {
@@ -19425,9 +21267,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait3000ms_4()
     {
@@ -19446,7 +21294,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t currentLevel)
     {
@@ -19466,7 +21317,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t minLevel)
     {
@@ -19498,9 +21352,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait3000ms_8()
     {
@@ -19519,7 +21379,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t currentLevel)
     {
@@ -19543,9 +21406,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsDefaultMoveRateAttributeFromDut_11()
     {
@@ -19558,7 +21427,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(const chip::app::DataModel::Nullable<uint8_t> & defaultMoveRate)
     {
@@ -19591,9 +21463,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_13()
     {
@@ -19612,7 +21490,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint8_t currentLevel)
     {
@@ -19644,9 +21525,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_16()
     {
@@ -19822,9 +21709,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestPreconditionDutLevelIsSetTo0x80_2()
     {
@@ -19850,9 +21743,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait3000ms_3()
     {
@@ -19871,7 +21770,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t currentLevel)
     {
@@ -19904,9 +21806,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait3000ms_6()
     {
@@ -19925,7 +21833,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t currentLevel)
     {
@@ -19958,9 +21869,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait3000ms_9()
     {
@@ -19979,7 +21896,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint8_t currentLevel)
     {
@@ -20011,9 +21931,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_12()
     {
@@ -20040,9 +21966,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_LVL_6_1 : public TestCommand
@@ -20194,9 +22126,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestPreconditionSetDutToLowestPoint_2()
     {
@@ -20221,9 +22159,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_3()
     {
@@ -20242,7 +22186,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t currentLevel)
     {
@@ -20274,9 +22221,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait2000ms_6()
     {
@@ -20305,9 +22258,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsCurrentLevelAttributeFromDut_8()
     {
@@ -20320,7 +22279,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint8_t currentLevel)
     {
@@ -20352,9 +22314,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait100ms_10()
     {
@@ -20381,9 +22349,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_MC_1_1 : public TestCommand
@@ -20466,7 +22440,10 @@ private:
         (static_cast<Test_TC_MC_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_MC_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_MC_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -20489,7 +22466,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -20517,7 +22497,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_MC_2_1 : public TestCommand
@@ -20609,9 +22592,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_MC_3_1 : public TestCommand
@@ -21444,7 +23433,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::Channel::Structs::ChannelInfo::DecodableType> & channelList)
@@ -21727,7 +23719,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::app::Clusters::MediaPlayback::PlaybackStateEnum playbackState)
     {
@@ -21880,7 +23875,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::app::Clusters::MediaPlayback::PlaybackStateEnum playbackState)
     {
@@ -22166,7 +24164,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(float playbackSpeed)
     {
@@ -22192,7 +24193,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::app::Clusters::MediaPlayback::PlaybackStateEnum playbackState)
     {
@@ -22224,7 +24228,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(chip::app::Clusters::MediaPlayback::PlaybackStateEnum playbackState)
     {
@@ -22491,7 +24498,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t currentNavigatorTarget)
     {
@@ -22511,7 +24521,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::TargetNavigator::Structs::TargetInfo::DecodableType> &
@@ -22693,7 +24706,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(chip::CharSpan vendorName)
     {
@@ -22712,7 +24728,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint16_t vendorId)
     {
@@ -22732,7 +24751,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::CharSpan applicationName)
     {
@@ -22752,7 +24774,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint16_t productId)
     {
@@ -22771,7 +24796,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(chip::app::Clusters::ApplicationBasic::ApplicationStatusEnum applicationStatus)
     {
@@ -22791,7 +24819,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(chip::CharSpan applicationVersion)
     {
@@ -22895,7 +24926,10 @@ private:
         (static_cast<Test_TC_OCC_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_OCC_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_OCC_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     //
     // Tests methods
@@ -22918,7 +24952,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -22938,7 +24975,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -22966,7 +25006,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_OCC_2_1 : public TestCommand
@@ -23080,7 +25123,10 @@ private:
         (static_cast<Test_TC_OCC_2_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -23107,7 +25153,10 @@ private:
         (static_cast<Test_TC_OCC_2_1 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -23134,7 +25183,10 @@ private:
         (static_cast<Test_TC_OCC_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_OCC_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -23167,7 +25219,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t occupancy)
     {
@@ -23197,7 +25252,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeOccupancy_3()
     {
@@ -23210,7 +25268,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t occupancy)
     {
@@ -23231,7 +25292,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t occupancySensorType)
     {
@@ -23262,7 +25326,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeOccupancySensorType_6()
     {
@@ -23276,7 +25343,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t occupancySensorType)
     {
@@ -23297,7 +25367,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t occupancySensorTypeBitmap)
     {
@@ -23328,7 +25401,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeOccupancySensorTypeBitmap_9()
     {
@@ -23342,7 +25418,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t occupancySensorTypeBitmap)
     {
@@ -23467,7 +25546,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t occupancy)
     {
@@ -23486,7 +25568,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t occupancy)
     {
@@ -23613,7 +25698,10 @@ private:
         (static_cast<Test_TC_OO_1_1 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_OO_1_1 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_OO_1_1 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
@@ -23650,7 +25738,10 @@ private:
         (static_cast<Test_TC_OO_1_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_OO_1_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_OO_1_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -23689,7 +25780,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -23709,7 +25803,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint16_t clusterRevision)
     {
@@ -23737,7 +25834,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_4() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_4()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_5()
     {
@@ -23750,7 +25850,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint16_t clusterRevision)
     {
@@ -23770,7 +25873,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint32_t featureMap)
     {
@@ -23790,7 +25896,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint32_t featureMap)
     {
@@ -23818,7 +25927,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackOptionalGlobalAttributeFeatureMap_9()
     {
@@ -23831,7 +25943,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint32_t featureMap)
     {
@@ -23972,7 +26087,10 @@ private:
         (static_cast<Test_TC_OO_2_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -24029,28 +26147,40 @@ private:
         (static_cast<Test_TC_OO_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_OO_2_1 *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_9();
+    }
 
     static void OnFailureCallback_10(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_OO_2_1 *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_OO_2_1 *>(context))->OnFailureResponse_11(status);
     }
 
-    static void OnSuccessCallback_11(void * context) { (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_11(); }
+    static void OnSuccessCallback_11(void * context)
+    {
+        (static_cast<Test_TC_OO_2_1 *>(context))->OnSuccessResponse_11();
+    }
 
     static void OnFailureCallback_12(void * context, EmberAfStatus status)
     {
@@ -24113,7 +26243,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(bool onOff)
     {
@@ -24142,7 +26275,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeOnOff_3()
     {
@@ -24155,7 +26291,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(bool onOff)
     {
@@ -24175,7 +26314,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool globalSceneControl)
     {
@@ -24195,7 +26337,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint16_t onTime)
     {
@@ -24215,7 +26360,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint16_t offWaitTime)
     {
@@ -24235,7 +26383,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t startUpOnOff)
     {
@@ -24264,7 +26415,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteTheDefaultValueToLtAttributeOnTime_9()
     {
@@ -24280,9 +26434,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWriteTheDefaultValueToLtAttributeOffWaitTime_10()
     {
@@ -24298,9 +26458,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWriteTheDefaultValueToLtAttributeStartUpOnOff_11()
     {
@@ -24316,9 +26482,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsBackLtAttributeGlobalSceneControl_12()
     {
@@ -24331,7 +26503,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(bool globalSceneControl)
     {
@@ -24351,7 +26526,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint16_t onTime)
     {
@@ -24371,7 +26549,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint16_t offWaitTime)
     {
@@ -24391,7 +26572,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t startUpOnOff)
     {
@@ -24612,9 +26796,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_2()
     {
@@ -24627,7 +26817,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -24655,9 +26848,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_4()
     {
@@ -24670,7 +26869,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool onOff)
     {
@@ -24698,9 +26900,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_6()
     {
@@ -24713,7 +26921,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool onOff)
     {
@@ -24741,9 +26952,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterToggleCommand_8()
     {
@@ -24756,7 +26973,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool onOff)
     {
@@ -24784,9 +27004,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterToggleCommand_10()
     {
@@ -24799,7 +27025,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(bool onOff)
     {
@@ -24827,9 +27056,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsTrueAfterOnCommand_12()
     {
@@ -24842,7 +27077,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(bool onOff)
     {
@@ -24870,9 +27108,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckOnOffAttributeValueIsFalseAfterOffCommand_14()
     {
@@ -24885,7 +27129,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(bool onOff)
     {
@@ -25709,9 +27956,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait1000ms_2()
     {
@@ -25730,7 +27983,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(bool onOff)
     {
@@ -25750,7 +28006,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool globalSceneControl)
     {
@@ -25778,9 +28037,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait1000ms_6()
     {
@@ -25799,7 +28064,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(bool onOff)
     {
@@ -25819,7 +28087,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool globalSceneControl)
     {
@@ -25847,9 +28118,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWait1000ms_10()
     {
@@ -25868,7 +28145,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(bool onOff)
     {
@@ -25888,7 +28168,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(bool globalSceneControl)
     {
@@ -25908,7 +28191,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint16_t onTime)
     {
@@ -25928,7 +28214,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint16_t offWaitTime)
     {
@@ -25956,9 +28245,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnOffAttributeFromDut_16()
     {
@@ -25971,7 +28266,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(bool onOff)
     {
@@ -25991,7 +28289,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(uint16_t onTime)
     {
@@ -26011,7 +28312,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint16_t offWaitTime)
     {
@@ -26039,9 +28343,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_19() { NextTest(); }
+    void OnSuccessResponse_19()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnOffAttributeFromDut_20()
     {
@@ -26054,7 +28364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_20(bool onOff)
     {
@@ -26074,7 +28387,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(uint16_t onTime)
     {
@@ -26094,7 +28410,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_22(bool onOff)
     {
@@ -26114,7 +28433,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(uint16_t onTime)
     {
@@ -26134,7 +28456,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_24(uint16_t offWaitTime)
     {
@@ -26162,9 +28487,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_25() { NextTest(); }
+    void OnSuccessResponse_25()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnTimeAttributeFromDut_26()
     {
@@ -26177,7 +28508,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(uint16_t onTime)
     {
@@ -26197,7 +28531,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_27(uint16_t offWaitTime)
     {
@@ -26225,9 +28562,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_28() { NextTest(); }
+    void OnSuccessResponse_28()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnOffAttributeFromDut_29()
     {
@@ -26240,7 +28583,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_29(bool onOff)
     {
@@ -26260,7 +28606,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_30(uint16_t onTime)
     {
@@ -26280,7 +28629,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(bool onOff)
     {
@@ -26300,7 +28652,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_32(uint16_t onTime)
     {
@@ -26328,9 +28683,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_33() { NextTest(); }
+    void OnSuccessResponse_33()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnOffAttributeFromDut_34()
     {
@@ -26343,7 +28704,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_34(bool onOff)
     {
@@ -26363,7 +28727,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_35(uint16_t onTime)
     {
@@ -26383,7 +28750,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_36(uint16_t offWaitTime)
     {
@@ -26411,9 +28781,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_37() { NextTest(); }
+    void OnSuccessResponse_37()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOnOffAttributeFromDut_38()
     {
@@ -26426,7 +28802,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_38(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_38(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_38(bool onOff)
     {
@@ -26446,7 +28825,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(uint16_t onTime)
     {
@@ -26466,7 +28848,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_40(bool onOff)
     {
@@ -26486,7 +28871,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(uint16_t onTime)
     {
@@ -26506,7 +28894,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_42(uint16_t offWaitTime)
     {
@@ -26526,7 +28917,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(bool onOff)
     {
@@ -26546,7 +28940,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_44(uint16_t onTime)
     {
@@ -26566,7 +28963,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(uint16_t offWaitTime)
     {
@@ -26594,9 +28994,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_46() { NextTest(); }
+    void OnSuccessResponse_46()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_PRS_1_1 : public TestCommand
@@ -26679,7 +29085,10 @@ private:
         (static_cast<Test_TC_PRS_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_PRS_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_PRS_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -26702,7 +29111,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -26731,7 +29143,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_PRS_2_1 : public TestCommand
@@ -26841,7 +29256,10 @@ private:
         (static_cast<Test_TC_PRS_2_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -26868,7 +29286,10 @@ private:
         (static_cast<Test_TC_PRS_2_1 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -26895,7 +29316,10 @@ private:
         (static_cast<Test_TC_PRS_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_PRS_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -26928,7 +29352,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t measuredValue)
     {
@@ -26956,7 +29383,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeMeasuredValue_3()
     {
@@ -26969,7 +29399,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(int16_t measuredValue)
     {
@@ -26990,7 +29423,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(int16_t minMeasuredValue)
     {
@@ -27019,7 +29455,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeMinMeasuredValue_6()
     {
@@ -27033,7 +29472,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(int16_t minMeasuredValue)
     {
@@ -27054,7 +29496,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(int16_t maxMeasuredValue)
     {
@@ -27083,7 +29528,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackMandatoryAttributeMaxMeasuredValue_9()
     {
@@ -27097,7 +29545,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(int16_t maxMeasuredValue)
     {
@@ -27191,7 +29642,10 @@ private:
         (static_cast<Test_TC_PCC_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_PCC_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_PCC_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -27225,7 +29679,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -27254,7 +29711,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadTheOptionalGlobalAttributeFeatureMap_3()
     {
@@ -27268,7 +29728,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint32_t featureMap)
     {
@@ -27834,7 +30297,10 @@ private:
         (static_cast<Test_TC_PCC_2_1 *>(context))->OnFailureResponse_31(status);
     }
 
-    static void OnSuccessCallback_31(void * context) { (static_cast<Test_TC_PCC_2_1 *>(context))->OnSuccessResponse_31(); }
+    static void OnSuccessCallback_31(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_1 *>(context))->OnSuccessResponse_31();
+    }
 
     static void OnFailureCallback_32(void * context, EmberAfStatus status)
     {
@@ -28038,7 +30504,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t maxPressure)
     {
@@ -28058,7 +30527,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t maxSpeed)
     {
@@ -28077,7 +30549,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint16_t maxFlow)
     {
@@ -28097,7 +30572,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t effectiveOperationMode)
     {
@@ -28117,7 +30595,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t effectiveControlMode)
     {
@@ -28137,7 +30618,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(int16_t capacity)
     {
@@ -28157,7 +30641,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(int16_t maxPressure)
     {
@@ -28177,7 +30664,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint16_t maxSpeed)
     {
@@ -28196,7 +30686,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint16_t maxFlow)
     {
@@ -28216,7 +30709,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint8_t effectiveOperationMode)
     {
@@ -28236,7 +30732,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t effectiveControlMode)
     {
@@ -28256,7 +30755,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(int16_t capacity)
     {
@@ -28704,7 +31206,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_31() { NextTest(); }
+    void OnSuccessResponse_31()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadTheOptionalAttributeMinConstPressure_32()
     {
@@ -29019,7 +31524,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(const chip::app::DataModel::Nullable<uint32_t> & lifetimeRunningHours)
     {
@@ -29211,21 +31719,30 @@ private:
         (static_cast<Test_TC_PCC_2_2 *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_2 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_2 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_2 *>(context))->OnSuccessResponse_3();
+    }
 
     //
     // Tests methods
@@ -29252,9 +31769,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite2ToTheOperationModeAttributeToDutOperationMode_2()
     {
@@ -29271,9 +31794,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite3ToTheOperationModeAttributeToDutOperationMode_3()
     {
@@ -29290,9 +31819,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_PCC_2_3 : public TestCommand
@@ -29437,7 +31972,10 @@ private:
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
@@ -29454,7 +31992,10 @@ private:
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -29471,35 +32012,50 @@ private:
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_6();
+    }
 
     static void OnFailureCallback_7(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_PCC_2_3 *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<Test_TC_PCC_2_3 *>(context))->OnSuccessResponse_9();
+    }
 
     //
     // Tests methods
@@ -29526,9 +32082,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheAttributeEffectiveOperationMode_2()
     {
@@ -29542,7 +32104,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t effectiveOperationMode)
     {
@@ -29566,9 +32131,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsTheAttributeEffectiveControlMode_4()
     {
@@ -29582,7 +32153,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t effectiveControlMode)
     {
@@ -29606,9 +32180,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite2ToTheControlModeAttributeToDut_6()
     {
@@ -29625,9 +32205,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite3ToTheControlModeAttributeToDut_7()
     {
@@ -29644,9 +32230,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite5ToTheControlModeAttributeToDut_8()
     {
@@ -29663,9 +32255,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWrite7ToTheControlModeAttributeToDut_9()
     {
@@ -29682,9 +32280,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_RH_1_1 : public TestCommand
@@ -29767,7 +32371,10 @@ private:
         (static_cast<Test_TC_RH_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_RH_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_RH_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -29791,7 +32398,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -29820,7 +32430,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_RH_2_1 : public TestCommand
@@ -29957,7 +32570,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t measuredValue)
     {
@@ -29977,7 +32593,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t minMeasuredValue)
     {
@@ -30153,7 +32772,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t measuredValue)
     {
@@ -30173,7 +32795,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t measuredValue)
     {
@@ -30280,7 +32905,10 @@ private:
         (static_cast<Test_TC_TM_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_TM_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_TM_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -30314,7 +32942,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -30335,7 +32966,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -30364,7 +32998,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -30378,7 +33015,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -30494,7 +33134,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t measuredValue)
     {
@@ -30643,7 +33286,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t measuredValue)
     {
@@ -30663,7 +33309,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(int16_t measuredValue)
     {
@@ -30756,7 +33405,10 @@ private:
         (static_cast<Test_TC_TSTAT_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_TSTAT_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -30789,7 +33441,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -30817,7 +33472,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadTheOptionalGlobalAttributeConstraintsFeatureMap_3()
     {
@@ -30830,7 +33488,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint32_t featureMap)
     {
@@ -31216,7 +33877,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
@@ -31253,7 +33917,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -31290,7 +33957,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -31327,7 +33997,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_16(status);
     }
 
-    static void OnSuccessCallback_16(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_16(); }
+    static void OnSuccessCallback_16(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_16();
+    }
 
     static void OnFailureCallback_17(void * context, EmberAfStatus status)
     {
@@ -31364,7 +34037,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_20(status);
     }
 
-    static void OnSuccessCallback_20(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_20(); }
+    static void OnSuccessCallback_20(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_20();
+    }
 
     static void OnFailureCallback_21(void * context, EmberAfStatus status)
     {
@@ -31401,7 +34077,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_24(status);
     }
 
-    static void OnSuccessCallback_24(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_24(); }
+    static void OnSuccessCallback_24(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_24();
+    }
 
     static void OnFailureCallback_25(void * context, EmberAfStatus status)
     {
@@ -31438,7 +34117,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_28(status);
     }
 
-    static void OnSuccessCallback_28(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_28(); }
+    static void OnSuccessCallback_28(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_28();
+    }
 
     static void OnFailureCallback_29(void * context, EmberAfStatus status)
     {
@@ -31475,7 +34157,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_32(status);
     }
 
-    static void OnSuccessCallback_32(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_32(); }
+    static void OnSuccessCallback_32(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_32();
+    }
 
     static void OnFailureCallback_33(void * context, EmberAfStatus status)
     {
@@ -31512,7 +34197,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_36(status);
     }
 
-    static void OnSuccessCallback_36(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_36(); }
+    static void OnSuccessCallback_36(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_36();
+    }
 
     static void OnFailureCallback_37(void * context, EmberAfStatus status)
     {
@@ -31549,7 +34237,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_40(status);
     }
 
-    static void OnSuccessCallback_40(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_40(); }
+    static void OnSuccessCallback_40(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_40();
+    }
 
     static void OnFailureCallback_41(void * context, EmberAfStatus status)
     {
@@ -31586,7 +34277,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_44(status);
     }
 
-    static void OnSuccessCallback_44(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_44(); }
+    static void OnSuccessCallback_44(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_44();
+    }
 
     static void OnFailureCallback_45(void * context, EmberAfStatus status)
     {
@@ -31623,7 +34317,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_48(status);
     }
 
-    static void OnSuccessCallback_48(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_48(); }
+    static void OnSuccessCallback_48(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_48();
+    }
 
     static void OnFailureCallback_49(void * context, EmberAfStatus status)
     {
@@ -31660,7 +34357,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_52(status);
     }
 
-    static void OnSuccessCallback_52(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_52(); }
+    static void OnSuccessCallback_52(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_52();
+    }
 
     static void OnFailureCallback_53(void * context, EmberAfStatus status)
     {
@@ -31687,7 +34387,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_55(status);
     }
 
-    static void OnSuccessCallback_55(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_55(); }
+    static void OnSuccessCallback_55(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_55();
+    }
 
     static void OnFailureCallback_56(void * context, EmberAfStatus status)
     {
@@ -31714,7 +34417,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_58(status);
     }
 
-    static void OnSuccessCallback_58(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_58(); }
+    static void OnSuccessCallback_58(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_58();
+    }
 
     static void OnFailureCallback_59(void * context, EmberAfStatus status)
     {
@@ -31731,7 +34437,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnFailureResponse_60(status);
     }
 
-    static void OnSuccessCallback_60(void * context) { (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_60(); }
+    static void OnSuccessCallback_60(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_1 *>(context))->OnSuccessResponse_60();
+    }
 
     //
     // Tests methods
@@ -31754,7 +34463,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t localTemperature)
     {
@@ -31773,7 +34485,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(int16_t absMinHeatSetpointLimit)
     {
@@ -31793,7 +34508,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(int16_t absMinHeatSetpointLimit)
     {
@@ -31823,7 +34541,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_4() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_4()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutAbsMinHeatSetpointLimit_5()
     {
@@ -31836,7 +34557,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(int16_t absMinHeatSetpointLimit)
     {
@@ -31856,7 +34580,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(int16_t absMaxHeatSetpointLimit)
     {
@@ -31876,7 +34603,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(int16_t absMaxHeatSetpointLimit)
     {
@@ -31906,7 +34636,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutAbsMaxHeatSetpointLimit_9()
     {
@@ -31919,7 +34652,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(int16_t absMaxHeatSetpointLimit)
     {
@@ -31939,7 +34675,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(int16_t absMinCoolSetpointLimit)
     {
@@ -31959,7 +34698,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(int16_t absMinCoolSetpointLimit)
     {
@@ -31989,7 +34731,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_12() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_12()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutAbsMinCoolSetpointLimit_13()
     {
@@ -32002,7 +34747,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(int16_t absMinCoolSetpointLimit)
     {
@@ -32022,7 +34770,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(int16_t absMaxCoolSetpointLimit)
     {
@@ -32042,7 +34793,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(int16_t absMaxCoolSetpointLimit)
     {
@@ -32072,7 +34826,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_16() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_16()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutAbsMaxCoolSetpointLimit_17()
     {
@@ -32085,7 +34842,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(int16_t absMaxCoolSetpointLimit)
     {
@@ -32105,7 +34865,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(int16_t occupiedCoolingSetpoint)
     {
@@ -32125,7 +34888,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_19(int16_t occupiedCoolingSetpoint)
     {
@@ -32149,9 +34915,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_20() { NextTest(); }
+    void OnSuccessResponse_20()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutOccupiedCoolingSetpoint_21()
     {
@@ -32164,7 +34936,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(int16_t occupiedCoolingSetpoint)
     {
@@ -32184,7 +34959,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_22(int16_t occupiedHeatingSetpoint)
     {
@@ -32204,7 +34982,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(int16_t occupiedHeatingSetpoint)
     {
@@ -32228,9 +35009,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_24() { NextTest(); }
+    void OnSuccessResponse_24()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutOccupiedHeatingSetpoint_25()
     {
@@ -32243,7 +35030,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_25(int16_t occupiedHeatingSetpoint)
     {
@@ -32263,7 +35053,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(int16_t minHeatSetpointLimit)
     {
@@ -32283,7 +35076,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_27(int16_t minHeatSetpointLimit)
     {
@@ -32307,9 +35103,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_28() { NextTest(); }
+    void OnSuccessResponse_28()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutMinHeatSetpointLimit_29()
     {
@@ -32322,7 +35124,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_29(int16_t minHeatSetpointLimit)
     {
@@ -32342,7 +35147,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_30(int16_t maxHeatSetpointLimit)
     {
@@ -32362,7 +35170,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(int16_t maxHeatSetpointLimit)
     {
@@ -32386,9 +35197,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_32() { NextTest(); }
+    void OnSuccessResponse_32()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutMaxHeatSetpointLimit_33()
     {
@@ -32401,7 +35218,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(int16_t maxHeatSetpointLimit)
     {
@@ -32421,7 +35241,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_34(int16_t minCoolSetpointLimit)
     {
@@ -32441,7 +35264,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_35(int16_t minCoolSetpointLimit)
     {
@@ -32465,9 +35291,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_36() { NextTest(); }
+    void OnSuccessResponse_36()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutMinCoolSetpointLimit_37()
     {
@@ -32480,7 +35312,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_37(int16_t minCoolSetpointLimit)
     {
@@ -32500,7 +35335,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_38(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_38(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_38(int16_t maxCoolSetpointLimit)
     {
@@ -32520,7 +35358,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(int16_t maxCoolSetpointLimit)
     {
@@ -32544,9 +35385,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_40() { NextTest(); }
+    void OnSuccessResponse_40()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutMaxCoolSetpointLimit_41()
     {
@@ -32559,7 +35406,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(int16_t maxCoolSetpointLimit)
     {
@@ -32580,7 +35430,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_42(uint8_t controlSequenceOfOperation)
     {
@@ -32601,7 +35454,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(uint8_t controlSequenceOfOperation)
     {
@@ -32626,9 +35482,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_44() { NextTest(); }
+    void OnSuccessResponse_44()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutControlSequenceOfOperation_45()
     {
@@ -32642,7 +35504,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(uint8_t controlSequenceOfOperation)
     {
@@ -32662,7 +35527,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_46(uint8_t systemMode)
     {
@@ -32682,7 +35550,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_47(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_47(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_47(uint8_t systemMode)
     {
@@ -32706,9 +35577,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_48() { NextTest(); }
+    void OnSuccessResponse_48()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackMandatoryAttributesFromDutSystemMode_49()
     {
@@ -32721,7 +35598,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_49(uint8_t systemMode)
     {
@@ -32796,7 +35676,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_52() { NextTest(); }
+    void OnSuccessResponse_52()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackOptionalAttributesFromDutMinSetpointDeadBand_53()
     {
@@ -32865,7 +35748,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_55() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_55()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadBackOptionalAttributesFromDutStartOfWeek_56()
     {
@@ -32934,7 +35820,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_58() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_58()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsConstraintsOfOptionalAttributesFromDutNumberOfDailyTransitions_59()
     {
@@ -32979,7 +35868,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_60() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_60()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_TSTAT_2_2 : public TestCommand
@@ -33561,7 +36453,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -33578,14 +36473,20 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -33602,7 +36503,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
@@ -33619,14 +36523,20 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_9();
+    }
 
     static void OnFailureCallback_10(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
@@ -33643,7 +36553,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -33660,14 +36573,20 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_14(status);
     }
 
-    static void OnSuccessCallback_14(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_14(); }
+    static void OnSuccessCallback_14(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_14();
+    }
 
     static void OnFailureCallback_15(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_15(status);
     }
 
-    static void OnSuccessCallback_15(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_15(); }
+    static void OnSuccessCallback_15(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_15();
+    }
 
     static void OnFailureCallback_16(void * context, EmberAfStatus status)
     {
@@ -33684,7 +36603,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_17(status);
     }
 
-    static void OnSuccessCallback_17(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_17(); }
+    static void OnSuccessCallback_17(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_17();
+    }
 
     static void OnFailureCallback_18(void * context, EmberAfStatus status)
     {
@@ -33701,14 +36623,20 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_19(status);
     }
 
-    static void OnSuccessCallback_19(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_19(); }
+    static void OnSuccessCallback_19(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_19();
+    }
 
     static void OnFailureCallback_20(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_20(status);
     }
 
-    static void OnSuccessCallback_20(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_20(); }
+    static void OnSuccessCallback_20(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_20();
+    }
 
     static void OnFailureCallback_21(void * context, EmberAfStatus status)
     {
@@ -33725,7 +36653,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_22(status);
     }
 
-    static void OnSuccessCallback_22(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_22(); }
+    static void OnSuccessCallback_22(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_22();
+    }
 
     static void OnFailureCallback_23(void * context, EmberAfStatus status)
     {
@@ -33742,14 +36673,20 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_24(status);
     }
 
-    static void OnSuccessCallback_24(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_24(); }
+    static void OnSuccessCallback_24(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_24();
+    }
 
     static void OnFailureCallback_25(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_25(status);
     }
 
-    static void OnSuccessCallback_25(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_25(); }
+    static void OnSuccessCallback_25(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_25();
+    }
 
     static void OnFailureCallback_26(void * context, EmberAfStatus status)
     {
@@ -33766,7 +36703,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_27(status);
     }
 
-    static void OnSuccessCallback_27(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_27(); }
+    static void OnSuccessCallback_27(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_27();
+    }
 
     static void OnFailureCallback_28(void * context, EmberAfStatus status)
     {
@@ -33783,70 +36723,100 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_29(status);
     }
 
-    static void OnSuccessCallback_29(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_29(); }
+    static void OnSuccessCallback_29(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_29();
+    }
 
     static void OnFailureCallback_30(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_30(status);
     }
 
-    static void OnSuccessCallback_30(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_30(); }
+    static void OnSuccessCallback_30(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_30();
+    }
 
     static void OnFailureCallback_31(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_31(status);
     }
 
-    static void OnSuccessCallback_31(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_31(); }
+    static void OnSuccessCallback_31(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_31();
+    }
 
     static void OnFailureCallback_32(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_32(status);
     }
 
-    static void OnSuccessCallback_32(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_32(); }
+    static void OnSuccessCallback_32(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_32();
+    }
 
     static void OnFailureCallback_33(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_33(status);
     }
 
-    static void OnSuccessCallback_33(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_33(); }
+    static void OnSuccessCallback_33(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_33();
+    }
 
     static void OnFailureCallback_34(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_34(status);
     }
 
-    static void OnSuccessCallback_34(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_34(); }
+    static void OnSuccessCallback_34(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_34();
+    }
 
     static void OnFailureCallback_35(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_35(status);
     }
 
-    static void OnSuccessCallback_35(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_35(); }
+    static void OnSuccessCallback_35(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_35();
+    }
 
     static void OnFailureCallback_36(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_36(status);
     }
 
-    static void OnSuccessCallback_36(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_36(); }
+    static void OnSuccessCallback_36(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_36();
+    }
 
     static void OnFailureCallback_37(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_37(status);
     }
 
-    static void OnSuccessCallback_37(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_37(); }
+    static void OnSuccessCallback_37(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_37();
+    }
 
     static void OnFailureCallback_38(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_38(status);
     }
 
-    static void OnSuccessCallback_38(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_38(); }
+    static void OnSuccessCallback_38(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_38();
+    }
 
     static void OnFailureCallback_39(void * context, EmberAfStatus status)
     {
@@ -33863,7 +36833,10 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_40(status);
     }
 
-    static void OnSuccessCallback_40(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_40(); }
+    static void OnSuccessCallback_40(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_40();
+    }
 
     static void OnFailureCallback_41(void * context, EmberAfStatus status)
     {
@@ -33880,56 +36853,80 @@ private:
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_42(status);
     }
 
-    static void OnSuccessCallback_42(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_42(); }
+    static void OnSuccessCallback_42(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_42();
+    }
 
     static void OnFailureCallback_43(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_43(status);
     }
 
-    static void OnSuccessCallback_43(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_43(); }
+    static void OnSuccessCallback_43(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_43();
+    }
 
     static void OnFailureCallback_44(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_44(status);
     }
 
-    static void OnSuccessCallback_44(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_44(); }
+    static void OnSuccessCallback_44(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_44();
+    }
 
     static void OnFailureCallback_45(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_45(status);
     }
 
-    static void OnSuccessCallback_45(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_45(); }
+    static void OnSuccessCallback_45(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_45();
+    }
 
     static void OnFailureCallback_46(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_46(status);
     }
 
-    static void OnSuccessCallback_46(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_46(); }
+    static void OnSuccessCallback_46(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_46();
+    }
 
     static void OnFailureCallback_47(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_47(status);
     }
 
-    static void OnSuccessCallback_47(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_47(); }
+    static void OnSuccessCallback_47(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_47();
+    }
 
     static void OnFailureCallback_48(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_48(status);
     }
 
-    static void OnSuccessCallback_48(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_48(); }
+    static void OnSuccessCallback_48(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_48();
+    }
 
     static void OnFailureCallback_49(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnFailureResponse_49(status);
     }
 
-    static void OnSuccessCallback_49(void * context) { (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_49(); }
+    static void OnSuccessCallback_49(void * context)
+    {
+        (static_cast<Test_TC_TSTAT_2_2 *>(context))->OnSuccessResponse_49();
+    }
 
     //
     // Tests methods
@@ -33952,7 +36949,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(int16_t occupiedCoolingSetpoint)
     {
@@ -33975,9 +36975,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfOccupiedCoolingSetpointAttribute_3()
     {
@@ -33990,7 +36996,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(int16_t occupiedCoolingSetpoint)
     {
@@ -34013,9 +37022,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfMaxCoolSetpointLimitToOccupiedCoolingSetpointAttribute_5()
     {
@@ -34031,9 +37046,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsOccupiedHeatingSetpointAttributeFromServerDutAndVerifiesThatTheValueIsWithinRange_6()
     {
@@ -34046,7 +37067,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(int16_t occupiedHeatingSetpoint)
     {
@@ -34069,9 +37093,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfOccupiedHeatingSetpointAttribute_8()
     {
@@ -34084,7 +37114,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(int16_t occupiedHeatingSetpoint)
     {
@@ -34107,9 +37140,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfMaxHeatSetpointLimitToOccupiedHeatingSetpointAttribute_10()
     {
@@ -34125,9 +37164,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsMinHeatSetpointLimitAttributeFromServerDutAndVerifiesThatTheValueIsWithinRange_11()
     {
@@ -34140,7 +37185,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(int16_t minHeatSetpointLimit)
     {
@@ -34163,9 +37211,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfMinHeatSetpointLimitAttribute_13()
     {
@@ -34178,7 +37232,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(int16_t minHeatSetpointLimit)
     {
@@ -34201,9 +37258,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfAbsMaxHeatSetpointLimitToMinHeatSetpointLimitAttribute_15()
     {
@@ -34219,9 +37282,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsMaxHeatSetpointLimitAttributeFromServerDutAndVerifiesThatTheValueIsWithinRange_16()
     {
@@ -34234,7 +37303,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(int16_t maxHeatSetpointLimit)
     {
@@ -34257,9 +37329,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_17() { NextTest(); }
+    void OnSuccessResponse_17()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfMaxHeatSetpointLimitAttribute_18()
     {
@@ -34272,7 +37350,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(int16_t maxHeatSetpointLimit)
     {
@@ -34295,9 +37376,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_19() { NextTest(); }
+    void OnSuccessResponse_19()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfAbsMaxHeatSetpointLimitToMaxHeatSetpointLimitAttribute_20()
     {
@@ -34313,9 +37400,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_20() { NextTest(); }
+    void OnSuccessResponse_20()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsMinCoolSetpointLimitAttributeFromServerDutAndVerifiesThatTheValueIsWithinRange_21()
     {
@@ -34328,7 +37421,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(int16_t minCoolSetpointLimit)
     {
@@ -34351,9 +37447,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_22() { NextTest(); }
+    void OnSuccessResponse_22()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfMinCoolSetpointLimitAttribute_23()
     {
@@ -34366,7 +37468,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(int16_t minCoolSetpointLimit)
     {
@@ -34389,9 +37494,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_24() { NextTest(); }
+    void OnSuccessResponse_24()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfMaxCoolSetpointLimitToMinCoolSetpointLimitAttribute_25()
     {
@@ -34407,9 +37518,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_25() { NextTest(); }
+    void OnSuccessResponse_25()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsMaxCoolSetpointLimitAttributeFromServerDutAndVerifiesThatTheValueIsWithinRange_26()
     {
@@ -34422,7 +37539,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(int16_t maxCoolSetpointLimit)
     {
@@ -34445,9 +37565,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_27() { NextTest(); }
+    void OnSuccessResponse_27()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsItBackAgainToConfirmTheSuccessfulWriteOfMaxCoolSetpointLimitAttribute_28()
     {
@@ -34460,7 +37586,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_28(int16_t maxCoolSetpointLimit)
     {
@@ -34483,9 +37612,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_29() { NextTest(); }
+    void OnSuccessResponse_29()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesTheLimitOfMaxCoolSetpointLimitToMaxCoolSetpointLimitAttribute_30()
     {
@@ -34501,9 +37636,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_30() { NextTest(); }
+    void OnSuccessResponse_30()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMinHeatSetpointLimitToMinHeatSetpointLimitAttribute_31()
     {
@@ -34519,9 +37660,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_31() { NextTest(); }
+    void OnSuccessResponse_31()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMaxHeatSetpointLimitToMinHeatSetpointLimitAttribute_32()
     {
@@ -34537,9 +37684,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_32() { NextTest(); }
+    void OnSuccessResponse_32()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMinHeatSetpointLimitToMaxHeatSetpointLimitAttribute_33()
     {
@@ -34555,9 +37708,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_33() { NextTest(); }
+    void OnSuccessResponse_33()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMaxHeatSetpointLimitToMaxHeatSetpointLimitAttribute_34()
     {
@@ -34573,9 +37732,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_34() { NextTest(); }
+    void OnSuccessResponse_34()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMinCoolSetpointLimitToMinCoolSetpointLimitAttribute_35()
     {
@@ -34591,9 +37756,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_35() { NextTest(); }
+    void OnSuccessResponse_35()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMaxCoolSetpointLimitToMinCoolSetpointLimitAttribute_36()
     {
@@ -34609,9 +37780,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_36() { NextTest(); }
+    void OnSuccessResponse_36()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMinCoolSetpointLimitToMaxCoolSetpointLimitAttribute_37()
     {
@@ -34627,9 +37804,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_37() { NextTest(); }
+    void OnSuccessResponse_37()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesSetsBackTheLimitOfMaxCoolSetpointLimitToMaxCoolSetpointLimitAttribute_38()
     {
@@ -34645,9 +37828,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_38(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_38(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_38() { NextTest(); }
+    void OnSuccessResponse_38()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadsControlSequenceOfOperationFromServerDutAndVerifiesThatTheValueIsValid_39()
     {
@@ -34661,7 +37850,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(uint8_t controlSequenceOfOperation)
     {
@@ -34685,9 +37877,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_40() { NextTest(); }
+    void OnSuccessResponse_40()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadItBackAgainToConfirmTheSuccessfulWrite_41()
     {
@@ -34701,7 +37899,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(uint8_t controlSequenceOfOperation)
     {
@@ -34724,9 +37925,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_42() { NextTest(); }
+    void OnSuccessResponse_42()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedHeatingSetpointToDefaultValue_43()
     {
@@ -34742,9 +37949,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_43() { NextTest(); }
+    void OnSuccessResponse_43()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedCoolingSetpointToDefaultValue_44()
     {
@@ -34760,9 +37973,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_44() { NextTest(); }
+    void OnSuccessResponse_44()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedCoolingSetpointToDefaultValue_45()
     {
@@ -34778,9 +37997,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_45() { NextTest(); }
+    void OnSuccessResponse_45()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedCoolingSetpointToDefaultValue_46()
     {
@@ -34796,9 +38021,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_46() { NextTest(); }
+    void OnSuccessResponse_46()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedHeatingSetpointToDefaultValue_47()
     {
@@ -34814,9 +38045,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_47(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_47(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_47() { NextTest(); }
+    void OnSuccessResponse_47()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedCoolingSetpointToDefaultValue_48()
     {
@@ -34832,9 +38069,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_48() { NextTest(); }
+    void OnSuccessResponse_48()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSetsOccupiedHeatingSetpointToDefaultValue_49()
     {
@@ -34850,9 +38093,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_49() { NextTest(); }
+    void OnSuccessResponse_49()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_TSUIC_1_1 : public TestCommand
@@ -34935,7 +38184,10 @@ private:
         (static_cast<Test_TC_TSUIC_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_TSUIC_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     //
     // Tests methods
@@ -34959,7 +38211,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -34989,7 +38244,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class Test_TC_TSUIC_2_1 : public TestCommand
@@ -35133,7 +38391,10 @@ private:
         (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -35180,7 +38441,10 @@ private:
         (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -35227,7 +38491,10 @@ private:
         (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnFailureResponse_13(status);
     }
 
-    static void OnSuccessCallback_13(void * context) { (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_13(); }
+    static void OnSuccessCallback_13(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_1 *>(context))->OnSuccessResponse_13();
+    }
 
     static void OnFailureCallback_14(void * context, EmberAfStatus status)
     {
@@ -35272,7 +38539,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t temperatureDisplayMode)
     {
@@ -35294,7 +38564,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t temperatureDisplayMode)
     {
@@ -35318,9 +38591,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadTheMandatoryAttributeTemperatureDisplayMode_4()
     {
@@ -35335,7 +38614,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t temperatureDisplayMode)
     {
@@ -35357,7 +38639,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t temperatureDisplayMode)
     {
@@ -35377,7 +38662,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t keypadLockout)
     {
@@ -35398,7 +38686,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t keypadLockout)
     {
@@ -35421,9 +38712,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadTheMandatoryAttributeKeypadLockout_9()
     {
@@ -35437,7 +38734,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t keypadLockout)
     {
@@ -35458,7 +38758,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint8_t keypadLockout)
     {
@@ -35479,7 +38782,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t scheduleProgrammingVisibility)
     {
@@ -35501,7 +38807,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint8_t scheduleProgrammingVisibility)
     {
@@ -35525,9 +38834,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadTheOptionalAttributeScheduleProgrammingVisibility_14()
     {
@@ -35542,7 +38857,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint8_t scheduleProgrammingVisibility)
     {
@@ -35564,7 +38882,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t scheduleProgrammingVisibility)
     {
@@ -35726,70 +39047,100 @@ private:
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_4(status);
     }
 
-    static void OnSuccessCallback_4(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_4(); }
+    static void OnSuccessCallback_4(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_4();
+    }
 
     static void OnFailureCallback_5(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_6();
+    }
 
     static void OnFailureCallback_7(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_9();
+    }
 
     static void OnFailureCallback_10(void * context, EmberAfStatus status)
     {
         (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<Test_TC_TSUIC_2_2 *>(context))->OnSuccessResponse_10();
+    }
 
     //
     // Tests methods
@@ -35817,9 +39168,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf1ToTemperatureDisplayModeAttributeOfDut_2()
     {
@@ -35837,9 +39194,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf0ToKeypadLockoutAttributeOfDut_3()
     {
@@ -35856,9 +39219,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf1ToKeypadLockoutAttributeOfDut_4()
     {
@@ -35875,9 +39244,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf2ToKeypadLockoutAttributeOfDut_5()
     {
@@ -35894,9 +39269,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf3ToKeypadLockoutAttributeOfDut_6()
     {
@@ -35913,9 +39294,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf4ToKeypadLockoutAttributeOfDut_7()
     {
@@ -35932,9 +39319,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf5ToKeypadLockoutAttributeOfDut_8()
     {
@@ -35951,9 +39344,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_8() { NextTest(); }
+    void OnSuccessResponse_8()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf0ToScheduleProgrammingVisibilityAttributeOfDut_9()
     {
@@ -35971,9 +39370,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWritesAValueOf1ToScheduleProgrammingVisibilityAttributeOfDut_10()
     {
@@ -35991,9 +39396,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 };
 
 class Test_TC_DIAGTH_1_1 : public TestCommand
@@ -36094,7 +39505,10 @@ private:
         (static_cast<Test_TC_DIAGTH_1_1 *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<Test_TC_DIAGTH_1_1 *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<Test_TC_DIAGTH_1_1 *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -36128,7 +39542,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -36149,7 +39566,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t clusterRevision)
     {
@@ -36178,7 +39598,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_3() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_3()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadsBackGlobalAttributeClusterRevision_4()
     {
@@ -36192,7 +39615,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t clusterRevision)
     {
@@ -36299,7 +39725,10 @@ private:
         (static_cast<Test_TC_WNCV_1_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_WNCV_1_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_WNCV_1_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -36326,7 +39755,10 @@ private:
         (static_cast<Test_TC_WNCV_1_1 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_WNCV_1_1 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_WNCV_1_1 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -36359,7 +39791,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t clusterRevision)
     {
@@ -36389,7 +39824,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackGlobalAttributeClusterRevision_3()
     {
@@ -36402,7 +39840,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint16_t clusterRevision)
     {
@@ -36423,7 +39864,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint32_t featureMap)
     {
@@ -36453,7 +39897,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackGlobalAttributeFeatureMap_6()
     {
@@ -36466,7 +39913,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint32_t featureMap)
     {
@@ -36797,7 +40247,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -36824,7 +40277,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -36851,7 +40307,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -36878,7 +40337,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_11(status);
     }
 
-    static void OnSuccessCallback_11(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_11(); }
+    static void OnSuccessCallback_11(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_11();
+    }
 
     static void OnFailureCallback_12(void * context, EmberAfStatus status)
     {
@@ -36905,7 +40367,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_14(status);
     }
 
-    static void OnSuccessCallback_14(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_14(); }
+    static void OnSuccessCallback_14(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_14();
+    }
 
     static void OnFailureCallback_15(void * context, EmberAfStatus status)
     {
@@ -36933,7 +40398,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_17(status);
     }
 
-    static void OnSuccessCallback_17(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_17(); }
+    static void OnSuccessCallback_17(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_17();
+    }
 
     static void OnFailureCallback_18(void * context, EmberAfStatus status)
     {
@@ -36962,7 +40430,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_20(status);
     }
 
-    static void OnSuccessCallback_20(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_20(); }
+    static void OnSuccessCallback_20(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_20();
+    }
 
     static void OnFailureCallback_21(void * context, EmberAfStatus status)
     {
@@ -36991,7 +40462,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_23(status);
     }
 
-    static void OnSuccessCallback_23(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_23(); }
+    static void OnSuccessCallback_23(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_23();
+    }
 
     static void OnFailureCallback_24(void * context, EmberAfStatus status)
     {
@@ -37020,7 +40494,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_26(status);
     }
 
-    static void OnSuccessCallback_26(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_26(); }
+    static void OnSuccessCallback_26(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_26();
+    }
 
     static void OnFailureCallback_27(void * context, EmberAfStatus status)
     {
@@ -37048,7 +40525,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_29(status);
     }
 
-    static void OnSuccessCallback_29(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_29(); }
+    static void OnSuccessCallback_29(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_29();
+    }
 
     static void OnFailureCallback_30(void * context, EmberAfStatus status)
     {
@@ -37075,7 +40555,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_32(status);
     }
 
-    static void OnSuccessCallback_32(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_32(); }
+    static void OnSuccessCallback_32(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_32();
+    }
 
     static void OnFailureCallback_33(void * context, EmberAfStatus status)
     {
@@ -37102,7 +40585,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_35(status);
     }
 
-    static void OnSuccessCallback_35(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_35(); }
+    static void OnSuccessCallback_35(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_35();
+    }
 
     static void OnFailureCallback_36(void * context, EmberAfStatus status)
     {
@@ -37129,7 +40615,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_38(status);
     }
 
-    static void OnSuccessCallback_38(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_38(); }
+    static void OnSuccessCallback_38(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_38();
+    }
 
     static void OnFailureCallback_39(void * context, EmberAfStatus status)
     {
@@ -37156,7 +40645,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_41(status);
     }
 
-    static void OnSuccessCallback_41(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_41(); }
+    static void OnSuccessCallback_41(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_41();
+    }
 
     static void OnFailureCallback_42(void * context, EmberAfStatus status)
     {
@@ -37183,7 +40675,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_44(status);
     }
 
-    static void OnSuccessCallback_44(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_44(); }
+    static void OnSuccessCallback_44(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_44();
+    }
 
     static void OnFailureCallback_45(void * context, EmberAfStatus status)
     {
@@ -37210,7 +40705,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_47(status);
     }
 
-    static void OnSuccessCallback_47(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_47(); }
+    static void OnSuccessCallback_47(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_47();
+    }
 
     static void OnFailureCallback_48(void * context, EmberAfStatus status)
     {
@@ -37238,7 +40736,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_50(status);
     }
 
-    static void OnSuccessCallback_50(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_50(); }
+    static void OnSuccessCallback_50(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_50();
+    }
 
     static void OnFailureCallback_51(void * context, EmberAfStatus status)
     {
@@ -37267,7 +40768,10 @@ private:
         (static_cast<Test_TC_WNCV_2_1 *>(context))->OnFailureResponse_53(status);
     }
 
-    static void OnSuccessCallback_53(void * context) { (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_53(); }
+    static void OnSuccessCallback_53(void * context)
+    {
+        (static_cast<Test_TC_WNCV_2_1 *>(context))->OnSuccessResponse_53();
+    }
 
     static void OnFailureCallback_54(void * context, EmberAfStatus status)
     {
@@ -37301,7 +40805,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t type)
     {
@@ -37331,7 +40838,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoMandatoryAttributeType_3()
     {
@@ -37344,7 +40854,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t type)
     {
@@ -37365,7 +40878,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t configStatus)
     {
@@ -37395,7 +40911,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoMandatoryAttributeConfigStatus_6()
     {
@@ -37408,7 +40927,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t configStatus)
     {
@@ -37429,7 +40951,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t operationalStatus)
     {
@@ -37459,7 +40984,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoMandatoryAttributeOperationalStatus_9()
     {
@@ -37472,7 +41000,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t operationalStatus)
     {
@@ -37493,7 +41024,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint8_t endProductType)
     {
@@ -37523,7 +41057,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_11() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_11()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoMandatoryAttributeEndProductType_12()
     {
@@ -37536,7 +41073,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint8_t endProductType)
     {
@@ -37557,7 +41097,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t mode)
     {
@@ -37581,9 +41124,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRwMandatoryAttributeMode_15()
     {
@@ -37596,7 +41145,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t mode)
     {
@@ -37617,7 +41169,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(const chip::app::DataModel::Nullable<chip::Percent100ths> & targetPositionLiftPercent100ths)
     {
@@ -37651,7 +41206,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_17() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_17()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeTargetPositionLiftPercent100ths_18()
     {
@@ -37665,7 +41223,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(const chip::app::DataModel::Nullable<chip::Percent100ths> & targetPositionLiftPercent100ths)
     {
@@ -37687,7 +41248,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_19(const chip::app::DataModel::Nullable<chip::Percent100ths> & targetPositionTiltPercent100ths)
     {
@@ -37721,7 +41285,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_20() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_20()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeTargetPositionTiltPercent100ths_21()
     {
@@ -37735,7 +41302,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(const chip::app::DataModel::Nullable<chip::Percent100ths> & targetPositionTiltPercent100ths)
     {
@@ -37757,7 +41327,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_22(const chip::app::DataModel::Nullable<chip::Percent100ths> & currentPositionLiftPercent100ths)
     {
@@ -37791,7 +41364,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_23() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_23()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeCurrentPositionLiftPercent100ths_24()
     {
@@ -37805,7 +41381,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_24(const chip::app::DataModel::Nullable<chip::Percent100ths> & currentPositionLiftPercent100ths)
     {
@@ -37827,7 +41406,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_25(const chip::app::DataModel::Nullable<chip::Percent100ths> & currentPositionTiltPercent100ths)
     {
@@ -37861,7 +41443,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_26() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_26()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeCurrentPositionTiltPercent100ths_27()
     {
@@ -37875,7 +41460,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_27(const chip::app::DataModel::Nullable<chip::Percent100ths> & currentPositionTiltPercent100ths)
     {
@@ -37897,7 +41485,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_28(uint16_t installedOpenLimitLift)
     {
@@ -37928,7 +41519,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_29() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_29()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeInstalledOpenLimitLift_30()
     {
@@ -37942,7 +41536,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_30(uint16_t installedOpenLimitLift)
     {
@@ -37964,7 +41561,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(uint16_t installedClosedLimitLift)
     {
@@ -37995,7 +41595,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_32() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_32()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeInstalledClosedLimitLift_33()
     {
@@ -38009,7 +41612,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(uint16_t installedClosedLimitLift)
     {
@@ -38031,7 +41637,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_34(uint16_t installedOpenLimitTilt)
     {
@@ -38062,7 +41671,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_35() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_35()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeInstalledOpenLimitTilt_36()
     {
@@ -38076,7 +41688,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_36(uint16_t installedOpenLimitTilt)
     {
@@ -38098,7 +41713,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_37(uint16_t installedClosedLimitTilt)
     {
@@ -38129,7 +41747,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_38() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_38()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test3bReadsBackTheRoOptionalAttributeInstalledClosedLimitTilt_39()
     {
@@ -38143,7 +41764,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(uint16_t installedClosedLimitTilt)
     {
@@ -38164,7 +41788,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_40(uint16_t safetyStatus)
     {
@@ -38194,7 +41821,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_41() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_41()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test5bReadsBackTheRoMandatoryAttributeSafetyStatus_42()
     {
@@ -38207,7 +41837,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_42(uint16_t safetyStatus)
     {
@@ -38228,7 +41861,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(const chip::app::DataModel::Nullable<uint16_t> & currentPositionLift)
     {
@@ -38259,7 +41895,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_44() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_44()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test5bReadsBackTheRoOptionalAttributeCurrentPositionLift_45()
     {
@@ -38272,7 +41911,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(const chip::app::DataModel::Nullable<uint16_t> & currentPositionLift)
     {
@@ -38293,7 +41935,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_46(const chip::app::DataModel::Nullable<uint16_t> & currentPositionTilt)
     {
@@ -38324,7 +41969,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_47() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_47()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test5bReadsBackTheRoOptionalAttributeCurrentPositionTilt_48()
     {
@@ -38337,7 +41985,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_48(const chip::app::DataModel::Nullable<uint16_t> & currentPositionTilt)
     {
@@ -38359,7 +42010,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_49(const chip::app::DataModel::Nullable<chip::Percent> & currentPositionLiftPercentage)
     {
@@ -38391,7 +42045,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_50() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_50()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test5bReadsBackTheRoOptionalAttributeCurrentPositionLiftPercentage_51()
     {
@@ -38405,7 +42062,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_51(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_51(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_51(const chip::app::DataModel::Nullable<chip::Percent> & currentPositionLiftPercentage)
     {
@@ -38427,7 +42087,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_52(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_52(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_52(const chip::app::DataModel::Nullable<chip::Percent> & currentPositionTiltPercentage)
     {
@@ -38459,7 +42122,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_53() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_53()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR Test5bReadsBackTheRoOptionalAttributeCurrentPositionTiltPercentage_54()
     {
@@ -38473,7 +42139,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_54(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_54(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_54(const chip::app::DataModel::Nullable<chip::Percent> & currentPositionTiltPercentage)
     {
@@ -38666,7 +42335,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t type)
     {
@@ -38686,7 +42358,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t type)
     {
@@ -38812,7 +42487,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t endProductType)
     {
@@ -38832,7 +42510,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t endProductType)
     {
@@ -38950,9 +42631,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test2aThSendsUpOrOpenCommandToDut_2()
     {
@@ -38973,9 +42660,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test3aThReadsOperationalStatusAttributeFromDut_3()
     {
@@ -38988,7 +42681,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t operationalStatus)
     {
@@ -39105,9 +42801,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test2aThSendsDownOrCloseCommandToDut_2()
     {
@@ -39128,9 +42830,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test3aThReadsOperationalStatusAttributeFromDut_3()
     {
@@ -39143,7 +42851,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t operationalStatus)
     {
@@ -39260,9 +42971,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test2aThSendsStopMotionCommandToDut_2()
     {
@@ -39283,9 +43000,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR Test2bThReadsOperationalStatusAttributeFromDut_3()
     {
@@ -39298,7 +43021,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t operationalStatus)
     {
@@ -39420,7 +43146,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::TargetNavigator::Structs::TargetInfo::DecodableType> &
@@ -39454,7 +43183,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t currentNavigatorTarget)
     {
@@ -39484,7 +43216,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::app::Clusters::TargetNavigator::StatusEnum status, chip::CharSpan data)
     {
@@ -39612,7 +43347,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::AudioOutput::Structs::OutputInfo::DecodableType> &
@@ -39652,7 +43390,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t currentAudioOutput)
     {
@@ -39681,9 +43422,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestRenameOutputCommand_4()
     {
@@ -39706,9 +43453,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 };
 
 class TV_ApplicationLauncherCluster : public TestCommand
@@ -39815,7 +43568,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(const chip::app::DataModel::DecodableList<uint16_t> & applicationLauncherList)
     {
@@ -39854,7 +43610,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(chip::app::Clusters::ApplicationLauncher::StatusEnum status, chip::CharSpan data)
     {
@@ -39887,7 +43646,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::app::Clusters::ApplicationLauncher::StatusEnum status, chip::CharSpan data)
     {
@@ -39920,7 +43682,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::app::Clusters::ApplicationLauncher::StatusEnum status, chip::CharSpan data)
     {
@@ -40022,7 +43787,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(chip::app::Clusters::KeypadInput::StatusEnum status)
     {
@@ -40131,7 +43899,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(chip::CharSpan setupPIN)
     {
@@ -40162,9 +43933,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestLogoutCommand_3()
     {
@@ -40186,9 +43963,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 };
 
 class TV_WakeOnLanCluster : public TestCommand
@@ -40282,7 +44065,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(chip::CharSpan wakeOnLanMacAddress)
     {
@@ -40453,7 +44239,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(chip::CharSpan vendorName)
     {
@@ -40473,7 +44262,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t vendorId)
     {
@@ -40493,7 +44285,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::CharSpan applicationName)
     {
@@ -40513,7 +44308,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint16_t productId)
     {
@@ -40533,7 +44331,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(chip::app::Clusters::ApplicationBasic::ApplicationStatusEnum applicationStatus)
     {
@@ -40553,7 +44354,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(chip::CharSpan applicationVersion)
     {
@@ -40768,7 +44572,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(chip::app::Clusters::MediaPlayback::PlaybackStateEnum playbackState)
     {
@@ -40788,7 +44595,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint64_t startTime)
     {
@@ -40808,7 +44618,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint64_t duration)
     {
@@ -40828,7 +44641,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(float playbackSpeed)
     {
@@ -40848,7 +44664,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint64_t seekRangeEnd)
     {
@@ -40868,7 +44687,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint64_t seekRangeStart)
     {
@@ -40896,7 +44718,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -40924,7 +44749,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -40952,7 +44780,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -40980,7 +44811,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41008,7 +44842,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41036,7 +44873,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41064,7 +44904,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41092,7 +44935,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41121,7 +44967,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41150,7 +44999,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41179,7 +45031,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(chip::app::Clusters::MediaPlayback::StatusEnum status)
     {
@@ -41294,7 +45149,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::Channel::Structs::ChannelInfo::DecodableType> & channelList)
@@ -41343,7 +45201,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(const chip::app::Clusters::Channel::Structs::ChannelInfo::DecodableType & channelMatch,
                              chip::app::Clusters::Channel::ErrorTypeEnum errorType)
@@ -41381,9 +45242,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSkipChannelCommand_4()
     {
@@ -41405,9 +45272,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 };
 
 class TV_LowPowerCluster : public TestCommand
@@ -41499,9 +45372,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 };
 
 class TV_ContentLauncherCluster : public TestCommand
@@ -41617,7 +45496,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(const chip::app::DataModel::DecodableList<chip::CharSpan> & acceptHeaderList)
     {
@@ -41645,7 +45527,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint32_t supportedStreamingProtocols)
     {
@@ -41677,7 +45562,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::app::Clusters::ContentLauncher::StatusEnum status, chip::CharSpan data)
     {
@@ -41747,7 +45635,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::app::Clusters::ContentLauncher::StatusEnum status, chip::CharSpan data)
     {
@@ -41883,7 +45774,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::MediaInput::Structs::InputInfo::DecodableType> &
@@ -41920,7 +45814,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t currentMediaInput)
     {
@@ -41949,9 +45846,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestHideInputStatusCommand_4()
     {
@@ -41972,9 +45875,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestShowInputStatusCommand_5()
     {
@@ -41995,9 +45904,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestRenameInputCommand_6()
     {
@@ -42020,9 +45935,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 };
 
 class TestCluster : public TestCommand
@@ -44100,7 +48021,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
@@ -44117,7 +48041,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_9(status);
     }
 
-    static void OnSuccessCallback_9(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_9(); }
+    static void OnSuccessCallback_9(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_9();
+    }
 
     static void OnFailureCallback_10(void * context, EmberAfStatus status)
     {
@@ -44144,7 +48071,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -44161,7 +48091,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_14(status);
     }
 
-    static void OnSuccessCallback_14(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_14(); }
+    static void OnSuccessCallback_14(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_14();
+    }
 
     static void OnFailureCallback_15(void * context, EmberAfStatus status)
     {
@@ -44188,7 +48121,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_17(status);
     }
 
-    static void OnSuccessCallback_17(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_17(); }
+    static void OnSuccessCallback_17(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_17();
+    }
 
     static void OnFailureCallback_18(void * context, EmberAfStatus status)
     {
@@ -44205,7 +48141,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_19(status);
     }
 
-    static void OnSuccessCallback_19(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_19(); }
+    static void OnSuccessCallback_19(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_19();
+    }
 
     static void OnFailureCallback_20(void * context, EmberAfStatus status)
     {
@@ -44232,7 +48171,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_22(status);
     }
 
-    static void OnSuccessCallback_22(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_22(); }
+    static void OnSuccessCallback_22(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_22();
+    }
 
     static void OnFailureCallback_23(void * context, EmberAfStatus status)
     {
@@ -44249,7 +48191,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_24(status);
     }
 
-    static void OnSuccessCallback_24(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_24(); }
+    static void OnSuccessCallback_24(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_24();
+    }
 
     static void OnFailureCallback_25(void * context, EmberAfStatus status)
     {
@@ -44276,7 +48221,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_27(status);
     }
 
-    static void OnSuccessCallback_27(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_27(); }
+    static void OnSuccessCallback_27(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_27();
+    }
 
     static void OnFailureCallback_28(void * context, EmberAfStatus status)
     {
@@ -44293,7 +48241,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_29(status);
     }
 
-    static void OnSuccessCallback_29(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_29(); }
+    static void OnSuccessCallback_29(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_29();
+    }
 
     static void OnFailureCallback_30(void * context, EmberAfStatus status)
     {
@@ -44320,7 +48271,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_32(status);
     }
 
-    static void OnSuccessCallback_32(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_32(); }
+    static void OnSuccessCallback_32(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_32();
+    }
 
     static void OnFailureCallback_33(void * context, EmberAfStatus status)
     {
@@ -44337,7 +48291,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_34(status);
     }
 
-    static void OnSuccessCallback_34(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_34(); }
+    static void OnSuccessCallback_34(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_34();
+    }
 
     static void OnFailureCallback_35(void * context, EmberAfStatus status)
     {
@@ -44364,7 +48321,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_37(status);
     }
 
-    static void OnSuccessCallback_37(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_37(); }
+    static void OnSuccessCallback_37(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_37();
+    }
 
     static void OnFailureCallback_38(void * context, EmberAfStatus status)
     {
@@ -44381,7 +48341,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_39(status);
     }
 
-    static void OnSuccessCallback_39(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_39(); }
+    static void OnSuccessCallback_39(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_39();
+    }
 
     static void OnFailureCallback_40(void * context, EmberAfStatus status)
     {
@@ -44408,7 +48371,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_42(status);
     }
 
-    static void OnSuccessCallback_42(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_42(); }
+    static void OnSuccessCallback_42(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_42();
+    }
 
     static void OnFailureCallback_43(void * context, EmberAfStatus status)
     {
@@ -44425,7 +48391,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_44(status);
     }
 
-    static void OnSuccessCallback_44(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_44(); }
+    static void OnSuccessCallback_44(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_44();
+    }
 
     static void OnFailureCallback_45(void * context, EmberAfStatus status)
     {
@@ -44452,7 +48421,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_47(status);
     }
 
-    static void OnSuccessCallback_47(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_47(); }
+    static void OnSuccessCallback_47(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_47();
+    }
 
     static void OnFailureCallback_48(void * context, EmberAfStatus status)
     {
@@ -44469,7 +48441,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_49(status);
     }
 
-    static void OnSuccessCallback_49(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_49(); }
+    static void OnSuccessCallback_49(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_49();
+    }
 
     static void OnFailureCallback_50(void * context, EmberAfStatus status)
     {
@@ -44496,7 +48471,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_52(status);
     }
 
-    static void OnSuccessCallback_52(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_52(); }
+    static void OnSuccessCallback_52(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_52();
+    }
 
     static void OnFailureCallback_53(void * context, EmberAfStatus status)
     {
@@ -44513,7 +48491,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_54(status);
     }
 
-    static void OnSuccessCallback_54(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_54(); }
+    static void OnSuccessCallback_54(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_54();
+    }
 
     static void OnFailureCallback_55(void * context, EmberAfStatus status)
     {
@@ -44530,7 +48511,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_56(status);
     }
 
-    static void OnSuccessCallback_56(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_56(); }
+    static void OnSuccessCallback_56(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_56();
+    }
 
     static void OnFailureCallback_57(void * context, EmberAfStatus status)
     {
@@ -44557,7 +48541,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_59(status);
     }
 
-    static void OnSuccessCallback_59(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_59(); }
+    static void OnSuccessCallback_59(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_59();
+    }
 
     static void OnFailureCallback_60(void * context, EmberAfStatus status)
     {
@@ -44574,7 +48561,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_61(status);
     }
 
-    static void OnSuccessCallback_61(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_61(); }
+    static void OnSuccessCallback_61(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_61();
+    }
 
     static void OnFailureCallback_62(void * context, EmberAfStatus status)
     {
@@ -44591,7 +48581,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_63(status);
     }
 
-    static void OnSuccessCallback_63(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_63(); }
+    static void OnSuccessCallback_63(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_63();
+    }
 
     static void OnFailureCallback_64(void * context, EmberAfStatus status)
     {
@@ -44618,7 +48611,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_66(status);
     }
 
-    static void OnSuccessCallback_66(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_66(); }
+    static void OnSuccessCallback_66(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_66();
+    }
 
     static void OnFailureCallback_67(void * context, EmberAfStatus status)
     {
@@ -44635,7 +48631,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_68(status);
     }
 
-    static void OnSuccessCallback_68(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_68(); }
+    static void OnSuccessCallback_68(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_68();
+    }
 
     static void OnFailureCallback_69(void * context, EmberAfStatus status)
     {
@@ -44652,7 +48651,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_70(status);
     }
 
-    static void OnSuccessCallback_70(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_70(); }
+    static void OnSuccessCallback_70(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_70();
+    }
 
     static void OnFailureCallback_71(void * context, EmberAfStatus status)
     {
@@ -44679,7 +48681,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_73(status);
     }
 
-    static void OnSuccessCallback_73(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_73(); }
+    static void OnSuccessCallback_73(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_73();
+    }
 
     static void OnFailureCallback_74(void * context, EmberAfStatus status)
     {
@@ -44696,7 +48701,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_75(status);
     }
 
-    static void OnSuccessCallback_75(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_75(); }
+    static void OnSuccessCallback_75(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_75();
+    }
 
     static void OnFailureCallback_76(void * context, EmberAfStatus status)
     {
@@ -44713,7 +48721,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_77(status);
     }
 
-    static void OnSuccessCallback_77(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_77(); }
+    static void OnSuccessCallback_77(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_77();
+    }
 
     static void OnFailureCallback_78(void * context, EmberAfStatus status)
     {
@@ -44740,7 +48751,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_80(status);
     }
 
-    static void OnSuccessCallback_80(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_80(); }
+    static void OnSuccessCallback_80(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_80();
+    }
 
     static void OnFailureCallback_81(void * context, EmberAfStatus status)
     {
@@ -44757,7 +48771,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_82(status);
     }
 
-    static void OnSuccessCallback_82(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_82(); }
+    static void OnSuccessCallback_82(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_82();
+    }
 
     static void OnFailureCallback_83(void * context, EmberAfStatus status)
     {
@@ -44774,7 +48791,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_84(status);
     }
 
-    static void OnSuccessCallback_84(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_84(); }
+    static void OnSuccessCallback_84(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_84();
+    }
 
     static void OnFailureCallback_85(void * context, EmberAfStatus status)
     {
@@ -44791,7 +48811,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_86(status);
     }
 
-    static void OnSuccessCallback_86(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_86(); }
+    static void OnSuccessCallback_86(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_86();
+    }
 
     static void OnFailureCallback_87(void * context, EmberAfStatus status)
     {
@@ -44818,7 +48841,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_89(status);
     }
 
-    static void OnSuccessCallback_89(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_89(); }
+    static void OnSuccessCallback_89(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_89();
+    }
 
     static void OnFailureCallback_90(void * context, EmberAfStatus status)
     {
@@ -44835,7 +48861,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_91(status);
     }
 
-    static void OnSuccessCallback_91(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_91(); }
+    static void OnSuccessCallback_91(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_91();
+    }
 
     static void OnFailureCallback_92(void * context, EmberAfStatus status)
     {
@@ -44852,7 +48881,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_93(status);
     }
 
-    static void OnSuccessCallback_93(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_93(); }
+    static void OnSuccessCallback_93(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_93();
+    }
 
     static void OnFailureCallback_94(void * context, EmberAfStatus status)
     {
@@ -44869,7 +48901,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_95(status);
     }
 
-    static void OnSuccessCallback_95(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_95(); }
+    static void OnSuccessCallback_95(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_95();
+    }
 
     static void OnFailureCallback_96(void * context, EmberAfStatus status)
     {
@@ -44896,7 +48931,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_98(status);
     }
 
-    static void OnSuccessCallback_98(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_98(); }
+    static void OnSuccessCallback_98(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_98();
+    }
 
     static void OnFailureCallback_99(void * context, EmberAfStatus status)
     {
@@ -44913,7 +48951,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_100(status);
     }
 
-    static void OnSuccessCallback_100(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_100(); }
+    static void OnSuccessCallback_100(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_100();
+    }
 
     static void OnFailureCallback_101(void * context, EmberAfStatus status)
     {
@@ -44940,7 +48981,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_103(status);
     }
 
-    static void OnSuccessCallback_103(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_103(); }
+    static void OnSuccessCallback_103(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_103();
+    }
 
     static void OnFailureCallback_104(void * context, EmberAfStatus status)
     {
@@ -44957,7 +49001,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_105(status);
     }
 
-    static void OnSuccessCallback_105(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_105(); }
+    static void OnSuccessCallback_105(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_105();
+    }
 
     static void OnFailureCallback_106(void * context, EmberAfStatus status)
     {
@@ -44984,7 +49031,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_108(status);
     }
 
-    static void OnSuccessCallback_108(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_108(); }
+    static void OnSuccessCallback_108(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_108();
+    }
 
     static void OnFailureCallback_109(void * context, EmberAfStatus status)
     {
@@ -45001,7 +49051,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_110(status);
     }
 
-    static void OnSuccessCallback_110(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_110(); }
+    static void OnSuccessCallback_110(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_110();
+    }
 
     static void OnFailureCallback_111(void * context, EmberAfStatus status)
     {
@@ -45018,7 +49071,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_112(status);
     }
 
-    static void OnSuccessCallback_112(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_112(); }
+    static void OnSuccessCallback_112(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_112();
+    }
 
     static void OnFailureCallback_113(void * context, EmberAfStatus status)
     {
@@ -45035,7 +49091,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_114(status);
     }
 
-    static void OnSuccessCallback_114(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_114(); }
+    static void OnSuccessCallback_114(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_114();
+    }
 
     static void OnFailureCallback_115(void * context, EmberAfStatus status)
     {
@@ -45052,7 +49111,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_116(status);
     }
 
-    static void OnSuccessCallback_116(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_116(); }
+    static void OnSuccessCallback_116(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_116();
+    }
 
     static void OnFailureCallback_117(void * context, EmberAfStatus status)
     {
@@ -45069,7 +49131,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_118(status);
     }
 
-    static void OnSuccessCallback_118(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_118(); }
+    static void OnSuccessCallback_118(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_118();
+    }
 
     static void OnFailureCallback_119(void * context, EmberAfStatus status)
     {
@@ -45086,7 +49151,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_120(status);
     }
 
-    static void OnSuccessCallback_120(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_120(); }
+    static void OnSuccessCallback_120(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_120();
+    }
 
     static void OnFailureCallback_121(void * context, EmberAfStatus status)
     {
@@ -45103,7 +49171,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_122(status);
     }
 
-    static void OnSuccessCallback_122(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_122(); }
+    static void OnSuccessCallback_122(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_122();
+    }
 
     static void OnFailureCallback_123(void * context, EmberAfStatus status)
     {
@@ -45120,7 +49191,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_124(status);
     }
 
-    static void OnSuccessCallback_124(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_124(); }
+    static void OnSuccessCallback_124(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_124();
+    }
 
     static void OnFailureCallback_125(void * context, EmberAfStatus status)
     {
@@ -45137,7 +49211,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_126(status);
     }
 
-    static void OnSuccessCallback_126(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_126(); }
+    static void OnSuccessCallback_126(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_126();
+    }
 
     static void OnFailureCallback_127(void * context, EmberAfStatus status)
     {
@@ -45154,7 +49231,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_128(status);
     }
 
-    static void OnSuccessCallback_128(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_128(); }
+    static void OnSuccessCallback_128(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_128();
+    }
 
     static void OnFailureCallback_129(void * context, EmberAfStatus status)
     {
@@ -45171,7 +49251,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_130(status);
     }
 
-    static void OnSuccessCallback_130(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_130(); }
+    static void OnSuccessCallback_130(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_130();
+    }
 
     static void OnFailureCallback_131(void * context, EmberAfStatus status)
     {
@@ -45199,7 +49282,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_133(status);
     }
 
-    static void OnSuccessCallback_133(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_133(); }
+    static void OnSuccessCallback_133(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_133();
+    }
 
     static void OnFailureCallback_134(void * context, EmberAfStatus status)
     {
@@ -45216,7 +49302,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_135(status);
     }
 
-    static void OnSuccessCallback_135(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_135(); }
+    static void OnSuccessCallback_135(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_135();
+    }
 
     static void OnFailureCallback_136(void * context, EmberAfStatus status)
     {
@@ -45243,7 +49332,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_138(status);
     }
 
-    static void OnSuccessCallback_138(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_138(); }
+    static void OnSuccessCallback_138(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_138();
+    }
 
     static void OnFailureCallback_139(void * context, EmberAfStatus status)
     {
@@ -45260,7 +49352,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_140(status);
     }
 
-    static void OnSuccessCallback_140(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_140(); }
+    static void OnSuccessCallback_140(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_140();
+    }
 
     static void OnFailureCallback_141(void * context, EmberAfStatus status)
     {
@@ -45287,7 +49382,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_143(status);
     }
 
-    static void OnSuccessCallback_143(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_143(); }
+    static void OnSuccessCallback_143(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_143();
+    }
 
     static void OnFailureCallback_146(void * context, EmberAfStatus status)
     {
@@ -45304,7 +49402,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_147(status);
     }
 
-    static void OnSuccessCallback_147(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_147(); }
+    static void OnSuccessCallback_147(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_147();
+    }
 
     static void OnFailureCallback_148(void * context, EmberAfStatus status)
     {
@@ -45321,14 +49422,20 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_149(status);
     }
 
-    static void OnSuccessCallback_149(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_149(); }
+    static void OnSuccessCallback_149(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_149();
+    }
 
     static void OnFailureCallback_166(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_166(status);
     }
 
-    static void OnSuccessCallback_166(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_166(); }
+    static void OnSuccessCallback_166(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_166();
+    }
 
     static void OnFailureCallback_167(void * context, EmberAfStatus status)
     {
@@ -45345,7 +49452,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_168(status);
     }
 
-    static void OnSuccessCallback_168(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_168(); }
+    static void OnSuccessCallback_168(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_168();
+    }
 
     static void OnFailureCallback_169(void * context, EmberAfStatus status)
     {
@@ -45362,7 +49472,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_170(status);
     }
 
-    static void OnSuccessCallback_170(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_170(); }
+    static void OnSuccessCallback_170(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_170();
+    }
 
     static void OnFailureCallback_171(void * context, EmberAfStatus status)
     {
@@ -45395,7 +49508,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_175(status);
     }
 
-    static void OnSuccessCallback_175(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_175(); }
+    static void OnSuccessCallback_175(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_175();
+    }
 
     static void OnFailureCallback_176(void * context, EmberAfStatus status)
     {
@@ -45415,7 +49531,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_177(status);
     }
 
-    static void OnSuccessCallback_177(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_177(); }
+    static void OnSuccessCallback_177(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_177();
+    }
 
     static void OnFailureCallback_178(void * context, EmberAfStatus status)
     {
@@ -45432,7 +49551,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_179(status);
     }
 
-    static void OnSuccessCallback_179(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_179(); }
+    static void OnSuccessCallback_179(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_179();
+    }
 
     static void OnFailureCallback_180(void * context, EmberAfStatus status)
     {
@@ -45449,7 +49571,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_181(status);
     }
 
-    static void OnSuccessCallback_181(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_181(); }
+    static void OnSuccessCallback_181(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_181();
+    }
 
     static void OnFailureCallback_182(void * context, EmberAfStatus status)
     {
@@ -45466,7 +49591,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_183(status);
     }
 
-    static void OnSuccessCallback_183(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_183(); }
+    static void OnSuccessCallback_183(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_183();
+    }
 
     static void OnFailureCallback_184(void * context, EmberAfStatus status)
     {
@@ -45483,7 +49611,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_185(status);
     }
 
-    static void OnSuccessCallback_185(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_185(); }
+    static void OnSuccessCallback_185(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_185();
+    }
 
     static void OnFailureCallback_186(void * context, EmberAfStatus status)
     {
@@ -45500,7 +49631,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_187(status);
     }
 
-    static void OnSuccessCallback_187(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_187(); }
+    static void OnSuccessCallback_187(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_187();
+    }
 
     static void OnFailureCallback_188(void * context, EmberAfStatus status)
     {
@@ -45517,7 +49651,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_189(status);
     }
 
-    static void OnSuccessCallback_189(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_189(); }
+    static void OnSuccessCallback_189(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_189();
+    }
 
     static void OnFailureCallback_190(void * context, EmberAfStatus status)
     {
@@ -45534,7 +49671,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_191(status);
     }
 
-    static void OnSuccessCallback_191(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_191(); }
+    static void OnSuccessCallback_191(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_191();
+    }
 
     static void OnFailureCallback_192(void * context, EmberAfStatus status)
     {
@@ -45551,7 +49691,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_193(status);
     }
 
-    static void OnSuccessCallback_193(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_193(); }
+    static void OnSuccessCallback_193(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_193();
+    }
 
     static void OnFailureCallback_194(void * context, EmberAfStatus status)
     {
@@ -45568,7 +49711,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_195(status);
     }
 
-    static void OnSuccessCallback_195(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_195(); }
+    static void OnSuccessCallback_195(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_195();
+    }
 
     static void OnFailureCallback_196(void * context, EmberAfStatus status)
     {
@@ -45585,7 +49731,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_197(status);
     }
 
-    static void OnSuccessCallback_197(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_197(); }
+    static void OnSuccessCallback_197(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_197();
+    }
 
     static void OnFailureCallback_198(void * context, EmberAfStatus status)
     {
@@ -45602,7 +49751,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_199(status);
     }
 
-    static void OnSuccessCallback_199(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_199(); }
+    static void OnSuccessCallback_199(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_199();
+    }
 
     static void OnFailureCallback_200(void * context, EmberAfStatus status)
     {
@@ -45619,7 +49771,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_201(status);
     }
 
-    static void OnSuccessCallback_201(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_201(); }
+    static void OnSuccessCallback_201(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_201();
+    }
 
     static void OnFailureCallback_202(void * context, EmberAfStatus status)
     {
@@ -45636,7 +49791,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_203(status);
     }
 
-    static void OnSuccessCallback_203(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_203(); }
+    static void OnSuccessCallback_203(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_203();
+    }
 
     static void OnFailureCallback_204(void * context, EmberAfStatus status)
     {
@@ -45653,7 +49811,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_205(status);
     }
 
-    static void OnSuccessCallback_205(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_205(); }
+    static void OnSuccessCallback_205(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_205();
+    }
 
     static void OnFailureCallback_206(void * context, EmberAfStatus status)
     {
@@ -45670,7 +49831,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_207(status);
     }
 
-    static void OnSuccessCallback_207(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_207(); }
+    static void OnSuccessCallback_207(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_207();
+    }
 
     static void OnFailureCallback_208(void * context, EmberAfStatus status)
     {
@@ -45687,7 +49851,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_209(status);
     }
 
-    static void OnSuccessCallback_209(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_209(); }
+    static void OnSuccessCallback_209(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_209();
+    }
 
     static void OnFailureCallback_210(void * context, EmberAfStatus status)
     {
@@ -45714,7 +49881,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_212(status);
     }
 
-    static void OnSuccessCallback_212(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_212(); }
+    static void OnSuccessCallback_212(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_212();
+    }
 
     static void OnFailureCallback_213(void * context, EmberAfStatus status)
     {
@@ -45751,7 +49921,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_216(status);
     }
 
-    static void OnSuccessCallback_216(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_216(); }
+    static void OnSuccessCallback_216(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_216();
+    }
 
     static void OnFailureCallback_217(void * context, EmberAfStatus status)
     {
@@ -45778,7 +49951,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_219(status);
     }
 
-    static void OnSuccessCallback_219(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_219(); }
+    static void OnSuccessCallback_219(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_219();
+    }
 
     static void OnFailureCallback_220(void * context, EmberAfStatus status)
     {
@@ -45795,7 +49971,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_221(status);
     }
 
-    static void OnSuccessCallback_221(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_221(); }
+    static void OnSuccessCallback_221(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_221();
+    }
 
     static void OnFailureCallback_222(void * context, EmberAfStatus status)
     {
@@ -45812,7 +49991,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_223(status);
     }
 
-    static void OnSuccessCallback_223(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_223(); }
+    static void OnSuccessCallback_223(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_223();
+    }
 
     static void OnFailureCallback_224(void * context, EmberAfStatus status)
     {
@@ -45829,7 +50011,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_225(status);
     }
 
-    static void OnSuccessCallback_225(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_225(); }
+    static void OnSuccessCallback_225(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_225();
+    }
 
     static void OnFailureCallback_226(void * context, EmberAfStatus status)
     {
@@ -45866,7 +50051,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_229(status);
     }
 
-    static void OnSuccessCallback_229(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_229(); }
+    static void OnSuccessCallback_229(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_229();
+    }
 
     static void OnFailureCallback_230(void * context, EmberAfStatus status)
     {
@@ -45893,7 +50081,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_232(status);
     }
 
-    static void OnSuccessCallback_232(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_232(); }
+    static void OnSuccessCallback_232(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_232();
+    }
 
     static void OnFailureCallback_233(void * context, EmberAfStatus status)
     {
@@ -45910,7 +50101,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_234(status);
     }
 
-    static void OnSuccessCallback_234(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_234(); }
+    static void OnSuccessCallback_234(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_234();
+    }
 
     static void OnFailureCallback_235(void * context, EmberAfStatus status)
     {
@@ -45927,7 +50121,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_236(status);
     }
 
-    static void OnSuccessCallback_236(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_236(); }
+    static void OnSuccessCallback_236(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_236();
+    }
 
     static void OnFailureCallback_237(void * context, EmberAfStatus status)
     {
@@ -45944,7 +50141,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_238(status);
     }
 
-    static void OnSuccessCallback_238(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_238(); }
+    static void OnSuccessCallback_238(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_238();
+    }
 
     static void OnFailureCallback_239(void * context, EmberAfStatus status)
     {
@@ -45981,7 +50181,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_242(status);
     }
 
-    static void OnSuccessCallback_242(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_242(); }
+    static void OnSuccessCallback_242(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_242();
+    }
 
     static void OnFailureCallback_243(void * context, EmberAfStatus status)
     {
@@ -46008,7 +50211,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_245(status);
     }
 
-    static void OnSuccessCallback_245(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_245(); }
+    static void OnSuccessCallback_245(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_245();
+    }
 
     static void OnFailureCallback_246(void * context, EmberAfStatus status)
     {
@@ -46025,7 +50231,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_247(status);
     }
 
-    static void OnSuccessCallback_247(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_247(); }
+    static void OnSuccessCallback_247(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_247();
+    }
 
     static void OnFailureCallback_248(void * context, EmberAfStatus status)
     {
@@ -46042,7 +50251,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_249(status);
     }
 
-    static void OnSuccessCallback_249(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_249(); }
+    static void OnSuccessCallback_249(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_249();
+    }
 
     static void OnFailureCallback_250(void * context, EmberAfStatus status)
     {
@@ -46059,7 +50271,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_251(status);
     }
 
-    static void OnSuccessCallback_251(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_251(); }
+    static void OnSuccessCallback_251(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_251();
+    }
 
     static void OnFailureCallback_252(void * context, EmberAfStatus status)
     {
@@ -46096,7 +50311,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_255(status);
     }
 
-    static void OnSuccessCallback_255(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_255(); }
+    static void OnSuccessCallback_255(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_255();
+    }
 
     static void OnFailureCallback_256(void * context, EmberAfStatus status)
     {
@@ -46123,7 +50341,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_258(status);
     }
 
-    static void OnSuccessCallback_258(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_258(); }
+    static void OnSuccessCallback_258(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_258();
+    }
 
     static void OnFailureCallback_259(void * context, EmberAfStatus status)
     {
@@ -46140,7 +50361,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_260(status);
     }
 
-    static void OnSuccessCallback_260(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_260(); }
+    static void OnSuccessCallback_260(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_260();
+    }
 
     static void OnFailureCallback_261(void * context, EmberAfStatus status)
     {
@@ -46157,7 +50381,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_262(status);
     }
 
-    static void OnSuccessCallback_262(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_262(); }
+    static void OnSuccessCallback_262(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_262();
+    }
 
     static void OnFailureCallback_263(void * context, EmberAfStatus status)
     {
@@ -46194,7 +50421,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_266(status);
     }
 
-    static void OnSuccessCallback_266(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_266(); }
+    static void OnSuccessCallback_266(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_266();
+    }
 
     static void OnFailureCallback_267(void * context, EmberAfStatus status)
     {
@@ -46221,7 +50451,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_269(status);
     }
 
-    static void OnSuccessCallback_269(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_269(); }
+    static void OnSuccessCallback_269(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_269();
+    }
 
     static void OnFailureCallback_270(void * context, EmberAfStatus status)
     {
@@ -46238,7 +50471,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_271(status);
     }
 
-    static void OnSuccessCallback_271(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_271(); }
+    static void OnSuccessCallback_271(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_271();
+    }
 
     static void OnFailureCallback_272(void * context, EmberAfStatus status)
     {
@@ -46255,7 +50491,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_273(status);
     }
 
-    static void OnSuccessCallback_273(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_273(); }
+    static void OnSuccessCallback_273(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_273();
+    }
 
     static void OnFailureCallback_274(void * context, EmberAfStatus status)
     {
@@ -46292,7 +50531,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_277(status);
     }
 
-    static void OnSuccessCallback_277(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_277(); }
+    static void OnSuccessCallback_277(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_277();
+    }
 
     static void OnFailureCallback_278(void * context, EmberAfStatus status)
     {
@@ -46319,7 +50561,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_280(status);
     }
 
-    static void OnSuccessCallback_280(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_280(); }
+    static void OnSuccessCallback_280(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_280();
+    }
 
     static void OnFailureCallback_281(void * context, EmberAfStatus status)
     {
@@ -46336,7 +50581,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_282(status);
     }
 
-    static void OnSuccessCallback_282(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_282(); }
+    static void OnSuccessCallback_282(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_282();
+    }
 
     static void OnFailureCallback_283(void * context, EmberAfStatus status)
     {
@@ -46353,7 +50601,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_284(status);
     }
 
-    static void OnSuccessCallback_284(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_284(); }
+    static void OnSuccessCallback_284(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_284();
+    }
 
     static void OnFailureCallback_285(void * context, EmberAfStatus status)
     {
@@ -46390,7 +50641,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_288(status);
     }
 
-    static void OnSuccessCallback_288(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_288(); }
+    static void OnSuccessCallback_288(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_288();
+    }
 
     static void OnFailureCallback_289(void * context, EmberAfStatus status)
     {
@@ -46417,7 +50671,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_291(status);
     }
 
-    static void OnSuccessCallback_291(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_291(); }
+    static void OnSuccessCallback_291(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_291();
+    }
 
     static void OnFailureCallback_292(void * context, EmberAfStatus status)
     {
@@ -46434,7 +50691,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_293(status);
     }
 
-    static void OnSuccessCallback_293(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_293(); }
+    static void OnSuccessCallback_293(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_293();
+    }
 
     static void OnFailureCallback_294(void * context, EmberAfStatus status)
     {
@@ -46451,7 +50711,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_295(status);
     }
 
-    static void OnSuccessCallback_295(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_295(); }
+    static void OnSuccessCallback_295(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_295();
+    }
 
     static void OnFailureCallback_296(void * context, EmberAfStatus status)
     {
@@ -46488,7 +50751,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_299(status);
     }
 
-    static void OnSuccessCallback_299(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_299(); }
+    static void OnSuccessCallback_299(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_299();
+    }
 
     static void OnFailureCallback_300(void * context, EmberAfStatus status)
     {
@@ -46515,7 +50781,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_302(status);
     }
 
-    static void OnSuccessCallback_302(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_302(); }
+    static void OnSuccessCallback_302(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_302();
+    }
 
     static void OnFailureCallback_303(void * context, EmberAfStatus status)
     {
@@ -46532,7 +50801,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_304(status);
     }
 
-    static void OnSuccessCallback_304(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_304(); }
+    static void OnSuccessCallback_304(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_304();
+    }
 
     static void OnFailureCallback_305(void * context, EmberAfStatus status)
     {
@@ -46549,7 +50821,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_306(status);
     }
 
-    static void OnSuccessCallback_306(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_306(); }
+    static void OnSuccessCallback_306(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_306();
+    }
 
     static void OnFailureCallback_307(void * context, EmberAfStatus status)
     {
@@ -46566,7 +50841,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_308(status);
     }
 
-    static void OnSuccessCallback_308(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_308(); }
+    static void OnSuccessCallback_308(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_308();
+    }
 
     static void OnFailureCallback_309(void * context, EmberAfStatus status)
     {
@@ -46583,7 +50861,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_310(status);
     }
 
-    static void OnSuccessCallback_310(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_310(); }
+    static void OnSuccessCallback_310(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_310();
+    }
 
     static void OnFailureCallback_311(void * context, EmberAfStatus status)
     {
@@ -46600,7 +50881,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_312(status);
     }
 
-    static void OnSuccessCallback_312(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_312(); }
+    static void OnSuccessCallback_312(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_312();
+    }
 
     static void OnFailureCallback_313(void * context, EmberAfStatus status)
     {
@@ -46617,7 +50901,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_314(status);
     }
 
-    static void OnSuccessCallback_314(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_314(); }
+    static void OnSuccessCallback_314(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_314();
+    }
 
     static void OnFailureCallback_315(void * context, EmberAfStatus status)
     {
@@ -46634,7 +50921,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_316(status);
     }
 
-    static void OnSuccessCallback_316(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_316(); }
+    static void OnSuccessCallback_316(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_316();
+    }
 
     static void OnFailureCallback_317(void * context, EmberAfStatus status)
     {
@@ -46651,7 +50941,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_318(status);
     }
 
-    static void OnSuccessCallback_318(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_318(); }
+    static void OnSuccessCallback_318(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_318();
+    }
 
     static void OnFailureCallback_319(void * context, EmberAfStatus status)
     {
@@ -46668,7 +50961,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_320(status);
     }
 
-    static void OnSuccessCallback_320(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_320(); }
+    static void OnSuccessCallback_320(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_320();
+    }
 
     static void OnFailureCallback_321(void * context, EmberAfStatus status)
     {
@@ -46685,7 +50981,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_322(status);
     }
 
-    static void OnSuccessCallback_322(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_322(); }
+    static void OnSuccessCallback_322(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_322();
+    }
 
     static void OnFailureCallback_323(void * context, EmberAfStatus status)
     {
@@ -46702,7 +51001,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_324(status);
     }
 
-    static void OnSuccessCallback_324(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_324(); }
+    static void OnSuccessCallback_324(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_324();
+    }
 
     static void OnFailureCallback_325(void * context, EmberAfStatus status)
     {
@@ -46719,7 +51021,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_326(status);
     }
 
-    static void OnSuccessCallback_326(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_326(); }
+    static void OnSuccessCallback_326(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_326();
+    }
 
     static void OnFailureCallback_327(void * context, EmberAfStatus status)
     {
@@ -46736,7 +51041,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_328(status);
     }
 
-    static void OnSuccessCallback_328(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_328(); }
+    static void OnSuccessCallback_328(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_328();
+    }
 
     static void OnFailureCallback_329(void * context, EmberAfStatus status)
     {
@@ -46753,7 +51061,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_330(status);
     }
 
-    static void OnSuccessCallback_330(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_330(); }
+    static void OnSuccessCallback_330(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_330();
+    }
 
     static void OnFailureCallback_331(void * context, EmberAfStatus status)
     {
@@ -46770,7 +51081,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_332(status);
     }
 
-    static void OnSuccessCallback_332(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_332(); }
+    static void OnSuccessCallback_332(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_332();
+    }
 
     static void OnFailureCallback_333(void * context, EmberAfStatus status)
     {
@@ -46787,7 +51101,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_334(status);
     }
 
-    static void OnSuccessCallback_334(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_334(); }
+    static void OnSuccessCallback_334(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_334();
+    }
 
     static void OnFailureCallback_335(void * context, EmberAfStatus status)
     {
@@ -46804,7 +51121,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_336(status);
     }
 
-    static void OnSuccessCallback_336(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_336(); }
+    static void OnSuccessCallback_336(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_336();
+    }
 
     static void OnFailureCallback_337(void * context, EmberAfStatus status)
     {
@@ -46821,7 +51141,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_338(status);
     }
 
-    static void OnSuccessCallback_338(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_338(); }
+    static void OnSuccessCallback_338(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_338();
+    }
 
     static void OnFailureCallback_339(void * context, EmberAfStatus status)
     {
@@ -46840,7 +51163,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_340(status);
     }
 
-    static void OnSuccessCallback_340(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_340(); }
+    static void OnSuccessCallback_340(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_340();
+    }
 
     static void OnFailureCallback_341(void * context, EmberAfStatus status)
     {
@@ -46859,7 +51185,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_342(status);
     }
 
-    static void OnSuccessCallback_342(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_342(); }
+    static void OnSuccessCallback_342(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_342();
+    }
 
     static void OnFailureCallback_343(void * context, EmberAfStatus status)
     {
@@ -46878,7 +51207,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_344(status);
     }
 
-    static void OnSuccessCallback_344(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_344(); }
+    static void OnSuccessCallback_344(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_344();
+    }
 
     static void OnFailureCallback_345(void * context, EmberAfStatus status)
     {
@@ -46907,7 +51239,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_347(status);
     }
 
-    static void OnSuccessCallback_347(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_347(); }
+    static void OnSuccessCallback_347(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_347();
+    }
 
     static void OnFailureCallback_348(void * context, EmberAfStatus status)
     {
@@ -46924,7 +51259,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_349(status);
     }
 
-    static void OnSuccessCallback_349(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_349(); }
+    static void OnSuccessCallback_349(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_349();
+    }
 
     static void OnFailureCallback_350(void * context, EmberAfStatus status)
     {
@@ -46941,7 +51279,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_351(status);
     }
 
-    static void OnSuccessCallback_351(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_351(); }
+    static void OnSuccessCallback_351(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_351();
+    }
 
     static void OnFailureCallback_352(void * context, EmberAfStatus status)
     {
@@ -46968,7 +51309,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_354(status);
     }
 
-    static void OnSuccessCallback_354(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_354(); }
+    static void OnSuccessCallback_354(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_354();
+    }
 
     static void OnFailureCallback_355(void * context, EmberAfStatus status)
     {
@@ -46985,7 +51329,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_356(status);
     }
 
-    static void OnSuccessCallback_356(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_356(); }
+    static void OnSuccessCallback_356(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_356();
+    }
 
     static void OnFailureCallback_357(void * context, EmberAfStatus status)
     {
@@ -47002,7 +51349,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_358(status);
     }
 
-    static void OnSuccessCallback_358(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_358(); }
+    static void OnSuccessCallback_358(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_358();
+    }
 
     static void OnFailureCallback_359(void * context, EmberAfStatus status)
     {
@@ -47066,7 +51416,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_366(status);
     }
 
-    static void OnSuccessCallback_366(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_366(); }
+    static void OnSuccessCallback_366(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_366();
+    }
 
     static void OnFailureCallback_367(void * context, EmberAfStatus status)
     {
@@ -47095,28 +51448,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_369(status);
     }
 
-    static void OnSuccessCallback_369(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_369(); }
+    static void OnSuccessCallback_369(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_369();
+    }
 
     static void OnFailureCallback_370(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_370(status);
     }
 
-    static void OnSuccessCallback_370(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_370(); }
+    static void OnSuccessCallback_370(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_370();
+    }
 
     static void OnFailureCallback_371(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_371(status);
     }
 
-    static void OnSuccessCallback_371(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_371(); }
+    static void OnSuccessCallback_371(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_371();
+    }
 
     static void OnFailureCallback_372(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_372(status);
     }
 
-    static void OnSuccessCallback_372(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_372(); }
+    static void OnSuccessCallback_372(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_372();
+    }
 
     static void OnFailureCallback_373(void * context, EmberAfStatus status)
     {
@@ -47133,7 +51498,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_374(status);
     }
 
-    static void OnSuccessCallback_374(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_374(); }
+    static void OnSuccessCallback_374(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_374();
+    }
 
     static void OnFailureCallback_375(void * context, EmberAfStatus status)
     {
@@ -47150,7 +51518,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_376(status);
     }
 
-    static void OnSuccessCallback_376(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_376(); }
+    static void OnSuccessCallback_376(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_376();
+    }
 
     static void OnFailureCallback_377(void * context, EmberAfStatus status)
     {
@@ -47167,7 +51538,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_378(status);
     }
 
-    static void OnSuccessCallback_378(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_378(); }
+    static void OnSuccessCallback_378(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_378();
+    }
 
     static void OnFailureCallback_379(void * context, EmberAfStatus status)
     {
@@ -47194,28 +51568,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_381(status);
     }
 
-    static void OnSuccessCallback_381(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_381(); }
+    static void OnSuccessCallback_381(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_381();
+    }
 
     static void OnFailureCallback_382(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_382(status);
     }
 
-    static void OnSuccessCallback_382(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_382(); }
+    static void OnSuccessCallback_382(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_382();
+    }
 
     static void OnFailureCallback_383(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_383(status);
     }
 
-    static void OnSuccessCallback_383(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_383(); }
+    static void OnSuccessCallback_383(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_383();
+    }
 
     static void OnFailureCallback_384(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_384(status);
     }
 
-    static void OnSuccessCallback_384(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_384(); }
+    static void OnSuccessCallback_384(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_384();
+    }
 
     static void OnFailureCallback_385(void * context, EmberAfStatus status)
     {
@@ -47232,7 +51618,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_386(status);
     }
 
-    static void OnSuccessCallback_386(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_386(); }
+    static void OnSuccessCallback_386(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_386();
+    }
 
     static void OnFailureCallback_387(void * context, EmberAfStatus status)
     {
@@ -47249,7 +51638,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_388(status);
     }
 
-    static void OnSuccessCallback_388(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_388(); }
+    static void OnSuccessCallback_388(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_388();
+    }
 
     static void OnFailureCallback_389(void * context, EmberAfStatus status)
     {
@@ -47266,7 +51658,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_390(status);
     }
 
-    static void OnSuccessCallback_390(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_390(); }
+    static void OnSuccessCallback_390(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_390();
+    }
 
     static void OnFailureCallback_391(void * context, EmberAfStatus status)
     {
@@ -47293,28 +51688,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_393(status);
     }
 
-    static void OnSuccessCallback_393(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_393(); }
+    static void OnSuccessCallback_393(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_393();
+    }
 
     static void OnFailureCallback_394(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_394(status);
     }
 
-    static void OnSuccessCallback_394(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_394(); }
+    static void OnSuccessCallback_394(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_394();
+    }
 
     static void OnFailureCallback_395(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_395(status);
     }
 
-    static void OnSuccessCallback_395(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_395(); }
+    static void OnSuccessCallback_395(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_395();
+    }
 
     static void OnFailureCallback_396(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_396(status);
     }
 
-    static void OnSuccessCallback_396(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_396(); }
+    static void OnSuccessCallback_396(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_396();
+    }
 
     static void OnFailureCallback_397(void * context, EmberAfStatus status)
     {
@@ -47331,7 +51738,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_398(status);
     }
 
-    static void OnSuccessCallback_398(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_398(); }
+    static void OnSuccessCallback_398(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_398();
+    }
 
     static void OnFailureCallback_399(void * context, EmberAfStatus status)
     {
@@ -47348,7 +51758,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_400(status);
     }
 
-    static void OnSuccessCallback_400(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_400(); }
+    static void OnSuccessCallback_400(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_400();
+    }
 
     static void OnFailureCallback_401(void * context, EmberAfStatus status)
     {
@@ -47365,7 +51778,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_402(status);
     }
 
-    static void OnSuccessCallback_402(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_402(); }
+    static void OnSuccessCallback_402(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_402();
+    }
 
     static void OnFailureCallback_403(void * context, EmberAfStatus status)
     {
@@ -47392,28 +51808,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_405(status);
     }
 
-    static void OnSuccessCallback_405(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_405(); }
+    static void OnSuccessCallback_405(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_405();
+    }
 
     static void OnFailureCallback_406(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_406(status);
     }
 
-    static void OnSuccessCallback_406(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_406(); }
+    static void OnSuccessCallback_406(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_406();
+    }
 
     static void OnFailureCallback_407(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_407(status);
     }
 
-    static void OnSuccessCallback_407(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_407(); }
+    static void OnSuccessCallback_407(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_407();
+    }
 
     static void OnFailureCallback_408(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_408(status);
     }
 
-    static void OnSuccessCallback_408(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_408(); }
+    static void OnSuccessCallback_408(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_408();
+    }
 
     static void OnFailureCallback_409(void * context, EmberAfStatus status)
     {
@@ -47430,7 +51858,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_410(status);
     }
 
-    static void OnSuccessCallback_410(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_410(); }
+    static void OnSuccessCallback_410(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_410();
+    }
 
     static void OnFailureCallback_411(void * context, EmberAfStatus status)
     {
@@ -47447,7 +51878,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_412(status);
     }
 
-    static void OnSuccessCallback_412(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_412(); }
+    static void OnSuccessCallback_412(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_412();
+    }
 
     static void OnFailureCallback_413(void * context, EmberAfStatus status)
     {
@@ -47464,7 +51898,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_414(status);
     }
 
-    static void OnSuccessCallback_414(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_414(); }
+    static void OnSuccessCallback_414(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_414();
+    }
 
     static void OnFailureCallback_415(void * context, EmberAfStatus status)
     {
@@ -47491,28 +51928,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_417(status);
     }
 
-    static void OnSuccessCallback_417(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_417(); }
+    static void OnSuccessCallback_417(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_417();
+    }
 
     static void OnFailureCallback_418(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_418(status);
     }
 
-    static void OnSuccessCallback_418(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_418(); }
+    static void OnSuccessCallback_418(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_418();
+    }
 
     static void OnFailureCallback_419(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_419(status);
     }
 
-    static void OnSuccessCallback_419(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_419(); }
+    static void OnSuccessCallback_419(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_419();
+    }
 
     static void OnFailureCallback_420(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_420(status);
     }
 
-    static void OnSuccessCallback_420(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_420(); }
+    static void OnSuccessCallback_420(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_420();
+    }
 
     static void OnFailureCallback_421(void * context, EmberAfStatus status)
     {
@@ -47529,7 +51978,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_422(status);
     }
 
-    static void OnSuccessCallback_422(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_422(); }
+    static void OnSuccessCallback_422(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_422();
+    }
 
     static void OnFailureCallback_423(void * context, EmberAfStatus status)
     {
@@ -47546,7 +51998,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_424(status);
     }
 
-    static void OnSuccessCallback_424(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_424(); }
+    static void OnSuccessCallback_424(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_424();
+    }
 
     static void OnFailureCallback_425(void * context, EmberAfStatus status)
     {
@@ -47563,7 +52018,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_426(status);
     }
 
-    static void OnSuccessCallback_426(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_426(); }
+    static void OnSuccessCallback_426(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_426();
+    }
 
     static void OnFailureCallback_427(void * context, EmberAfStatus status)
     {
@@ -47580,7 +52038,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_428(status);
     }
 
-    static void OnSuccessCallback_428(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_428(); }
+    static void OnSuccessCallback_428(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_428();
+    }
 
     static void OnFailureCallback_429(void * context, EmberAfStatus status)
     {
@@ -47608,28 +52069,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_431(status);
     }
 
-    static void OnSuccessCallback_431(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_431(); }
+    static void OnSuccessCallback_431(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_431();
+    }
 
     static void OnFailureCallback_432(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_432(status);
     }
 
-    static void OnSuccessCallback_432(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_432(); }
+    static void OnSuccessCallback_432(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_432();
+    }
 
     static void OnFailureCallback_433(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_433(status);
     }
 
-    static void OnSuccessCallback_433(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_433(); }
+    static void OnSuccessCallback_433(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_433();
+    }
 
     static void OnFailureCallback_434(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_434(status);
     }
 
-    static void OnSuccessCallback_434(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_434(); }
+    static void OnSuccessCallback_434(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_434();
+    }
 
     static void OnFailureCallback_435(void * context, EmberAfStatus status)
     {
@@ -47647,7 +52120,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_436(status);
     }
 
-    static void OnSuccessCallback_436(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_436(); }
+    static void OnSuccessCallback_436(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_436();
+    }
 
     static void OnFailureCallback_437(void * context, EmberAfStatus status)
     {
@@ -47665,7 +52141,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_438(status);
     }
 
-    static void OnSuccessCallback_438(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_438(); }
+    static void OnSuccessCallback_438(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_438();
+    }
 
     static void OnFailureCallback_439(void * context, EmberAfStatus status)
     {
@@ -47683,7 +52162,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_440(status);
     }
 
-    static void OnSuccessCallback_440(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_440(); }
+    static void OnSuccessCallback_440(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_440();
+    }
 
     static void OnFailureCallback_441(void * context, EmberAfStatus status)
     {
@@ -47701,7 +52183,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_442(status);
     }
 
-    static void OnSuccessCallback_442(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_442(); }
+    static void OnSuccessCallback_442(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_442();
+    }
 
     static void OnFailureCallback_443(void * context, EmberAfStatus status)
     {
@@ -47729,28 +52214,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_445(status);
     }
 
-    static void OnSuccessCallback_445(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_445(); }
+    static void OnSuccessCallback_445(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_445();
+    }
 
     static void OnFailureCallback_446(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_446(status);
     }
 
-    static void OnSuccessCallback_446(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_446(); }
+    static void OnSuccessCallback_446(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_446();
+    }
 
     static void OnFailureCallback_447(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_447(status);
     }
 
-    static void OnSuccessCallback_447(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_447(); }
+    static void OnSuccessCallback_447(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_447();
+    }
 
     static void OnFailureCallback_448(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_448(status);
     }
 
-    static void OnSuccessCallback_448(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_448(); }
+    static void OnSuccessCallback_448(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_448();
+    }
 
     static void OnFailureCallback_449(void * context, EmberAfStatus status)
     {
@@ -47767,7 +52264,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_450(status);
     }
 
-    static void OnSuccessCallback_450(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_450(); }
+    static void OnSuccessCallback_450(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_450();
+    }
 
     static void OnFailureCallback_451(void * context, EmberAfStatus status)
     {
@@ -47784,7 +52284,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_452(status);
     }
 
-    static void OnSuccessCallback_452(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_452(); }
+    static void OnSuccessCallback_452(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_452();
+    }
 
     static void OnFailureCallback_453(void * context, EmberAfStatus status)
     {
@@ -47801,7 +52304,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_454(status);
     }
 
-    static void OnSuccessCallback_454(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_454(); }
+    static void OnSuccessCallback_454(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_454();
+    }
 
     static void OnFailureCallback_455(void * context, EmberAfStatus status)
     {
@@ -47818,7 +52324,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_456(status);
     }
 
-    static void OnSuccessCallback_456(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_456(); }
+    static void OnSuccessCallback_456(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_456();
+    }
 
     static void OnFailureCallback_457(void * context, EmberAfStatus status)
     {
@@ -47845,28 +52354,40 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_459(status);
     }
 
-    static void OnSuccessCallback_459(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_459(); }
+    static void OnSuccessCallback_459(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_459();
+    }
 
     static void OnFailureCallback_460(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_460(status);
     }
 
-    static void OnSuccessCallback_460(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_460(); }
+    static void OnSuccessCallback_460(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_460();
+    }
 
     static void OnFailureCallback_461(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_461(status);
     }
 
-    static void OnSuccessCallback_461(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_461(); }
+    static void OnSuccessCallback_461(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_461();
+    }
 
     static void OnFailureCallback_462(void * context, EmberAfStatus status)
     {
         (static_cast<TestCluster *>(context))->OnFailureResponse_462(status);
     }
 
-    static void OnSuccessCallback_462(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_462(); }
+    static void OnSuccessCallback_462(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_462();
+    }
 
     static void OnFailureCallback_463(void * context, EmberAfStatus status)
     {
@@ -47883,7 +52404,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_464(status);
     }
 
-    static void OnSuccessCallback_464(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_464(); }
+    static void OnSuccessCallback_464(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_464();
+    }
 
     static void OnFailureCallback_465(void * context, EmberAfStatus status)
     {
@@ -47900,7 +52424,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_466(status);
     }
 
-    static void OnSuccessCallback_466(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_466(); }
+    static void OnSuccessCallback_466(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_466();
+    }
 
     static void OnFailureCallback_467(void * context, EmberAfStatus status)
     {
@@ -47917,7 +52444,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_468(status);
     }
 
-    static void OnSuccessCallback_468(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_468(); }
+    static void OnSuccessCallback_468(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_468();
+    }
 
     static void OnFailureCallback_469(void * context, EmberAfStatus status)
     {
@@ -47934,7 +52464,10 @@ private:
         (static_cast<TestCluster *>(context))->OnFailureResponse_470(status);
     }
 
-    static void OnSuccessCallback_470(void * context) { (static_cast<TestCluster *>(context))->OnSuccessResponse_470(); }
+    static void OnSuccessCallback_470(void * context)
+    {
+        (static_cast<TestCluster *>(context))->OnSuccessResponse_470();
+    }
 
     static void OnFailureCallback_471(void * context, EmberAfStatus status)
     {
@@ -47975,9 +52508,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSendTestNotHandledCommand_2()
     {
@@ -48004,7 +52543,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendTestSpecificCommand_3()
     {
@@ -48025,7 +52567,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t returnValue)
     {
@@ -48055,7 +52600,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t returnValue)
     {
@@ -48091,7 +52639,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_5(uint8_t returnValue) { ThrowSuccessResponse(); }
+    void OnSuccessResponse_5(uint8_t returnValue)
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeBooleanDefaultValue_6()
     {
@@ -48104,7 +52655,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool boolean)
     {
@@ -48127,9 +52681,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBooleanTrue_8()
     {
@@ -48142,7 +52702,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool boolean)
     {
@@ -48165,9 +52728,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_9() { NextTest(); }
+    void OnSuccessResponse_9()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBooleanFalse_10()
     {
@@ -48180,7 +52749,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(bool boolean)
     {
@@ -48200,7 +52772,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t bitmap8)
     {
@@ -48223,9 +52798,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap8MaxValue_13()
     {
@@ -48238,7 +52819,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t bitmap8)
     {
@@ -48261,9 +52845,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap8MinValue_15()
     {
@@ -48276,7 +52866,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t bitmap8)
     {
@@ -48296,7 +52889,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(uint16_t bitmap16)
     {
@@ -48319,9 +52915,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_17() { NextTest(); }
+    void OnSuccessResponse_17()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap16MaxValue_18()
     {
@@ -48334,7 +52936,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint16_t bitmap16)
     {
@@ -48357,9 +52962,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_19() { NextTest(); }
+    void OnSuccessResponse_19()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap16MinValue_20()
     {
@@ -48372,7 +52983,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_20(uint16_t bitmap16)
     {
@@ -48392,7 +53006,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(uint32_t bitmap32)
     {
@@ -48415,9 +53032,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_22() { NextTest(); }
+    void OnSuccessResponse_22()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap32MaxValue_23()
     {
@@ -48430,7 +53053,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(uint32_t bitmap32)
     {
@@ -48453,9 +53079,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_24() { NextTest(); }
+    void OnSuccessResponse_24()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap32MinValue_25()
     {
@@ -48468,7 +53100,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_25(uint32_t bitmap32)
     {
@@ -48488,7 +53123,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(uint64_t bitmap64)
     {
@@ -48511,9 +53149,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_27() { NextTest(); }
+    void OnSuccessResponse_27()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap64MaxValue_28()
     {
@@ -48526,7 +53170,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_28(uint64_t bitmap64)
     {
@@ -48549,9 +53196,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_29() { NextTest(); }
+    void OnSuccessResponse_29()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap64MinValue_30()
     {
@@ -48564,7 +53217,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_30(uint64_t bitmap64)
     {
@@ -48584,7 +53240,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(uint8_t int8u)
     {
@@ -48607,9 +53266,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_32() { NextTest(); }
+    void OnSuccessResponse_32()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8uMaxValue_33()
     {
@@ -48622,7 +53287,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(uint8_t int8u)
     {
@@ -48645,9 +53313,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_34() { NextTest(); }
+    void OnSuccessResponse_34()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8uMinValue_35()
     {
@@ -48660,7 +53334,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_35(uint8_t int8u)
     {
@@ -48680,7 +53357,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_36(uint16_t int16u)
     {
@@ -48703,9 +53383,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_37() { NextTest(); }
+    void OnSuccessResponse_37()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16uMaxValue_38()
     {
@@ -48718,7 +53404,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_38(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_38(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_38(uint16_t int16u)
     {
@@ -48741,9 +53430,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_39() { NextTest(); }
+    void OnSuccessResponse_39()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16uMinValue_40()
     {
@@ -48756,7 +53451,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_40(uint16_t int16u)
     {
@@ -48776,7 +53474,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(uint32_t int32u)
     {
@@ -48799,9 +53500,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_42() { NextTest(); }
+    void OnSuccessResponse_42()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32uMaxValue_43()
     {
@@ -48814,7 +53521,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(uint32_t int32u)
     {
@@ -48837,9 +53547,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_44() { NextTest(); }
+    void OnSuccessResponse_44()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32uMinValue_45()
     {
@@ -48852,7 +53568,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_45(uint32_t int32u)
     {
@@ -48872,7 +53591,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_46(uint64_t int64u)
     {
@@ -48895,9 +53617,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_47(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_47(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_47() { NextTest(); }
+    void OnSuccessResponse_47()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64uMaxValue_48()
     {
@@ -48910,7 +53638,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_48(uint64_t int64u)
     {
@@ -48933,9 +53664,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_49() { NextTest(); }
+    void OnSuccessResponse_49()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64uMinValue_50()
     {
@@ -48948,7 +53685,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_50(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_50(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_50(uint64_t int64u)
     {
@@ -48968,7 +53708,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_51(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_51(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_51(int8_t int8s)
     {
@@ -48991,9 +53734,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_52(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_52(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_52() { NextTest(); }
+    void OnSuccessResponse_52()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8sMaxValue_53()
     {
@@ -49006,7 +53755,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_53(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_53(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_53(int8_t int8s)
     {
@@ -49029,9 +53781,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_54(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_54(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_54() { NextTest(); }
+    void OnSuccessResponse_54()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8sMinValue_55()
     {
@@ -49044,7 +53802,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_55(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_55(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_55(int8_t int8s)
     {
@@ -49067,9 +53828,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_56(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_56(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_56() { NextTest(); }
+    void OnSuccessResponse_56()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8sDefaultValue_57()
     {
@@ -49082,7 +53849,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_57(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_57(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_57(int8_t int8s)
     {
@@ -49102,7 +53872,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_58(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_58(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_58(int16_t int16s)
     {
@@ -49125,9 +53898,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_59(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_59(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_59() { NextTest(); }
+    void OnSuccessResponse_59()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16sMaxValue_60()
     {
@@ -49140,7 +53919,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_60(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_60(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_60(int16_t int16s)
     {
@@ -49163,9 +53945,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_61(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_61(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_61() { NextTest(); }
+    void OnSuccessResponse_61()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16sMinValue_62()
     {
@@ -49178,7 +53966,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_62(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_62(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_62(int16_t int16s)
     {
@@ -49201,9 +53992,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_63(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_63(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_63() { NextTest(); }
+    void OnSuccessResponse_63()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16sDefaultValue_64()
     {
@@ -49216,7 +54013,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_64(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_64(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_64(int16_t int16s)
     {
@@ -49236,7 +54036,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_65(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_65(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_65(int32_t int32s)
     {
@@ -49259,9 +54062,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_66(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_66(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_66() { NextTest(); }
+    void OnSuccessResponse_66()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32sMaxValue_67()
     {
@@ -49274,7 +54083,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_67(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_67(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_67(int32_t int32s)
     {
@@ -49297,9 +54109,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_68(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_68(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_68() { NextTest(); }
+    void OnSuccessResponse_68()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32sMinValue_69()
     {
@@ -49312,7 +54130,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_69(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_69(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_69(int32_t int32s)
     {
@@ -49335,9 +54156,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_70(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_70(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_70() { NextTest(); }
+    void OnSuccessResponse_70()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32sDefaultValue_71()
     {
@@ -49350,7 +54177,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_71(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_71(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_71(int32_t int32s)
     {
@@ -49370,7 +54200,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_72(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_72(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_72(int64_t int64s)
     {
@@ -49393,9 +54226,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_73(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_73(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_73() { NextTest(); }
+    void OnSuccessResponse_73()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64sMaxValue_74()
     {
@@ -49408,7 +54247,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_74(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_74(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_74(int64_t int64s)
     {
@@ -49431,9 +54273,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_75(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_75(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_75() { NextTest(); }
+    void OnSuccessResponse_75()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64sMinValue_76()
     {
@@ -49446,7 +54294,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_76(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_76(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_76(int64_t int64s)
     {
@@ -49469,9 +54320,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_77(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_77(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_77() { NextTest(); }
+    void OnSuccessResponse_77()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64sDefaultValue_78()
     {
@@ -49484,7 +54341,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_78(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_78(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_78(int64_t int64s)
     {
@@ -49504,7 +54364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_79(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_79(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_79(float floatSingle)
     {
@@ -49527,9 +54390,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_80(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_80(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_80() { NextTest(); }
+    void OnSuccessResponse_80()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeSingleMediumValue_81()
     {
@@ -49542,7 +54411,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_81(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_81(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_81(float floatSingle)
     {
@@ -49565,9 +54437,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_82(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_82(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_82() { NextTest(); }
+    void OnSuccessResponse_82()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeSingleLargeValue_83()
     {
@@ -49580,7 +54458,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_83(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_83(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_83(float floatSingle)
     {
@@ -49603,9 +54484,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_84(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_84(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_84() { NextTest(); }
+    void OnSuccessResponse_84()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeSingleSmallValue_85()
     {
@@ -49618,7 +54505,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_85(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_85(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_85(float floatSingle)
     {
@@ -49641,9 +54531,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_86(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_86(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_86() { NextTest(); }
+    void OnSuccessResponse_86()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeSingleDefaultValue_87()
     {
@@ -49656,7 +54552,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_87(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_87(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_87(float floatSingle)
     {
@@ -49676,7 +54575,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_88(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_88(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_88(double floatDouble)
     {
@@ -49699,9 +54601,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_89(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_89(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_89() { NextTest(); }
+    void OnSuccessResponse_89()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeDoubleMediumValue_90()
     {
@@ -49714,7 +54622,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_90(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_90(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_90(double floatDouble)
     {
@@ -49737,9 +54648,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_91(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_91(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_91() { NextTest(); }
+    void OnSuccessResponse_91()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeDoubleLargeValue_92()
     {
@@ -49752,7 +54669,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_92(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_92(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_92(double floatDouble)
     {
@@ -49775,9 +54695,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_93(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_93(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_93() { NextTest(); }
+    void OnSuccessResponse_93()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeDoubleSmallValue_94()
     {
@@ -49790,7 +54716,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_94(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_94(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_94(double floatDouble)
     {
@@ -49813,9 +54742,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_95(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_95(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_95() { NextTest(); }
+    void OnSuccessResponse_95()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeDoubleDefaultValue_96()
     {
@@ -49828,7 +54763,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_96(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_96(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_96(double floatDouble)
     {
@@ -49848,7 +54786,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_97(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_97(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_97(uint8_t enum8)
     {
@@ -49871,9 +54812,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_98(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_98(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_98() { NextTest(); }
+    void OnSuccessResponse_98()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum8MaxValue_99()
     {
@@ -49886,7 +54833,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_99(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_99(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_99(uint8_t enum8)
     {
@@ -49909,9 +54859,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_100(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_100(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_100() { NextTest(); }
+    void OnSuccessResponse_100()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum8MinValue_101()
     {
@@ -49924,7 +54880,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_101(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_101(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_101(uint8_t enum8)
     {
@@ -49944,7 +54903,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_102(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_102(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_102(uint16_t enum16)
     {
@@ -49967,9 +54929,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_103(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_103(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_103() { NextTest(); }
+    void OnSuccessResponse_103()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum16MaxValue_104()
     {
@@ -49982,7 +54950,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_104(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_104(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_104(uint16_t enum16)
     {
@@ -50005,9 +54976,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_105(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_105(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_105() { NextTest(); }
+    void OnSuccessResponse_105()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum16MinValue_106()
     {
@@ -50020,7 +54997,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_106(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_106(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_106(uint16_t enum16)
     {
@@ -50040,7 +55020,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_107(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_107(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_107(chip::ByteSpan octetString)
     {
@@ -50063,9 +55046,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_108(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_108(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_108() { NextTest(); }
+    void OnSuccessResponse_108()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetStringWithEmbeddedNull_109()
     {
@@ -50078,7 +55067,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_109(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_109(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_109(chip::ByteSpan octetString)
     {
@@ -50103,9 +55095,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_110(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_110(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_110() { NextTest(); }
+    void OnSuccessResponse_110()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetStringWithWeirdChars_111()
     {
@@ -50118,7 +55116,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_111(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_111(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_111(chip::ByteSpan octetString)
     {
@@ -50142,9 +55143,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_112(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_112(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_112() { NextTest(); }
+    void OnSuccessResponse_112()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetString_113()
     {
@@ -50157,7 +55164,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_113(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_113(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_113(chip::ByteSpan octetString)
     {
@@ -50188,7 +55198,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_114() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_114()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeOctetString_115()
     {
@@ -50201,7 +55214,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_115(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_115(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_115(chip::ByteSpan octetString)
     {
@@ -50225,9 +55241,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_116(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_116(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_116() { NextTest(); }
+    void OnSuccessResponse_116()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeLongOctetStringDefaultValue_117()
     {
@@ -50240,7 +55262,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_117(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_117(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_117(chip::ByteSpan longOctetString)
     {
@@ -50268,9 +55293,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_118(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_118(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_118() { NextTest(); }
+    void OnSuccessResponse_118()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeLongOctetString_119()
     {
@@ -50283,7 +55314,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_119(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_119(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_119(chip::ByteSpan longOctetString)
     {
@@ -50313,9 +55347,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_120(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_120(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_120() { NextTest(); }
+    void OnSuccessResponse_120()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringDefaultValue_121()
     {
@@ -50328,7 +55368,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_121(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_121(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_121(chip::CharSpan charString)
     {
@@ -50351,9 +55394,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_122(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_122(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_122() { NextTest(); }
+    void OnSuccessResponse_122()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharString_123()
     {
@@ -50366,7 +55415,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_123(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_123(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_123(chip::CharSpan charString)
     {
@@ -50395,7 +55447,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_124() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_124()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeCharString_125()
     {
@@ -50408,7 +55463,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_125(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_125(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_125(chip::CharSpan charString)
     {
@@ -50431,9 +55489,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_126(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_126(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_126() { NextTest(); }
+    void OnSuccessResponse_126()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeLongCharStringDefaultValue_127()
     {
@@ -50446,7 +55510,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_127(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_127(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_127(chip::CharSpan longCharString)
     {
@@ -50473,9 +55540,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_128(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_128(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_128() { NextTest(); }
+    void OnSuccessResponse_128()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeLongCharString_129()
     {
@@ -50488,7 +55561,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_129(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_129(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_129(chip::CharSpan longCharString)
     {
@@ -50516,9 +55592,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_130(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_130(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_130() { NextTest(); }
+    void OnSuccessResponse_130()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeListLongOctetString_131()
     {
@@ -50531,7 +55613,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_131(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_131(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_131(const chip::app::DataModel::DecodableList<chip::ByteSpan> & listLongOctetString)
     {
@@ -50598,7 +55683,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_132(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_132(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_132(uint64_t epochUs)
     {
@@ -50621,9 +55709,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_133(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_133(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_133() { NextTest(); }
+    void OnSuccessResponse_133()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochUsMaxValue_134()
     {
@@ -50636,7 +55730,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_134(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_134(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_134(uint64_t epochUs)
     {
@@ -50659,9 +55756,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_135(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_135(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_135() { NextTest(); }
+    void OnSuccessResponse_135()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochUsMinValue_136()
     {
@@ -50674,7 +55777,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_136(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_136(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_136(uint64_t epochUs)
     {
@@ -50694,7 +55800,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_137(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_137(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_137(uint32_t epochS)
     {
@@ -50717,9 +55826,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_138(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_138(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_138() { NextTest(); }
+    void OnSuccessResponse_138()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochSMaxValue_139()
     {
@@ -50732,7 +55847,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_139(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_139(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_139(uint32_t epochS)
     {
@@ -50755,9 +55873,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_140(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_140(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_140() { NextTest(); }
+    void OnSuccessResponse_140()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochSMinValue_141()
     {
@@ -50770,7 +55894,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_141(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_141(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_141(uint32_t epochS)
     {
@@ -50821,7 +55948,10 @@ private:
         (status == EMBER_ZCL_STATUS_UNSUPPORTED_ATTRIBUTE) ? NextTest() : ThrowFailureResponse();
     }
 
-    void OnSuccessResponse_143() { NextTest(); }
+    void OnSuccessResponse_143()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSendTestCommandToUnsupportedEndpoint_144()
     {
@@ -50848,7 +55978,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_144() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_144()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendTestCommandToUnsupportedCluster_145()
     {
@@ -50875,7 +56008,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_145() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_145()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeVendorIdDefaultValue_146()
     {
@@ -50888,7 +56024,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_146(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_146(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_146(chip::VendorId vendorId)
     {
@@ -50911,9 +56050,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_147(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_147(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_147() { NextTest(); }
+    void OnSuccessResponse_147()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeVendorId_148()
     {
@@ -50926,7 +56071,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_148(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_148(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_148(chip::VendorId vendorId)
     {
@@ -50949,9 +56097,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_149(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_149(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_149() { NextTest(); }
+    void OnSuccessResponse_149()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSendACommandWithAVendorIdAndEnum_150()
     {
@@ -50974,7 +56128,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_150(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_150(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_150(chip::VendorId arg1, chip::app::Clusters::TestCluster::SimpleEnum arg2)
     {
@@ -51013,7 +56170,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_151(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_151(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_151(bool value)
     {
@@ -51050,7 +56210,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_152(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_152(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_152(bool value)
     {
@@ -51090,7 +56253,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_153(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_153(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_153(bool value)
     {
@@ -51130,7 +56296,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_154(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_154(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_154(bool value)
     {
@@ -51209,7 +56378,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_155(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_155(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_155(bool value)
     {
@@ -51288,7 +56460,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_156(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_156(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_156(bool value)
     {
@@ -51325,7 +56500,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_157(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_157(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_157(const chip::app::Clusters::TestCluster::Structs::SimpleStruct::DecodableType & arg1)
     {
@@ -51372,7 +56550,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_158(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_158(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_158(bool value)
     {
@@ -51413,7 +56594,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_159(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_159(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_159(bool value)
     {
@@ -51453,7 +56637,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_160(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_160(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_160(const chip::app::DataModel::DecodableList<uint8_t> & arg1)
     {
@@ -51504,7 +56691,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_161(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_161(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_161(const chip::app::DataModel::DecodableList<uint8_t> & arg1)
     {
@@ -51557,7 +56747,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_162(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_162(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_162(bool value)
     {
@@ -51607,7 +56800,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_163(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_163(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_163(bool value)
     {
@@ -51690,7 +56886,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_164(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_164(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_164(bool value)
     {
@@ -51773,7 +56972,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_165(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_165(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_165(bool value)
     {
@@ -51802,9 +57004,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_166(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_166(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_166() { NextTest(); }
+    void OnSuccessResponse_166()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeListWithListOfInt8u_167()
     {
@@ -51817,7 +57025,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_167(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_167(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_167(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u)
     {
@@ -51857,9 +57068,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_168(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_168(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_168() { NextTest(); }
+    void OnSuccessResponse_168()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeListWithListOfOctetString_169()
     {
@@ -51872,7 +57089,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_169(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_169(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_169(const chip::app::DataModel::DecodableList<chip::ByteSpan> & listOctetString)
     {
@@ -51930,9 +57150,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_170(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_170(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_170() { NextTest(); }
+    void OnSuccessResponse_170()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeListWithListOfListStructOctetString_171()
     {
@@ -51945,7 +57171,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_171(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_171(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_171(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::TestCluster::Structs::TestListStructOctet::DecodableType> &
@@ -51998,7 +57227,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_172(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_172(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_172(bool wasPresent, const chip::Optional<bool> & wasNull, const chip::Optional<uint8_t> & value,
                                const chip::Optional<chip::app::DataModel::Nullable<uint8_t>> & originalValue)
@@ -52038,7 +57270,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_173(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_173(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_173(bool wasPresent, const chip::Optional<bool> & wasNull, const chip::Optional<uint8_t> & value,
                                const chip::Optional<chip::app::DataModel::Nullable<uint8_t>> & originalValue)
@@ -52060,7 +57295,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_174(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_174(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_174(const chip::app::DataModel::DecodableList<
                                chip::app::Clusters::TestCluster::Structs::NullablesAndOptionalsStruct::DecodableType> &
@@ -52110,9 +57348,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_175(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_175(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_175() { NextTest(); }
+    void OnSuccessResponse_175()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadListOfStructsContainingNullablesAndOptionalsAfterWriting_176()
     {
@@ -52126,7 +57370,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_176(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_176(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_176(const chip::app::DataModel::DecodableList<
                                chip::app::Clusters::TestCluster::Structs::NullablesAndOptionalsStruct::DecodableType> &
@@ -52172,9 +57419,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_177(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_177(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_177() { NextTest(); }
+    void OnSuccessResponse_177()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBooleanNull_178()
     {
@@ -52187,7 +57440,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_178(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_178(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_178(const chip::app::DataModel::Nullable<bool> & nullableBoolean)
     {
@@ -52211,9 +57467,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_179(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_179(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_179() { NextTest(); }
+    void OnSuccessResponse_179()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBooleanTrue_180()
     {
@@ -52226,7 +57488,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_180(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_180(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_180(const chip::app::DataModel::Nullable<bool> & nullableBoolean)
     {
@@ -52251,9 +57516,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_181(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_181(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_181() { NextTest(); }
+    void OnSuccessResponse_181()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap8MaxValue_182()
     {
@@ -52266,7 +57537,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_182(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_182(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_182(const chip::app::DataModel::Nullable<uint8_t> & nullableBitmap8)
     {
@@ -52297,7 +57571,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_183() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_183()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap8UnchangedValue_184()
     {
@@ -52310,7 +57587,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_184(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_184(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_184(const chip::app::DataModel::Nullable<uint8_t> & nullableBitmap8)
     {
@@ -52334,9 +57614,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_185(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_185(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_185() { NextTest(); }
+    void OnSuccessResponse_185()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap8NullValue_186()
     {
@@ -52349,7 +57635,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_186(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_186(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_186(const chip::app::DataModel::Nullable<uint8_t> & nullableBitmap8)
     {
@@ -52373,9 +57662,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_187(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_187(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_187() { NextTest(); }
+    void OnSuccessResponse_187()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap16MaxValue_188()
     {
@@ -52388,7 +57683,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_188(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_188(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_188(const chip::app::DataModel::Nullable<uint16_t> & nullableBitmap16)
     {
@@ -52419,7 +57717,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_189() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_189()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap16UnchangedValue_190()
     {
@@ -52432,7 +57733,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_190(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_190(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_190(const chip::app::DataModel::Nullable<uint16_t> & nullableBitmap16)
     {
@@ -52456,9 +57760,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_191(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_191(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_191() { NextTest(); }
+    void OnSuccessResponse_191()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap16NullValue_192()
     {
@@ -52471,7 +57781,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_192(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_192(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_192(const chip::app::DataModel::Nullable<uint16_t> & nullableBitmap16)
     {
@@ -52495,9 +57808,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_193(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_193(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_193() { NextTest(); }
+    void OnSuccessResponse_193()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap32MaxValue_194()
     {
@@ -52510,7 +57829,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_194(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_194(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_194(const chip::app::DataModel::Nullable<uint32_t> & nullableBitmap32)
     {
@@ -52541,7 +57863,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_195() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_195()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap32UnchangedValue_196()
     {
@@ -52554,7 +57879,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_196(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_196(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_196(const chip::app::DataModel::Nullable<uint32_t> & nullableBitmap32)
     {
@@ -52578,9 +57906,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_197(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_197(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_197() { NextTest(); }
+    void OnSuccessResponse_197()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap32NullValue_198()
     {
@@ -52593,7 +57927,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_198(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_198(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_198(const chip::app::DataModel::Nullable<uint32_t> & nullableBitmap32)
     {
@@ -52617,9 +57954,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_199(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_199(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_199() { NextTest(); }
+    void OnSuccessResponse_199()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap64MaxValue_200()
     {
@@ -52632,7 +57975,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_200(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_200(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_200(const chip::app::DataModel::Nullable<uint64_t> & nullableBitmap64)
     {
@@ -52663,7 +58009,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_201() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_201()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap64UnchangedValue_202()
     {
@@ -52676,7 +58025,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_202(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_202(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_202(const chip::app::DataModel::Nullable<uint64_t> & nullableBitmap64)
     {
@@ -52700,9 +58052,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_203(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_203(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_203() { NextTest(); }
+    void OnSuccessResponse_203()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableBitmap64NullValue_204()
     {
@@ -52715,7 +58073,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_204(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_204(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_204(const chip::app::DataModel::Nullable<uint64_t> & nullableBitmap64)
     {
@@ -52739,9 +58100,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_205(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_205(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_205() { NextTest(); }
+    void OnSuccessResponse_205()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8uMinValue_206()
     {
@@ -52754,7 +58121,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_206(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_206(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_206(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52779,9 +58149,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_207(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_207(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_207() { NextTest(); }
+    void OnSuccessResponse_207()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8uMaxValue_208()
     {
@@ -52794,7 +58170,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_208(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_208(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_208(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52825,7 +58204,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_209() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_209()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8uUnchangedValue_210()
     {
@@ -52838,7 +58220,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_210(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_210(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_210(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52859,7 +58244,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_211(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_211(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_211(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52882,9 +58270,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_212(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_212(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_212() { NextTest(); }
+    void OnSuccessResponse_212()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8uNullValue_213()
     {
@@ -52897,7 +58291,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_213(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_213(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_213(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52917,7 +58314,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_214(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_214(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_214(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52937,7 +58337,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_215(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_215(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_215(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52961,9 +58364,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_216(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_216(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_216() { NextTest(); }
+    void OnSuccessResponse_216()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8uValueInRange_217()
     {
@@ -52976,7 +58385,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_217(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_217(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_217(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -52996,7 +58408,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_218(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_218(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_218(const chip::app::DataModel::Nullable<uint8_t> & nullableInt8u)
     {
@@ -53020,9 +58435,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_219(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_219(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_219() { NextTest(); }
+    void OnSuccessResponse_219()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16uMinValue_220()
     {
@@ -53035,7 +58456,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_220(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_220(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_220(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53060,9 +58484,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_221(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_221(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_221() { NextTest(); }
+    void OnSuccessResponse_221()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16uMaxValue_222()
     {
@@ -53075,7 +58505,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_222(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_222(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_222(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53106,7 +58539,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_223() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_223()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16uUnchangedValue_224()
     {
@@ -53119,7 +58555,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_224(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_224(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_224(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53143,9 +58582,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_225(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_225(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_225() { NextTest(); }
+    void OnSuccessResponse_225()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16uNullValue_226()
     {
@@ -53158,7 +58603,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_226(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_226(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_226(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53178,7 +58626,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_227(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_227(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_227(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53198,7 +58649,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_228(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_228(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_228(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53222,9 +58676,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_229(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_229(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_229() { NextTest(); }
+    void OnSuccessResponse_229()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16uValueInRange_230()
     {
@@ -53237,7 +58697,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_230(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_230(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_230(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53257,7 +58720,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_231(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_231(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_231(const chip::app::DataModel::Nullable<uint16_t> & nullableInt16u)
     {
@@ -53281,9 +58747,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_232(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_232(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_232() { NextTest(); }
+    void OnSuccessResponse_232()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32uMinValue_233()
     {
@@ -53296,7 +58768,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_233(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_233(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_233(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53321,9 +58796,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_234(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_234(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_234() { NextTest(); }
+    void OnSuccessResponse_234()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32uMaxValue_235()
     {
@@ -53336,7 +58817,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_235(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_235(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_235(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53367,7 +58851,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_236() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_236()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32uUnchangedValue_237()
     {
@@ -53380,7 +58867,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_237(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_237(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_237(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53404,9 +58894,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_238(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_238(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_238() { NextTest(); }
+    void OnSuccessResponse_238()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32uNullValue_239()
     {
@@ -53419,7 +58915,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_239(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_239(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_239(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53439,7 +58938,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_240(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_240(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_240(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53459,7 +58961,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_241(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_241(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_241(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53483,9 +58988,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_242(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_242(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_242() { NextTest(); }
+    void OnSuccessResponse_242()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32uValueInRange_243()
     {
@@ -53498,7 +59009,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_243(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_243(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_243(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53518,7 +59032,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_244(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_244(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_244(const chip::app::DataModel::Nullable<uint32_t> & nullableInt32u)
     {
@@ -53542,9 +59059,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_245(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_245(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_245() { NextTest(); }
+    void OnSuccessResponse_245()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64uMinValue_246()
     {
@@ -53557,7 +59080,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_246(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_246(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_246(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53582,9 +59108,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_247(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_247(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_247() { NextTest(); }
+    void OnSuccessResponse_247()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64uMaxValue_248()
     {
@@ -53597,7 +59129,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_248(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_248(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_248(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53628,7 +59163,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_249() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_249()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64uUnchangedValue_250()
     {
@@ -53641,7 +59179,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_250(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_250(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_250(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53665,9 +59206,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_251(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_251(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_251() { NextTest(); }
+    void OnSuccessResponse_251()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64uNullValue_252()
     {
@@ -53680,7 +59227,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_252(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_252(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_252(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53700,7 +59250,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_253(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_253(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_253(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53720,7 +59273,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_254(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_254(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_254(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53744,9 +59300,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_255(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_255(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_255() { NextTest(); }
+    void OnSuccessResponse_255()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64uValueInRange_256()
     {
@@ -53759,7 +59321,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_256(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_256(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_256(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53779,7 +59344,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_257(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_257(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_257(const chip::app::DataModel::Nullable<uint64_t> & nullableInt64u)
     {
@@ -53803,9 +59371,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_258(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_258(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_258() { NextTest(); }
+    void OnSuccessResponse_258()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8sMinValue_259()
     {
@@ -53818,7 +59392,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_259(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_259(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_259(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -53849,7 +59426,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_260() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_260()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8sUnchangedValue_261()
     {
@@ -53862,7 +59442,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_261(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_261(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_261(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -53886,9 +59469,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_262(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_262(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_262() { NextTest(); }
+    void OnSuccessResponse_262()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8sNullValue_263()
     {
@@ -53901,7 +59490,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_263(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_263(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_263(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -53921,7 +59513,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_264(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_264(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_264(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -53941,7 +59536,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_265(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_265(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_265(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -53965,9 +59563,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_266(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_266(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_266() { NextTest(); }
+    void OnSuccessResponse_266()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt8sValueInRange_267()
     {
@@ -53980,7 +59584,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_267(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_267(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_267(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -54000,7 +59607,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_268(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_268(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_268(const chip::app::DataModel::Nullable<int8_t> & nullableInt8s)
     {
@@ -54024,9 +59634,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_269(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_269(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_269() { NextTest(); }
+    void OnSuccessResponse_269()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16sMinValue_270()
     {
@@ -54039,7 +59655,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_270(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_270(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_270(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54070,7 +59689,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_271() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_271()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16sUnchangedValue_272()
     {
@@ -54083,7 +59705,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_272(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_272(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_272(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54107,9 +59732,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_273(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_273(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_273() { NextTest(); }
+    void OnSuccessResponse_273()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16sNullValue_274()
     {
@@ -54122,7 +59753,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_274(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_274(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_274(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54142,7 +59776,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_275(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_275(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_275(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54162,7 +59799,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_276(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_276(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_276(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54186,9 +59826,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_277(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_277(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_277() { NextTest(); }
+    void OnSuccessResponse_277()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt16sValueInRange_278()
     {
@@ -54201,7 +59847,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_278(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_278(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_278(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54221,7 +59870,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_279(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_279(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_279(const chip::app::DataModel::Nullable<int16_t> & nullableInt16s)
     {
@@ -54245,9 +59897,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_280(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_280(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_280() { NextTest(); }
+    void OnSuccessResponse_280()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32sMinValue_281()
     {
@@ -54260,7 +59918,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_281(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_281(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_281(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54291,7 +59952,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_282() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_282()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32sUnchangedValue_283()
     {
@@ -54304,7 +59968,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_283(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_283(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_283(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54328,9 +59995,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_284(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_284(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_284() { NextTest(); }
+    void OnSuccessResponse_284()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32sNullValue_285()
     {
@@ -54343,7 +60016,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_285(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_285(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_285(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54363,7 +60039,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_286(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_286(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_286(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54383,7 +60062,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_287(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_287(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_287(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54407,9 +60089,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_288(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_288(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_288() { NextTest(); }
+    void OnSuccessResponse_288()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt32sValueInRange_289()
     {
@@ -54422,7 +60110,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_289(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_289(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_289(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54442,7 +60133,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_290(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_290(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_290(const chip::app::DataModel::Nullable<int32_t> & nullableInt32s)
     {
@@ -54466,9 +60160,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_291(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_291(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_291() { NextTest(); }
+    void OnSuccessResponse_291()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64sMinValue_292()
     {
@@ -54481,7 +60181,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_292(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_292(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_292(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54512,7 +60215,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_293() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_293()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64sUnchangedValue_294()
     {
@@ -54525,7 +60231,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_294(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_294(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_294(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54549,9 +60258,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_295(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_295(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_295() { NextTest(); }
+    void OnSuccessResponse_295()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64sNullValue_296()
     {
@@ -54564,7 +60279,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_296(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_296(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_296(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54584,7 +60302,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_297(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_297(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_297(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54604,7 +60325,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_298(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_298(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_298(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54628,9 +60352,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_299(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_299(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_299() { NextTest(); }
+    void OnSuccessResponse_299()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableInt64sValueInRange_300()
     {
@@ -54643,7 +60373,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_300(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_300(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_300(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54663,7 +60396,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_301(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_301(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_301(const chip::app::DataModel::Nullable<int64_t> & nullableInt64s)
     {
@@ -54687,9 +60423,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_302(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_302(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_302() { NextTest(); }
+    void OnSuccessResponse_302()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSingleMediumValue_303()
     {
@@ -54702,7 +60444,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_303(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_303(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_303(const chip::app::DataModel::Nullable<float> & nullableFloatSingle)
     {
@@ -54727,9 +60472,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_304(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_304(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_304() { NextTest(); }
+    void OnSuccessResponse_304()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSingleLargestValue_305()
     {
@@ -54742,7 +60493,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_305(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_305(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_305(const chip::app::DataModel::Nullable<float> & nullableFloatSingle)
     {
@@ -54767,9 +60521,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_306(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_306(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_306() { NextTest(); }
+    void OnSuccessResponse_306()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSingleSmallestValue_307()
     {
@@ -54782,7 +60542,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_307(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_307(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_307(const chip::app::DataModel::Nullable<float> & nullableFloatSingle)
     {
@@ -54806,9 +60569,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_308(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_308(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_308() { NextTest(); }
+    void OnSuccessResponse_308()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSingleNullValue_309()
     {
@@ -54821,7 +60590,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_309(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_309(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_309(const chip::app::DataModel::Nullable<float> & nullableFloatSingle)
     {
@@ -54845,9 +60617,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_310(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_310(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_310() { NextTest(); }
+    void OnSuccessResponse_310()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSingle0Value_311()
     {
@@ -54860,7 +60638,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_311(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_311(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_311(const chip::app::DataModel::Nullable<float> & nullableFloatSingle)
     {
@@ -54885,9 +60666,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_312(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_312(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_312() { NextTest(); }
+    void OnSuccessResponse_312()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableDoubleMediumValue_313()
     {
@@ -54900,7 +60687,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_313(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_313(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_313(const chip::app::DataModel::Nullable<double> & nullableFloatDouble)
     {
@@ -54925,9 +60715,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_314(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_314(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_314() { NextTest(); }
+    void OnSuccessResponse_314()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableDoubleLargestValue_315()
     {
@@ -54940,7 +60736,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_315(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_315(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_315(const chip::app::DataModel::Nullable<double> & nullableFloatDouble)
     {
@@ -54965,9 +60764,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_316(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_316(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_316() { NextTest(); }
+    void OnSuccessResponse_316()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableDoubleSmallestValue_317()
     {
@@ -54980,7 +60785,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_317(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_317(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_317(const chip::app::DataModel::Nullable<double> & nullableFloatDouble)
     {
@@ -55004,9 +60812,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_318(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_318(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_318() { NextTest(); }
+    void OnSuccessResponse_318()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableDoubleNullValue_319()
     {
@@ -55019,7 +60833,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_319(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_319(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_319(const chip::app::DataModel::Nullable<double> & nullableFloatDouble)
     {
@@ -55043,9 +60860,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_320(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_320(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_320() { NextTest(); }
+    void OnSuccessResponse_320()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableDouble0Value_321()
     {
@@ -55058,7 +60881,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_321(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_321(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_321(const chip::app::DataModel::Nullable<double> & nullableFloatDouble)
     {
@@ -55083,9 +60909,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_322(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_322(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_322() { NextTest(); }
+    void OnSuccessResponse_322()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum8MinValue_323()
     {
@@ -55098,7 +60930,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_323(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_323(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_323(const chip::app::DataModel::Nullable<uint8_t> & nullableEnum8)
     {
@@ -55123,9 +60958,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_324(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_324(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_324() { NextTest(); }
+    void OnSuccessResponse_324()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum8MaxValue_325()
     {
@@ -55138,7 +60979,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_325(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_325(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_325(const chip::app::DataModel::Nullable<uint8_t> & nullableEnum8)
     {
@@ -55169,7 +61013,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_326() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_326()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum8UnchangedValue_327()
     {
@@ -55182,7 +61029,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_327(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_327(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_327(const chip::app::DataModel::Nullable<uint8_t> & nullableEnum8)
     {
@@ -55206,9 +61056,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_328(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_328(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_328() { NextTest(); }
+    void OnSuccessResponse_328()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum8NullValue_329()
     {
@@ -55221,7 +61077,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_329(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_329(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_329(const chip::app::DataModel::Nullable<uint8_t> & nullableEnum8)
     {
@@ -55245,9 +61104,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_330(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_330(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_330() { NextTest(); }
+    void OnSuccessResponse_330()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum16MinValue_331()
     {
@@ -55260,7 +61125,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_331(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_331(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_331(const chip::app::DataModel::Nullable<uint16_t> & nullableEnum16)
     {
@@ -55285,9 +61153,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_332(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_332(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_332() { NextTest(); }
+    void OnSuccessResponse_332()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum16MaxValue_333()
     {
@@ -55300,7 +61174,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_333(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_333(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_333(const chip::app::DataModel::Nullable<uint16_t> & nullableEnum16)
     {
@@ -55331,7 +61208,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_334() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_334()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum16UnchangedValue_335()
     {
@@ -55344,7 +61224,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_335(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_335(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_335(const chip::app::DataModel::Nullable<uint16_t> & nullableEnum16)
     {
@@ -55368,9 +61251,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_336(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_336(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_336() { NextTest(); }
+    void OnSuccessResponse_336()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableEnum16NullValue_337()
     {
@@ -55383,7 +61272,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_337(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_337(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_337(const chip::app::DataModel::Nullable<uint16_t> & nullableEnum16)
     {
@@ -55407,9 +61299,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_338(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_338(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_338() { NextTest(); }
+    void OnSuccessResponse_338()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSimpleEnumMinValue_339()
     {
@@ -55422,7 +61320,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_339(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_339(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void
     OnSuccessResponse_339(const chip::app::DataModel::Nullable<chip::app::Clusters::TestCluster::SimpleEnum> & nullableEnumAttr)
@@ -55448,9 +61349,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_340(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_340(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_340() { NextTest(); }
+    void OnSuccessResponse_340()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSimpleEnumMaxValue_341()
     {
@@ -55463,7 +61370,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_341(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_341(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void
     OnSuccessResponse_341(const chip::app::DataModel::Nullable<chip::app::Clusters::TestCluster::SimpleEnum> & nullableEnumAttr)
@@ -55495,7 +61405,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_342() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_342()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSimpleEnumUnchangedValue_343()
     {
@@ -55508,7 +61421,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_343(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_343(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void
     OnSuccessResponse_343(const chip::app::DataModel::Nullable<chip::app::Clusters::TestCluster::SimpleEnum> & nullableEnumAttr)
@@ -55533,9 +61449,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_344(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_344(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_344() { NextTest(); }
+    void OnSuccessResponse_344()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableSimpleEnumNullValue_345()
     {
@@ -55548,7 +61470,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_345(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_345(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void
     OnSuccessResponse_345(const chip::app::DataModel::Nullable<chip::app::Clusters::TestCluster::SimpleEnum> & nullableEnumAttr)
@@ -55569,7 +61494,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_346(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_346(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_346(const chip::app::DataModel::Nullable<chip::ByteSpan> & nullableOctetString)
     {
@@ -55596,9 +61524,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_347(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_347(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_347() { NextTest(); }
+    void OnSuccessResponse_347()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableOctetString_348()
     {
@@ -55611,7 +61545,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_348(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_348(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_348(const chip::app::DataModel::Nullable<chip::ByteSpan> & nullableOctetString)
     {
@@ -55636,9 +61573,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_349(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_349(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_349() { NextTest(); }
+    void OnSuccessResponse_349()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableOctetString_350()
     {
@@ -55651,7 +61594,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_350(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_350(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_350(const chip::app::DataModel::Nullable<chip::ByteSpan> & nullableOctetString)
     {
@@ -55675,9 +61621,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_351(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_351(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_351() { NextTest(); }
+    void OnSuccessResponse_351()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableOctetString_352()
     {
@@ -55690,7 +61642,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_352(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_352(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_352(const chip::app::DataModel::Nullable<chip::ByteSpan> & nullableOctetString)
     {
@@ -55712,7 +61667,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_353(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_353(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_353(const chip::app::DataModel::Nullable<chip::CharSpan> & nullableCharString)
     {
@@ -55737,9 +61695,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_354(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_354(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_354() { NextTest(); }
+    void OnSuccessResponse_354()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableCharString_355()
     {
@@ -55752,7 +61716,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_355(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_355(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_355(const chip::app::DataModel::Nullable<chip::CharSpan> & nullableCharString)
     {
@@ -55776,9 +61743,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_356(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_356(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_356() { NextTest(); }
+    void OnSuccessResponse_356()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableCharString_357()
     {
@@ -55791,7 +61764,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_357(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_357(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_357(const chip::app::DataModel::Nullable<chip::CharSpan> & nullableCharString)
     {
@@ -55815,9 +61791,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_358(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_358(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_358() { NextTest(); }
+    void OnSuccessResponse_358()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeNullableCharString_359()
     {
@@ -55830,7 +61812,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_359(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_359(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_359(const chip::app::DataModel::Nullable<chip::CharSpan> & nullableCharString)
     {
@@ -55857,7 +61842,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_360(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u) { ThrowSuccessResponse(); }
+    void OnSuccessResponse_360(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u)
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeFromNonexistentCluster_361()
     {
@@ -55876,7 +61864,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_361(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u) { ThrowSuccessResponse(); }
+    void OnSuccessResponse_361(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u)
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendACommandThatTakesAnOptionalParameterButDoNotSetIt_362()
     {
@@ -55903,7 +61894,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_362() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_362()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendACommandThatTakesAnOptionalParameterButDoNotSetIt_363()
     {
@@ -55926,9 +61920,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_363(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_363(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_363() { NextTest(); }
+    void OnSuccessResponse_363()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReportSubscribeToListAttribute_364()
     {
@@ -55940,7 +61940,10 @@ private:
         return WaitForMs(0);
     }
 
-    void OnFailureResponse_364(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_364(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_364(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u)
     {
@@ -55977,7 +61980,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_365(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_365(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_365(const chip::app::DataModel::DecodableList<uint8_t> & value)
     {
@@ -56015,9 +62021,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_366(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_366(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_366() { NextTest(); }
+    void OnSuccessResponse_366()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckForListAttributeReport_367()
     {
@@ -56029,7 +62041,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_367(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_367(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_367(const chip::app::DataModel::DecodableList<uint8_t> & listInt8u)
     {
@@ -56062,7 +62077,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_368(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_368(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_368(uint8_t rangeRestrictedInt8u)
     {
@@ -56091,7 +62109,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_369() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_369()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToARangeRestrictedUnsigned8BitInteger_370()
     {
@@ -56113,7 +62134,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_370() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_370()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToARangeRestrictedUnsigned8BitInteger_371()
     {
@@ -56135,7 +62159,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_371() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_371()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToARangeRestrictedUnsigned8BitInteger_372()
     {
@@ -56157,7 +62184,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_372() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_372()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned8BitIntegerValueHasNotChanged_373()
     {
@@ -56170,7 +62200,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_373(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_373(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_373(uint8_t rangeRestrictedInt8u)
     {
@@ -56193,9 +62226,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_374(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_374(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_374() { NextTest(); }
+    void OnSuccessResponse_374()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned8BitIntegerValueIsAtMinValid_375()
     {
@@ -56208,7 +62247,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_375(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_375(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_375(uint8_t rangeRestrictedInt8u)
     {
@@ -56231,9 +62273,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_376(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_376(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_376() { NextTest(); }
+    void OnSuccessResponse_376()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned8BitIntegerValueIsAtMaxValid_377()
     {
@@ -56246,7 +62294,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_377(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_377(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_377(uint8_t rangeRestrictedInt8u)
     {
@@ -56269,9 +62320,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_378(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_378(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_378() { NextTest(); }
+    void OnSuccessResponse_378()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned8BitIntegerValueIsAtMidValid_379()
     {
@@ -56284,7 +62341,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_379(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_379(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_379(uint8_t rangeRestrictedInt8u)
     {
@@ -56304,7 +62364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_380(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_380(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_380(uint16_t rangeRestrictedInt16u)
     {
@@ -56333,7 +62396,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_381() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_381()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToARangeRestrictedUnsigned16BitInteger_382()
     {
@@ -56355,7 +62421,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_382() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_382()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToARangeRestrictedUnsigned16BitInteger_383()
     {
@@ -56377,7 +62446,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_383() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_383()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToARangeRestrictedUnsigned16BitInteger_384()
     {
@@ -56399,7 +62471,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_384() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_384()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned16BitIntegerValueHasNotChanged_385()
     {
@@ -56412,7 +62487,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_385(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_385(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_385(uint16_t rangeRestrictedInt16u)
     {
@@ -56435,9 +62513,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_386(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_386(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_386() { NextTest(); }
+    void OnSuccessResponse_386()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned16BitIntegerValueIsAtMinValid_387()
     {
@@ -56450,7 +62534,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_387(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_387(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_387(uint16_t rangeRestrictedInt16u)
     {
@@ -56473,9 +62560,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_388(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_388(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_388() { NextTest(); }
+    void OnSuccessResponse_388()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned16BitIntegerValueIsAtMaxValid_389()
     {
@@ -56488,7 +62581,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_389(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_389(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_389(uint16_t rangeRestrictedInt16u)
     {
@@ -56511,9 +62607,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_390(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_390(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_390() { NextTest(); }
+    void OnSuccessResponse_390()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedUnsigned16BitIntegerValueIsAtMidValid_391()
     {
@@ -56526,7 +62628,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_391(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_391(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_391(uint16_t rangeRestrictedInt16u)
     {
@@ -56546,7 +62651,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_392(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_392(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_392(int8_t rangeRestrictedInt8s)
     {
@@ -56575,7 +62683,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_393() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_393()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToARangeRestrictedSigned8BitInteger_394()
     {
@@ -56597,7 +62708,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_394() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_394()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToARangeRestrictedSigned8BitInteger_395()
     {
@@ -56619,7 +62733,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_395() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_395()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToARangeRestrictedSigned8BitInteger_396()
     {
@@ -56641,7 +62758,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_396() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_396()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned8BitIntegerValueHasNotChanged_397()
     {
@@ -56654,7 +62774,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_397(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_397(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_397(int8_t rangeRestrictedInt8s)
     {
@@ -56677,9 +62800,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_398(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_398(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_398() { NextTest(); }
+    void OnSuccessResponse_398()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned8BitIntegerValueIsAtMinValid_399()
     {
@@ -56692,7 +62821,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_399(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_399(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_399(int8_t rangeRestrictedInt8s)
     {
@@ -56715,9 +62847,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_400(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_400(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_400() { NextTest(); }
+    void OnSuccessResponse_400()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned8BitIntegerValueIsAtMaxValid_401()
     {
@@ -56730,7 +62868,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_401(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_401(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_401(int8_t rangeRestrictedInt8s)
     {
@@ -56753,9 +62894,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_402(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_402(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_402() { NextTest(); }
+    void OnSuccessResponse_402()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned8BitIntegerValueIsAtMidValid_403()
     {
@@ -56768,7 +62915,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_403(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_403(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_403(int8_t rangeRestrictedInt8s)
     {
@@ -56788,7 +62938,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_404(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_404(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_404(int16_t rangeRestrictedInt16s)
     {
@@ -56817,7 +62970,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_405() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_405()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToARangeRestrictedSigned16BitInteger_406()
     {
@@ -56839,7 +62995,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_406() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_406()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToARangeRestrictedSigned16BitInteger_407()
     {
@@ -56861,7 +63020,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_407() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_407()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToARangeRestrictedSigned16BitInteger_408()
     {
@@ -56883,7 +63045,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_408() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_408()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned16BitIntegerValueHasNotChanged_409()
     {
@@ -56896,7 +63061,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_409(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_409(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_409(int16_t rangeRestrictedInt16s)
     {
@@ -56919,9 +63087,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_410(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_410(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_410() { NextTest(); }
+    void OnSuccessResponse_410()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned16BitIntegerValueIsAtMinValid_411()
     {
@@ -56934,7 +63108,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_411(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_411(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_411(int16_t rangeRestrictedInt16s)
     {
@@ -56957,9 +63134,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_412(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_412(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_412() { NextTest(); }
+    void OnSuccessResponse_412()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned16BitIntegerValueIsAtMaxValid_413()
     {
@@ -56972,7 +63155,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_413(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_413(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_413(int16_t rangeRestrictedInt16s)
     {
@@ -56995,9 +63181,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_414(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_414(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_414() { NextTest(); }
+    void OnSuccessResponse_414()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyRangeRestrictedSigned16BitIntegerValueIsAtMidValid_415()
     {
@@ -57010,7 +63202,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_415(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_415(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_415(int16_t rangeRestrictedInt16s)
     {
@@ -57031,7 +63226,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_416(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_416(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_416(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57063,7 +63261,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_417() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_417()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToANullableRangeRestrictedUnsigned8BitInteger_418()
     {
@@ -57087,7 +63288,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_418() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_418()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToANullableRangeRestrictedUnsigned8BitInteger_419()
     {
@@ -57111,7 +63315,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_419() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_419()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToANullableRangeRestrictedUnsigned8BitInteger_420()
     {
@@ -57135,7 +63342,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_420() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_420()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned8BitIntegerValueHasNotChanged_421()
     {
@@ -57149,7 +63359,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_421(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_421(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_421(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57175,9 +63388,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_422(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_422(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_422() { NextTest(); }
+    void OnSuccessResponse_422()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned8BitIntegerValueIsAtMinValid_423()
     {
@@ -57191,7 +63410,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_423(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_423(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_423(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57217,9 +63439,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_424(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_424(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_424() { NextTest(); }
+    void OnSuccessResponse_424()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned8BitIntegerValueIsAtMaxValid_425()
     {
@@ -57233,7 +63461,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_425(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_425(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_425(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57259,9 +63490,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_426(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_426(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_426() { NextTest(); }
+    void OnSuccessResponse_426()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned8BitIntegerValueIsAtMidValid_427()
     {
@@ -57275,7 +63512,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_427(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_427(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_427(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57300,9 +63540,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_428(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_428(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_428() { NextTest(); }
+    void OnSuccessResponse_428()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned8BitIntegerValueIsNull_429()
     {
@@ -57316,7 +63562,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_429(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_429(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_429(const chip::app::DataModel::Nullable<uint8_t> & nullableRangeRestrictedInt8u)
     {
@@ -57337,7 +63586,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_430(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_430(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_430(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57369,7 +63621,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_431() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_431()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToANullableRangeRestrictedUnsigned16BitInteger_432()
     {
@@ -57393,7 +63648,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_432() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_432()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToANullableRangeRestrictedUnsigned16BitInteger_433()
     {
@@ -57417,7 +63675,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_433() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_433()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToANullableRangeRestrictedUnsigned16BitInteger_434()
     {
@@ -57441,7 +63702,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_434() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_434()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned16BitIntegerValueHasNotChanged_435()
     {
@@ -57455,7 +63719,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_435(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_435(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_435(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57481,9 +63748,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_436(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_436(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_436() { NextTest(); }
+    void OnSuccessResponse_436()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned16BitIntegerValueIsAtMinValid_437()
     {
@@ -57497,7 +63770,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_437(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_437(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_437(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57523,9 +63799,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_438(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_438(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_438() { NextTest(); }
+    void OnSuccessResponse_438()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned16BitIntegerValueIsAtMaxValid_439()
     {
@@ -57539,7 +63821,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_439(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_439(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_439(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57565,9 +63850,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_440(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_440(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_440() { NextTest(); }
+    void OnSuccessResponse_440()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned16BitIntegerValueIsAtMidValid_441()
     {
@@ -57581,7 +63872,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_441(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_441(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_441(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57606,9 +63900,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_442(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_442(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_442() { NextTest(); }
+    void OnSuccessResponse_442()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedUnsigned16BitIntegerValueIsNull_443()
     {
@@ -57622,7 +63922,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_443(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_443(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_443(const chip::app::DataModel::Nullable<uint16_t> & nullableRangeRestrictedInt16u)
     {
@@ -57643,7 +63946,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_444(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_444(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_444(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57675,7 +63981,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_445() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_445()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToANullableRangeRestrictedSigned8BitInteger_446()
     {
@@ -57699,7 +64008,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_446() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_446()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToANullableRangeRestrictedSigned8BitInteger_447()
     {
@@ -57723,7 +64035,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_447() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_447()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToANullableRangeRestrictedSigned8BitInteger_448()
     {
@@ -57747,7 +64062,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_448() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_448()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned8BitIntegerValueHasNotChanged_449()
     {
@@ -57761,7 +64079,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_449(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_449(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_449(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57787,9 +64108,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_450(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_450(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_450() { NextTest(); }
+    void OnSuccessResponse_450()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned8BitIntegerValueIsAtMinValid_451()
     {
@@ -57803,7 +64130,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_451(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_451(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_451(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57829,9 +64159,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_452(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_452(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_452() { NextTest(); }
+    void OnSuccessResponse_452()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned8BitIntegerValueIsAtMaxValid_453()
     {
@@ -57845,7 +64181,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_453(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_453(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_453(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57871,9 +64210,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_454(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_454(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_454() { NextTest(); }
+    void OnSuccessResponse_454()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned8BitIntegerValueIsAtMidValid_455()
     {
@@ -57887,7 +64232,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_455(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_455(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_455(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57912,9 +64260,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_456(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_456(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_456() { NextTest(); }
+    void OnSuccessResponse_456()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned8BitIntegerValueIsAtNull_457()
     {
@@ -57928,7 +64282,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_457(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_457(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_457(const chip::app::DataModel::Nullable<int8_t> & nullableRangeRestrictedInt8s)
     {
@@ -57949,7 +64306,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_458(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_458(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_458(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -57981,7 +64341,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_459() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_459()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustBelowRangeValueToANullableRangeRestrictedSigned16BitInteger_460()
     {
@@ -58005,7 +64368,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_460() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_460()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteJustAboveRangeValueToANullableRangeRestrictedSigned16BitInteger_461()
     {
@@ -58029,7 +64395,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_461() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_461()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestWriteMaxValueToANullableRangeRestrictedSigned16BitInteger_462()
     {
@@ -58053,7 +64422,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_462() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_462()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned16BitIntegerValueHasNotChanged_463()
     {
@@ -58067,7 +64439,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_463(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_463(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_463(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -58093,9 +64468,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_464(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_464(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_464() { NextTest(); }
+    void OnSuccessResponse_464()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned16BitIntegerValueIsAtMinValid_465()
     {
@@ -58109,7 +64490,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_465(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_465(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_465(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -58135,9 +64519,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_466(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_466(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_466() { NextTest(); }
+    void OnSuccessResponse_466()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned16BitIntegerValueIsAtMaxValid_467()
     {
@@ -58151,7 +64541,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_467(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_467(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_467(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -58177,9 +64570,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_468(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_468(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_468() { NextTest(); }
+    void OnSuccessResponse_468()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned16BitIntegerValueIsAtMidValid_469()
     {
@@ -58193,7 +64592,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_469(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_469(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_469(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -58218,9 +64620,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_470(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_470(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_470() { NextTest(); }
+    void OnSuccessResponse_470()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyNullableRangeRestrictedSigned16BitIntegerValueIsNull_471()
     {
@@ -58234,7 +64642,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_471(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_471(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_471(const chip::app::DataModel::Nullable<int16_t> & nullableRangeRestrictedInt16s)
     {
@@ -58400,7 +64811,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_8(status);
     }
 
-    static void OnSuccessCallback_8(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_8(); }
+    static void OnSuccessCallback_8(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_8();
+    }
 
     static void OnFailureCallback_9(void * context, EmberAfStatus status)
     {
@@ -58417,7 +64831,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
@@ -58434,7 +64851,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -58451,7 +64871,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_14(status);
     }
 
-    static void OnSuccessCallback_14(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_14(); }
+    static void OnSuccessCallback_14(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_14();
+    }
 
     static void OnFailureCallback_15(void * context, EmberAfStatus status)
     {
@@ -58468,7 +64891,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_16(status);
     }
 
-    static void OnSuccessCallback_16(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_16(); }
+    static void OnSuccessCallback_16(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_16();
+    }
 
     static void OnFailureCallback_17(void * context, EmberAfStatus status)
     {
@@ -58485,7 +64911,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_18(status);
     }
 
-    static void OnSuccessCallback_18(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_18(); }
+    static void OnSuccessCallback_18(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_18();
+    }
 
     static void OnFailureCallback_19(void * context, EmberAfStatus status)
     {
@@ -58502,7 +64931,10 @@ private:
         (static_cast<TestClusterComplexTypes *>(context))->OnFailureResponse_20(status);
     }
 
-    static void OnSuccessCallback_20(void * context) { (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_20(); }
+    static void OnSuccessCallback_20(void * context)
+    {
+        (static_cast<TestClusterComplexTypes *>(context))->OnSuccessResponse_20();
+    }
 
     //
     // Tests methods
@@ -58536,7 +64968,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(bool wasPresent, const chip::Optional<bool> & wasNull, const chip::Optional<uint8_t> & value,
                              const chip::Optional<chip::app::DataModel::Nullable<uint8_t>> & originalValue)
@@ -58578,7 +65013,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_2() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_2()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendCommandThatNeedsTimedInvokeWithALongTimeoutValue_3()
     {
@@ -58600,9 +65038,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSendCommandThatNeedsTimedInvokeWithATooShortTimeoutValue_4()
     {
@@ -58638,7 +65082,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_4() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_4()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestSendCommandThatDoesNotNeedTimedInvokeWithALongTimeoutValue_5()
     {
@@ -58660,9 +65107,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestSendCommandThatDoesNotNeedTimedInvokeWithATooShortTimeoutValue_6()
     {
@@ -58698,7 +65151,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_6() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_6()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeThatNeedsTimedWriteInitialState_7()
     {
@@ -58711,7 +65167,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(bool timedWriteBoolean)
     {
@@ -58740,7 +65199,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeThatNeedsTimedWriteStateUnchanged1_9()
     {
@@ -58753,7 +65215,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(bool timedWriteBoolean)
     {
@@ -58790,7 +65255,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_10() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_10()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeThatNeedsTimedWriteStateUnchanged2_11()
     {
@@ -58803,7 +65271,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(bool timedWriteBoolean)
     {
@@ -58826,9 +65297,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeThatNeedsTimedWriteStateChanged_13()
     {
@@ -58841,7 +65318,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(bool timedWriteBoolean)
     {
@@ -58864,9 +65344,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeThatDoesNotNeedTimedWriteInitialValue_15()
     {
@@ -58879,7 +65365,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(bool boolean)
     {
@@ -58916,7 +65405,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_16() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_16()
+    {
+        ThrowSuccessResponse();
+    }
 
     CHIP_ERROR TestReadAttributeThatDoesNotNeedTimedWriteUnchangedValue_17()
     {
@@ -58929,7 +65421,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(bool boolean)
     {
@@ -58952,9 +65447,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_18() { NextTest(); }
+    void OnSuccessResponse_18()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeThatDoesNotNeedTimedWriteChangedValue_19()
     {
@@ -58967,7 +65468,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_19(bool boolean)
     {
@@ -58990,9 +65494,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_20() { NextTest(); }
+    void OnSuccessResponse_20()
+    {
+        NextTest();
+    }
 };
 
 class TestConstraints : public TestCommand
@@ -59143,7 +65653,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
@@ -59180,14 +65693,20 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
         (static_cast<TestConstraints *>(context))->OnFailureResponse_6(status);
     }
 
-    static void OnSuccessCallback_6(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_6(); }
+    static void OnSuccessCallback_6(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_6();
+    }
 
     static void OnFailureCallback_7(void * context, EmberAfStatus status)
     {
@@ -59234,7 +65753,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_11(status);
     }
 
-    static void OnSuccessCallback_11(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_11(); }
+    static void OnSuccessCallback_11(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_11();
+    }
 
     static void OnFailureCallback_12(void * context, EmberAfStatus status)
     {
@@ -59251,7 +65773,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_13(status);
     }
 
-    static void OnSuccessCallback_13(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_13(); }
+    static void OnSuccessCallback_13(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_13();
+    }
 
     static void OnFailureCallback_14(void * context, EmberAfStatus status)
     {
@@ -59268,7 +65793,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_15(status);
     }
 
-    static void OnSuccessCallback_15(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_15(); }
+    static void OnSuccessCallback_15(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_15();
+    }
 
     static void OnFailureCallback_16(void * context, EmberAfStatus status)
     {
@@ -59285,7 +65813,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_17(status);
     }
 
-    static void OnSuccessCallback_17(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_17(); }
+    static void OnSuccessCallback_17(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_17();
+    }
 
     static void OnFailureCallback_18(void * context, EmberAfStatus status)
     {
@@ -59302,7 +65833,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_19(status);
     }
 
-    static void OnSuccessCallback_19(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_19(); }
+    static void OnSuccessCallback_19(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_19();
+    }
 
     static void OnFailureCallback_20(void * context, EmberAfStatus status)
     {
@@ -59319,7 +65853,10 @@ private:
         (static_cast<TestConstraints *>(context))->OnFailureResponse_21(status);
     }
 
-    static void OnSuccessCallback_21(void * context) { (static_cast<TestConstraints *>(context))->OnSuccessResponse_21(); }
+    static void OnSuccessCallback_21(void * context)
+    {
+        (static_cast<TestConstraints *>(context))->OnSuccessResponse_21();
+    }
 
     //
     // Tests methods
@@ -59345,9 +65882,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32uValueMinValueConstraints_2()
     {
@@ -59360,7 +65903,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint32_t int32u)
     {
@@ -59379,7 +65925,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint32_t int32u)
     {
@@ -59398,7 +65947,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint32_t int32u)
     {
@@ -59421,9 +65973,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestWriteAttributeCharStringValue_6()
     {
@@ -59439,9 +65997,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueMinLengthConstraints_7()
     {
@@ -59454,7 +66018,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(chip::CharSpan charString)
     {
@@ -59473,7 +66040,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(chip::CharSpan charString)
     {
@@ -59492,7 +66062,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(chip::CharSpan charString)
     {
@@ -59511,7 +66084,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(chip::CharSpan charString)
     {
@@ -59533,9 +66109,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_11() { NextTest(); }
+    void OnSuccessResponse_11()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueIsLowerCaseIsUpperCaseConstraints_12()
     {
@@ -59548,7 +66130,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(chip::CharSpan charString)
     {
@@ -59571,9 +66156,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_13() { NextTest(); }
+    void OnSuccessResponse_13()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueIsLowerCaseIsUpperCaseConstraints_14()
     {
@@ -59586,7 +66177,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(chip::CharSpan charString)
     {
@@ -59609,9 +66203,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueIsLowerCaseIsUpperCaseConstraints_16()
     {
@@ -59624,7 +66224,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(chip::CharSpan charString)
     {
@@ -59647,9 +66250,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_17() { NextTest(); }
+    void OnSuccessResponse_17()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueIsHexStringConstraints_18()
     {
@@ -59662,7 +66271,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(chip::CharSpan charString)
     {
@@ -59684,9 +66296,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_19() { NextTest(); }
+    void OnSuccessResponse_19()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringValueIsHexStringConstraints_20()
     {
@@ -59699,7 +66317,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_20(chip::CharSpan charString)
     {
@@ -59721,9 +66342,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_21() { NextTest(); }
+    void OnSuccessResponse_21()
+    {
+        NextTest();
+    }
 };
 
 class TestDelayCommands : public TestCommand
@@ -60453,7 +67080,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_5(status);
     }
 
-    static void OnSuccessCallback_5(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_5(); }
+    static void OnSuccessCallback_5(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_5();
+    }
 
     static void OnFailureCallback_6(void * context, EmberAfStatus status)
     {
@@ -60470,7 +67100,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_7(status);
     }
 
-    static void OnSuccessCallback_7(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_7(); }
+    static void OnSuccessCallback_7(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_7();
+    }
 
     static void OnFailureCallback_8(void * context, EmberAfStatus status)
     {
@@ -60497,7 +67130,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_10(status);
     }
 
-    static void OnSuccessCallback_10(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_10(); }
+    static void OnSuccessCallback_10(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_10();
+    }
 
     static void OnFailureCallback_11(void * context, EmberAfStatus status)
     {
@@ -60514,7 +67150,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_12(status);
     }
 
-    static void OnSuccessCallback_12(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_12(); }
+    static void OnSuccessCallback_12(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_12();
+    }
 
     static void OnFailureCallback_13(void * context, EmberAfStatus status)
     {
@@ -60541,7 +67180,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_15(status);
     }
 
-    static void OnSuccessCallback_15(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_15(); }
+    static void OnSuccessCallback_15(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_15();
+    }
 
     static void OnFailureCallback_16(void * context, EmberAfStatus status)
     {
@@ -60558,7 +67200,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_17(status);
     }
 
-    static void OnSuccessCallback_17(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_17(); }
+    static void OnSuccessCallback_17(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_17();
+    }
 
     static void OnFailureCallback_18(void * context, EmberAfStatus status)
     {
@@ -60585,7 +67230,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_20(status);
     }
 
-    static void OnSuccessCallback_20(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_20(); }
+    static void OnSuccessCallback_20(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_20();
+    }
 
     static void OnFailureCallback_21(void * context, EmberAfStatus status)
     {
@@ -60602,7 +67250,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_22(status);
     }
 
-    static void OnSuccessCallback_22(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_22(); }
+    static void OnSuccessCallback_22(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_22();
+    }
 
     static void OnFailureCallback_23(void * context, EmberAfStatus status)
     {
@@ -60629,7 +67280,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_25(status);
     }
 
-    static void OnSuccessCallback_25(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_25(); }
+    static void OnSuccessCallback_25(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_25();
+    }
 
     static void OnFailureCallback_26(void * context, EmberAfStatus status)
     {
@@ -60646,7 +67300,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_27(status);
     }
 
-    static void OnSuccessCallback_27(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_27(); }
+    static void OnSuccessCallback_27(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_27();
+    }
 
     static void OnFailureCallback_28(void * context, EmberAfStatus status)
     {
@@ -60673,7 +67330,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_30(status);
     }
 
-    static void OnSuccessCallback_30(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_30(); }
+    static void OnSuccessCallback_30(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_30();
+    }
 
     static void OnFailureCallback_31(void * context, EmberAfStatus status)
     {
@@ -60690,7 +67350,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_32(status);
     }
 
-    static void OnSuccessCallback_32(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_32(); }
+    static void OnSuccessCallback_32(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_32();
+    }
 
     static void OnFailureCallback_33(void * context, EmberAfStatus status)
     {
@@ -60717,7 +67380,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_35(status);
     }
 
-    static void OnSuccessCallback_35(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_35(); }
+    static void OnSuccessCallback_35(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_35();
+    }
 
     static void OnFailureCallback_36(void * context, EmberAfStatus status)
     {
@@ -60734,7 +67400,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_37(status);
     }
 
-    static void OnSuccessCallback_37(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_37(); }
+    static void OnSuccessCallback_37(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_37();
+    }
 
     static void OnFailureCallback_38(void * context, EmberAfStatus status)
     {
@@ -60761,7 +67430,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_40(status);
     }
 
-    static void OnSuccessCallback_40(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_40(); }
+    static void OnSuccessCallback_40(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_40();
+    }
 
     static void OnFailureCallback_41(void * context, EmberAfStatus status)
     {
@@ -60778,7 +67450,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_42(status);
     }
 
-    static void OnSuccessCallback_42(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_42(); }
+    static void OnSuccessCallback_42(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_42();
+    }
 
     static void OnFailureCallback_43(void * context, EmberAfStatus status)
     {
@@ -60805,7 +67480,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_45(status);
     }
 
-    static void OnSuccessCallback_45(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_45(); }
+    static void OnSuccessCallback_45(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_45();
+    }
 
     static void OnFailureCallback_46(void * context, EmberAfStatus status)
     {
@@ -60822,7 +67500,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_47(status);
     }
 
-    static void OnSuccessCallback_47(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_47(); }
+    static void OnSuccessCallback_47(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_47();
+    }
 
     static void OnFailureCallback_48(void * context, EmberAfStatus status)
     {
@@ -60849,7 +67530,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_50(status);
     }
 
-    static void OnSuccessCallback_50(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_50(); }
+    static void OnSuccessCallback_50(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_50();
+    }
 
     static void OnFailureCallback_51(void * context, EmberAfStatus status)
     {
@@ -60866,7 +67550,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_52(status);
     }
 
-    static void OnSuccessCallback_52(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_52(); }
+    static void OnSuccessCallback_52(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_52();
+    }
 
     static void OnFailureCallback_53(void * context, EmberAfStatus status)
     {
@@ -60893,7 +67580,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_55(status);
     }
 
-    static void OnSuccessCallback_55(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_55(); }
+    static void OnSuccessCallback_55(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_55();
+    }
 
     static void OnFailureCallback_56(void * context, EmberAfStatus status)
     {
@@ -60910,7 +67600,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_57(status);
     }
 
-    static void OnSuccessCallback_57(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_57(); }
+    static void OnSuccessCallback_57(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_57();
+    }
 
     static void OnFailureCallback_58(void * context, EmberAfStatus status)
     {
@@ -60937,7 +67630,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_60(status);
     }
 
-    static void OnSuccessCallback_60(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_60(); }
+    static void OnSuccessCallback_60(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_60();
+    }
 
     static void OnFailureCallback_61(void * context, EmberAfStatus status)
     {
@@ -60954,7 +67650,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_62(status);
     }
 
-    static void OnSuccessCallback_62(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_62(); }
+    static void OnSuccessCallback_62(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_62();
+    }
 
     static void OnFailureCallback_63(void * context, EmberAfStatus status)
     {
@@ -60981,7 +67680,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_65(status);
     }
 
-    static void OnSuccessCallback_65(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_65(); }
+    static void OnSuccessCallback_65(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_65();
+    }
 
     static void OnFailureCallback_66(void * context, EmberAfStatus status)
     {
@@ -60998,7 +67700,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_67(status);
     }
 
-    static void OnSuccessCallback_67(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_67(); }
+    static void OnSuccessCallback_67(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_67();
+    }
 
     static void OnFailureCallback_68(void * context, EmberAfStatus status)
     {
@@ -61025,7 +67730,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_70(status);
     }
 
-    static void OnSuccessCallback_70(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_70(); }
+    static void OnSuccessCallback_70(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_70();
+    }
 
     static void OnFailureCallback_71(void * context, EmberAfStatus status)
     {
@@ -61042,7 +67750,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_72(status);
     }
 
-    static void OnSuccessCallback_72(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_72(); }
+    static void OnSuccessCallback_72(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_72();
+    }
 
     static void OnFailureCallback_73(void * context, EmberAfStatus status)
     {
@@ -61069,7 +67780,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_75(status);
     }
 
-    static void OnSuccessCallback_75(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_75(); }
+    static void OnSuccessCallback_75(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_75();
+    }
 
     static void OnFailureCallback_76(void * context, EmberAfStatus status)
     {
@@ -61086,7 +67800,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_77(status);
     }
 
-    static void OnSuccessCallback_77(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_77(); }
+    static void OnSuccessCallback_77(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_77();
+    }
 
     static void OnFailureCallback_78(void * context, EmberAfStatus status)
     {
@@ -61113,7 +67830,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_80(status);
     }
 
-    static void OnSuccessCallback_80(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_80(); }
+    static void OnSuccessCallback_80(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_80();
+    }
 
     static void OnFailureCallback_81(void * context, EmberAfStatus status)
     {
@@ -61130,7 +67850,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_82(status);
     }
 
-    static void OnSuccessCallback_82(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_82(); }
+    static void OnSuccessCallback_82(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_82();
+    }
 
     static void OnFailureCallback_83(void * context, EmberAfStatus status)
     {
@@ -61157,7 +67880,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_85(status);
     }
 
-    static void OnSuccessCallback_85(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_85(); }
+    static void OnSuccessCallback_85(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_85();
+    }
 
     static void OnFailureCallback_86(void * context, EmberAfStatus status)
     {
@@ -61174,7 +67900,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_87(status);
     }
 
-    static void OnSuccessCallback_87(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_87(); }
+    static void OnSuccessCallback_87(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_87();
+    }
 
     static void OnFailureCallback_88(void * context, EmberAfStatus status)
     {
@@ -61201,7 +67930,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_90(status);
     }
 
-    static void OnSuccessCallback_90(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_90(); }
+    static void OnSuccessCallback_90(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_90();
+    }
 
     static void OnFailureCallback_91(void * context, EmberAfStatus status)
     {
@@ -61218,7 +67950,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_92(status);
     }
 
-    static void OnSuccessCallback_92(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_92(); }
+    static void OnSuccessCallback_92(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_92();
+    }
 
     static void OnFailureCallback_93(void * context, EmberAfStatus status)
     {
@@ -61255,7 +67990,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_96(status);
     }
 
-    static void OnSuccessCallback_96(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_96(); }
+    static void OnSuccessCallback_96(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_96();
+    }
 
     static void OnFailureCallback_97(void * context, EmberAfStatus status)
     {
@@ -61282,7 +68020,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_99(status);
     }
 
-    static void OnSuccessCallback_99(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_99(); }
+    static void OnSuccessCallback_99(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_99();
+    }
 
     static void OnFailureCallback_100(void * context, EmberAfStatus status)
     {
@@ -61299,7 +68040,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_101(status);
     }
 
-    static void OnSuccessCallback_101(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_101(); }
+    static void OnSuccessCallback_101(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_101();
+    }
 
     static void OnFailureCallback_102(void * context, EmberAfStatus status)
     {
@@ -61326,7 +68070,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_104(status);
     }
 
-    static void OnSuccessCallback_104(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_104(); }
+    static void OnSuccessCallback_104(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_104();
+    }
 
     static void OnFailureCallback_105(void * context, EmberAfStatus status)
     {
@@ -61353,7 +68100,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_107(status);
     }
 
-    static void OnSuccessCallback_107(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_107(); }
+    static void OnSuccessCallback_107(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_107();
+    }
 
     static void OnFailureCallback_108(void * context, EmberAfStatus status)
     {
@@ -61370,7 +68120,10 @@ private:
         (static_cast<TestSaveAs *>(context))->OnFailureResponse_109(status);
     }
 
-    static void OnSuccessCallback_109(void * context) { (static_cast<TestSaveAs *>(context))->OnSuccessResponse_109(); }
+    static void OnSuccessCallback_109(void * context)
+    {
+        (static_cast<TestSaveAs *>(context))->OnSuccessResponse_109();
+    }
 
     //
     // Tests methods
@@ -61403,7 +68156,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t returnValue)
     {
@@ -61434,7 +68190,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t returnValue)
     {
@@ -61464,7 +68223,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t returnValue)
     {
@@ -61484,7 +68246,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(bool boolean)
     {
@@ -61508,9 +68273,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_5() { NextTest(); }
+    void OnSuccessResponse_5()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBooleanNotDefaultValue_6()
     {
@@ -61523,7 +68294,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(bool boolean)
     {
@@ -61546,9 +68320,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_7() { NextTest(); }
+    void OnSuccessResponse_7()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBooleanFalse_8()
     {
@@ -61561,7 +68341,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(bool boolean)
     {
@@ -61581,7 +68364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t bitmap8)
     {
@@ -61605,9 +68391,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_10() { NextTest(); }
+    void OnSuccessResponse_10()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap8NotDefaultValue_11()
     {
@@ -61620,7 +68412,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t bitmap8)
     {
@@ -61643,9 +68438,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_12() { NextTest(); }
+    void OnSuccessResponse_12()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap8DefaultValue_13()
     {
@@ -61658,7 +68459,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t bitmap8)
     {
@@ -61678,7 +68482,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_14(uint16_t bitmap16)
     {
@@ -61702,9 +68509,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_15() { NextTest(); }
+    void OnSuccessResponse_15()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap16NotDefaultValue_16()
     {
@@ -61717,7 +68530,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(uint16_t bitmap16)
     {
@@ -61740,9 +68556,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_17() { NextTest(); }
+    void OnSuccessResponse_17()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap16DefaultValue_18()
     {
@@ -61755,7 +68577,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint16_t bitmap16)
     {
@@ -61775,7 +68600,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_19(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_19(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_19(uint32_t bitmap32)
     {
@@ -61799,9 +68627,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_20(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_20(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_20() { NextTest(); }
+    void OnSuccessResponse_20()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap32NotDefaultValue_21()
     {
@@ -61814,7 +68648,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_21(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_21(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_21(uint32_t bitmap32)
     {
@@ -61837,9 +68674,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_22(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_22(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_22() { NextTest(); }
+    void OnSuccessResponse_22()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap32DefaultValue_23()
     {
@@ -61852,7 +68695,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_23(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_23(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_23(uint32_t bitmap32)
     {
@@ -61872,7 +68718,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_24(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_24(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_24(uint64_t bitmap64)
     {
@@ -61896,9 +68745,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_25(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_25(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_25() { NextTest(); }
+    void OnSuccessResponse_25()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap64DefaultValue_26()
     {
@@ -61911,7 +68766,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_26(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_26(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_26(uint64_t bitmap64)
     {
@@ -61934,9 +68792,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_27(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_27(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_27() { NextTest(); }
+    void OnSuccessResponse_27()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeBitmap64DefaultValue_28()
     {
@@ -61949,7 +68813,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_28(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_28(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_28(uint64_t bitmap64)
     {
@@ -61969,7 +68836,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_29(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_29(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_29(uint8_t int8u)
     {
@@ -61993,9 +68863,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_30(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_30(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_30() { NextTest(); }
+    void OnSuccessResponse_30()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8uNotDefaultValue_31()
     {
@@ -62008,7 +68884,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_31(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_31(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_31(uint8_t int8u)
     {
@@ -62031,9 +68910,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_32(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_32(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_32() { NextTest(); }
+    void OnSuccessResponse_32()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8uDefaultValue_33()
     {
@@ -62046,7 +68931,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_33(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_33(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_33(uint8_t int8u)
     {
@@ -62066,7 +68954,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_34(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_34(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_34(uint16_t int16u)
     {
@@ -62090,9 +68981,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_35(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_35(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_35() { NextTest(); }
+    void OnSuccessResponse_35()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16uNotDefaultValue_36()
     {
@@ -62105,7 +69002,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_36(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_36(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_36(uint16_t int16u)
     {
@@ -62128,9 +69028,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_37(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_37(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_37() { NextTest(); }
+    void OnSuccessResponse_37()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16uDefaultValue_38()
     {
@@ -62143,7 +69049,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_38(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_38(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_38(uint16_t int16u)
     {
@@ -62163,7 +69072,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_39(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_39(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_39(uint32_t int32u)
     {
@@ -62187,9 +69099,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_40(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_40(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_40() { NextTest(); }
+    void OnSuccessResponse_40()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32uNotDefaultValue_41()
     {
@@ -62202,7 +69120,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_41(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_41(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_41(uint32_t int32u)
     {
@@ -62225,9 +69146,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_42(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_42(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_42() { NextTest(); }
+    void OnSuccessResponse_42()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32uDefaultValue_43()
     {
@@ -62240,7 +69167,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_43(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_43(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_43(uint32_t int32u)
     {
@@ -62260,7 +69190,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_44(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_44(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_44(uint64_t int64u)
     {
@@ -62284,9 +69217,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_45(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_45(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_45() { NextTest(); }
+    void OnSuccessResponse_45()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64uNotDefaultValue_46()
     {
@@ -62299,7 +69238,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_46(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_46(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_46(uint64_t int64u)
     {
@@ -62322,9 +69264,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_47(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_47(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_47() { NextTest(); }
+    void OnSuccessResponse_47()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64uDefaultValue_48()
     {
@@ -62337,7 +69285,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_48(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_48(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_48(uint64_t int64u)
     {
@@ -62357,7 +69308,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_49(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_49(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_49(int8_t int8s)
     {
@@ -62381,9 +69335,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_50(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_50(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_50() { NextTest(); }
+    void OnSuccessResponse_50()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8sNotDefaultValue_51()
     {
@@ -62396,7 +69356,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_51(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_51(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_51(int8_t int8s)
     {
@@ -62419,9 +69382,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_52(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_52(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_52() { NextTest(); }
+    void OnSuccessResponse_52()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt8sDefaultValue_53()
     {
@@ -62434,7 +69403,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_53(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_53(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_53(int8_t int8s)
     {
@@ -62454,7 +69426,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_54(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_54(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_54(int16_t int16s)
     {
@@ -62478,9 +69453,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_55(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_55(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_55() { NextTest(); }
+    void OnSuccessResponse_55()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16sNotDefaultValue_56()
     {
@@ -62493,7 +69474,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_56(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_56(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_56(int16_t int16s)
     {
@@ -62516,9 +69500,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_57(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_57(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_57() { NextTest(); }
+    void OnSuccessResponse_57()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt16sDefaultValue_58()
     {
@@ -62531,7 +69521,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_58(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_58(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_58(int16_t int16s)
     {
@@ -62551,7 +69544,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_59(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_59(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_59(int32_t int32s)
     {
@@ -62575,9 +69571,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_60(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_60(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_60() { NextTest(); }
+    void OnSuccessResponse_60()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32sNotDefaultValue_61()
     {
@@ -62590,7 +69592,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_61(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_61(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_61(int32_t int32s)
     {
@@ -62613,9 +69618,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_62(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_62(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_62() { NextTest(); }
+    void OnSuccessResponse_62()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt32sDefaultValue_63()
     {
@@ -62628,7 +69639,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_63(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_63(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_63(int32_t int32s)
     {
@@ -62648,7 +69662,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_64(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_64(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_64(int64_t int64s)
     {
@@ -62672,9 +69689,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_65(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_65(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_65() { NextTest(); }
+    void OnSuccessResponse_65()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64sNotDefaultValue_66()
     {
@@ -62687,7 +69710,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_66(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_66(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_66(int64_t int64s)
     {
@@ -62710,9 +69736,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_67(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_67(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_67() { NextTest(); }
+    void OnSuccessResponse_67()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeInt64sDefaultValue_68()
     {
@@ -62725,7 +69757,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_68(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_68(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_68(int64_t int64s)
     {
@@ -62745,7 +69780,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_69(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_69(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_69(uint8_t enum8)
     {
@@ -62769,9 +69807,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_70(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_70(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_70() { NextTest(); }
+    void OnSuccessResponse_70()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum8NotDefaultValue_71()
     {
@@ -62784,7 +69828,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_71(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_71(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_71(uint8_t enum8)
     {
@@ -62807,9 +69854,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_72(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_72(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_72() { NextTest(); }
+    void OnSuccessResponse_72()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum8DefaultValue_73()
     {
@@ -62822,7 +69875,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_73(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_73(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_73(uint8_t enum8)
     {
@@ -62842,7 +69898,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_74(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_74(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_74(uint16_t enum16)
     {
@@ -62866,9 +69925,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_75(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_75(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_75() { NextTest(); }
+    void OnSuccessResponse_75()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum16NotDefaultValue_76()
     {
@@ -62881,7 +69946,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_76(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_76(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_76(uint16_t enum16)
     {
@@ -62904,9 +69972,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_77(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_77(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_77() { NextTest(); }
+    void OnSuccessResponse_77()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEnum16DefaultValue_78()
     {
@@ -62919,7 +69993,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_78(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_78(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_78(uint16_t enum16)
     {
@@ -62939,7 +70016,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_79(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_79(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_79(uint64_t epochUs)
     {
@@ -62963,9 +70043,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_80(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_80(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_80() { NextTest(); }
+    void OnSuccessResponse_80()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochUsNotDefaultValue_81()
     {
@@ -62978,7 +70064,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_81(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_81(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_81(uint64_t epochUs)
     {
@@ -63001,9 +70090,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_82(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_82(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_82() { NextTest(); }
+    void OnSuccessResponse_82()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochUsDefaultValue_83()
     {
@@ -63016,7 +70111,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_83(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_83(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_83(uint64_t epochUs)
     {
@@ -63036,7 +70134,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_84(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_84(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_84(uint32_t epochS)
     {
@@ -63060,9 +70161,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_85(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_85(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_85() { NextTest(); }
+    void OnSuccessResponse_85()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochSNotDefaultValue_86()
     {
@@ -63075,7 +70182,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_86(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_86(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_86(uint32_t epochS)
     {
@@ -63098,9 +70208,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_87(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_87(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_87() { NextTest(); }
+    void OnSuccessResponse_87()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeEpochSDefaultValue_88()
     {
@@ -63113,7 +70229,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_88(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_88(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_88(uint32_t epochS)
     {
@@ -63133,7 +70252,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_89(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_89(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_89(chip::VendorId vendorId)
     {
@@ -63157,9 +70279,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_90(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_90(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_90() { NextTest(); }
+    void OnSuccessResponse_90()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeVendorIdNotDefaultValue_91()
     {
@@ -63172,7 +70300,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_91(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_91(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_91(chip::VendorId vendorId)
     {
@@ -63195,9 +70326,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_92(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_92(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_92() { NextTest(); }
+    void OnSuccessResponse_92()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeVendorIdDefaultValue_93()
     {
@@ -63210,7 +70347,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_93(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_93(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_93(chip::VendorId vendorId)
     {
@@ -63230,7 +70370,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_94(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_94(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_94(chip::CharSpan charString)
     {
@@ -63257,7 +70400,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_95(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_95(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_95(chip::CharSpan charString)
     {
@@ -63280,9 +70426,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_96(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_96(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_96() { NextTest(); }
+    void OnSuccessResponse_96()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringNotDefaultValue_97()
     {
@@ -63295,7 +70447,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_97(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_97(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_97(chip::CharSpan charString)
     {
@@ -63322,7 +70477,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_98(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_98(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_98(chip::CharSpan charString)
     {
@@ -63345,9 +70503,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_99(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_99(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_99() { NextTest(); }
+    void OnSuccessResponse_99()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeCharStringNotDefaultValueAndCompareToExpectedValue_100()
     {
@@ -63360,7 +70524,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_100(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_100(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_100(chip::CharSpan charString)
     {
@@ -63383,9 +70550,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_101(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_101(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_101() { NextTest(); }
+    void OnSuccessResponse_101()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetStringDefaultValue_102()
     {
@@ -63398,7 +70571,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_102(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_102(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_102(chip::ByteSpan octetString)
     {
@@ -63425,7 +70601,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_103(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_103(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_103(chip::ByteSpan octetString)
     {
@@ -63448,9 +70627,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_104(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_104(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_104() { NextTest(); }
+    void OnSuccessResponse_104()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetStringNotDefaultValue_105()
     {
@@ -63463,7 +70648,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_105(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_105(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_105(chip::ByteSpan octetString)
     {
@@ -63491,7 +70679,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_106(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_106(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_106(chip::ByteSpan octetString)
     {
@@ -63514,9 +70705,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_107(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_107(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_107() { NextTest(); }
+    void OnSuccessResponse_107()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeOctetStringNotDefaultValueAndCompareToExpectedValue_108()
     {
@@ -63529,7 +70726,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_108(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_108(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_108(chip::ByteSpan octetString)
     {
@@ -63553,9 +70753,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_109(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_109(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_109() { NextTest(); }
+    void OnSuccessResponse_109()
+    {
+        NextTest();
+    }
 };
 
 class TestConfigVariables : public TestCommand
@@ -63659,7 +70865,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t returnValue)
     {
@@ -63690,7 +70899,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t returnValue)
     {
@@ -63835,7 +71047,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::Descriptor::Structs::DeviceType::DecodableType> & deviceList)
@@ -63862,7 +71077,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(const chip::app::DataModel::DecodableList<chip::ClusterId> & serverList)
     {
@@ -63931,7 +71149,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(const chip::app::DataModel::DecodableList<chip::ClusterId> & clientList)
     {
@@ -63956,7 +71177,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(const chip::app::DataModel::DecodableList<chip::EndpointId> & partsList)
     {
@@ -64046,14 +71270,20 @@ private:
         (static_cast<TestBasicInformation *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<TestBasicInformation *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<TestBasicInformation *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
         (static_cast<TestBasicInformation *>(context))->OnFailureResponse_2(status);
     }
 
-    static void OnSuccessCallback_2(void * context) { (static_cast<TestBasicInformation *>(context))->OnSuccessResponse_2(); }
+    static void OnSuccessCallback_2(void * context)
+    {
+        (static_cast<TestBasicInformation *>(context))->OnSuccessResponse_2();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
@@ -64089,9 +71319,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestRestoreInitialLocationValue_2()
     {
@@ -64107,9 +71343,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_2() { NextTest(); }
+    void OnSuccessResponse_2()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadAttributeListValue_3()
     {
@@ -64122,7 +71364,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(const chip::app::DataModel::DecodableList<chip::AttributeId> & attributeList)
     {
@@ -64267,9 +71512,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 };
 
 class TestGroupsCluster : public TestCommand
@@ -64430,7 +71681,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64461,7 +71715,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64493,7 +71750,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t status, uint16_t groupId)
     {
@@ -64524,7 +71784,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64557,7 +71820,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64589,7 +71855,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_6(uint8_t capacity, const chip::app::DataModel::DecodableList<uint16_t> & groupList)
     {
@@ -64625,7 +71894,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64656,7 +71928,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_8(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_8(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_8(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64689,7 +71964,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_9(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_9(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_9(uint8_t status, uint16_t groupId)
     {
@@ -64720,7 +71998,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_10(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_10(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_10(uint8_t status, uint16_t groupId)
     {
@@ -64751,7 +72032,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_11(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_11(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_11(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64784,7 +72068,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_12(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_12(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_12(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64821,7 +72108,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_13(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_13(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_13(uint8_t capacity, const chip::app::DataModel::DecodableList<uint16_t> & groupList)
     {
@@ -64856,9 +72146,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_14(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_14(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_14() { NextTest(); }
+    void OnSuccessResponse_14()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestViewGroup1Removed_15()
     {
@@ -64880,7 +72176,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_15(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_15(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_15(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64911,7 +72210,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_16(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_16(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_16(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64942,7 +72244,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_17(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_17(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_17(uint8_t status, uint16_t groupId, chip::CharSpan groupName)
     {
@@ -64980,7 +72285,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_18(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_18(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_18(uint8_t capacity, const chip::app::DataModel::DecodableList<uint16_t> & groupList)
     {
@@ -65101,7 +72409,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint16_t maxGroupsPerFabric)
     {
@@ -65122,7 +72433,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint16_t maxGroupKeysPerFabric)
     {
@@ -65252,7 +72566,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t supportedFabrics)
     {
@@ -65273,7 +72590,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t commissionedFabrics)
     {
@@ -65294,7 +72614,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(chip::FabricIndex currentFabricIndex)
     {
@@ -65476,7 +72799,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_1(uint8_t currentMode)
     {
@@ -65496,7 +72822,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(uint8_t onMode)
     {
@@ -65516,7 +72845,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(uint8_t startUpMode)
     {
@@ -65536,7 +72868,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::CharSpan description)
     {
@@ -65556,7 +72891,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(
         const chip::app::DataModel::DecodableList<chip::app::Clusters::ModeSelect::Structs::ModeOptionStruct::DecodableType> &
@@ -65603,9 +72941,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestVerifyCurrentModeChange_7()
     {
@@ -65618,7 +72962,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(uint8_t currentMode)
     {
@@ -65653,7 +73000,10 @@ private:
         NextTest();
     }
 
-    void OnSuccessResponse_8() { ThrowSuccessResponse(); }
+    void OnSuccessResponse_8()
+    {
+        ThrowSuccessResponse();
+    }
 };
 
 class TestGroupMessaging : public TestCommand
@@ -65728,14 +73078,20 @@ private:
     chip::Optional<chip::CharSpan> mCluster;
     chip::Optional<chip::EndpointId> mEndpoint;
 
-    static void OnDoneCallback_1(void * context) { (static_cast<TestGroupMessaging *>(context))->OnDoneResponse_1(); }
+    static void OnDoneCallback_1(void * context)
+    {
+        (static_cast<TestGroupMessaging *>(context))->OnDoneResponse_1();
+    }
 
     static void OnFailureCallback_1(void * context, EmberAfStatus status)
     {
         (static_cast<TestGroupMessaging *>(context))->OnFailureResponse_1(status);
     }
 
-    static void OnSuccessCallback_1(void * context) { (static_cast<TestGroupMessaging *>(context))->OnSuccessResponse_1(); }
+    static void OnSuccessCallback_1(void * context)
+    {
+        (static_cast<TestGroupMessaging *>(context))->OnSuccessResponse_1();
+    }
 
     static void OnFailureCallback_2(void * context, EmberAfStatus status)
     {
@@ -65747,14 +73103,20 @@ private:
         (static_cast<TestGroupMessaging *>(context))->OnSuccessResponse_2(location);
     }
 
-    static void OnDoneCallback_3(void * context) { (static_cast<TestGroupMessaging *>(context))->OnDoneResponse_3(); }
+    static void OnDoneCallback_3(void * context)
+    {
+        (static_cast<TestGroupMessaging *>(context))->OnDoneResponse_3();
+    }
 
     static void OnFailureCallback_3(void * context, EmberAfStatus status)
     {
         (static_cast<TestGroupMessaging *>(context))->OnFailureResponse_3(status);
     }
 
-    static void OnSuccessCallback_3(void * context) { (static_cast<TestGroupMessaging *>(context))->OnSuccessResponse_3(); }
+    static void OnSuccessCallback_3(void * context)
+    {
+        (static_cast<TestGroupMessaging *>(context))->OnSuccessResponse_3();
+    }
 
     static void OnFailureCallback_4(void * context, EmberAfStatus status)
     {
@@ -65790,11 +73152,20 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
-    void OnDoneResponse_1() { NextTest(); }
+    void OnDoneResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackAttribute_2()
     {
@@ -65807,7 +73178,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(chip::CharSpan location)
     {
@@ -65830,11 +73204,20 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_3() { NextTest(); }
+    void OnSuccessResponse_3()
+    {
+        NextTest();
+    }
 
-    void OnDoneResponse_3() { NextTest(); }
+    void OnDoneResponse_3()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReadBackAttribute_4()
     {
@@ -65847,7 +73230,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_4(chip::CharSpan location)
     {
@@ -66418,9 +73804,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_1(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_1(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_1() { NextTest(); }
+    void OnSuccessResponse_1()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestReportSubscribeOnOffAttribute_2()
     {
@@ -66432,7 +73824,10 @@ private:
         return WaitForMs(0);
     }
 
-    void OnFailureResponse_2(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_2(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_2(bool onOff)
     {
@@ -66457,7 +73852,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_3(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_3(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_3(bool value)
     {
@@ -66494,9 +73892,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_4(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_4(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_4() { NextTest(); }
+    void OnSuccessResponse_4()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckForAttributeReport_5()
     {
@@ -66508,7 +73912,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_5(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_5(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_5(bool onOff)
     {
@@ -66538,9 +73945,15 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_6(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_6(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
-    void OnSuccessResponse_6() { NextTest(); }
+    void OnSuccessResponse_6()
+    {
+        NextTest();
+    }
 
     CHIP_ERROR TestCheckForAttributeReport_7()
     {
@@ -66552,7 +73965,10 @@ private:
         return CHIP_NO_ERROR;
     }
 
-    void OnFailureResponse_7(EmberAfStatus status) { ThrowFailureResponse(); }
+    void OnFailureResponse_7(EmberAfStatus status)
+    {
+        ThrowFailureResponse();
+    }
 
     void OnSuccessResponse_7(bool onOff)
     {

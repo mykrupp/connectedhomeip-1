@@ -325,7 +325,7 @@
 #define ZAP_ATTRIBUTE_INDEX(index) ((EmberAfAttributeMetadata *) (&generatedAttributes[index]))
 
 // This is an array of EmberAfCluster structures.
-#define ZAP_CLUSTER_VERSION_INDEX(index) ((uint32_t *) (&clusterVersions[index]))
+#define ZAP_CLUSTER_VERSION_INDEX(index) (&clusterVersions[index])
 
 // Cluster function static arrays
 #define GENERATED_FUNCTION_ARRAYS

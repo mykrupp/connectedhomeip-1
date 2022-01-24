@@ -78,7 +78,7 @@ public:
 
     app::BufferedReadCallback * GetBufferedReadCallback() { return &mBufferedReadCallback; }
 
-    void OnAttributeData(const ReadClient * apReadClient, DataVersion * apVersion, const ConcreteDataAttributePath & aPath,
+    void OnAttributeData(const ReadClient * apReadClient, Optional<DataVersion> & aVersion, const ConcreteDataAttributePath & aPath,
                          TLV::TLVReader * apData, const StatusIB & aStatus) override
     {
         //
@@ -107,8 +107,11 @@ public:
                 this->OnError(apReadClient, err);
                 return;
             }
-            size    = writer.GetLengthWritten();
-            version = *apVersion;
+            size = writer.GetLengthWritten();
+            if (aVersion.HasValue())
+            {
+                version = aVersion.Value();
+            }
         }
 
         gOnReadAttributeDataCallback(mAppContext, version, aPath.mEndpointId, aPath.mClusterId, aPath.mAttributeId,

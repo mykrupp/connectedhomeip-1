@@ -99,7 +99,7 @@ class TestReadCallback : public app::ReadClient::Callback
 {
 public:
     TestReadCallback() : mBufferedCallback(*this) {}
-    void OnAttributeData(const app::ReadClient * apReadClient, DataVersion * apVersion,
+    void OnAttributeData(const app::ReadClient * apReadClient, Optional<DataVersion> & aVersion,
                          const app::ConcreteDataAttributePath & aPath, TLV::TLVReader * apData,
                          const app::StatusIB & aStatus) override;
 
@@ -112,7 +112,7 @@ public:
     app::BufferedReadCallback mBufferedCallback;
 };
 
-void TestReadCallback::OnAttributeData(const app::ReadClient * apReadClient, DataVersion * apVersion,
+void TestReadCallback::OnAttributeData(const app::ReadClient * apReadClient, Optional<DataVersion> & aVersion,
                                        const app::ConcreteDataAttributePath & aPath, TLV::TLVReader * apData,
                                        const app::StatusIB & aStatus)
 {

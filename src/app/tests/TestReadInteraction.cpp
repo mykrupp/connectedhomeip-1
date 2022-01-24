@@ -143,7 +143,7 @@ public:
         mGotEventResponse = true;
     }
 
-    void OnAttributeData(const chip::app::ReadClient * apReadClient, chip::DataVersion * apVersion,
+    void OnAttributeData(const chip::app::ReadClient * apReadClient, chip::Optional<chip::DataVersion> & aVersion,
                          const chip::app::ConcreteDataAttributePath & aPath, chip::TLV::TLVReader * apData,
                          const chip::app::StatusIB & status) override
     {

@@ -24,7 +24,6 @@
 #include <access/AccessControl.h>
 #include <app/ClusterInfo.h>
 #include <app/ConcreteAttributePath.h>
-#include <app/ConcreteClusterPath.h>
 #include <app/InteractionModelEngine.h>
 #include <app/reporting/Engine.h>
 #include <app/reporting/reporting.h>
@@ -264,14 +263,15 @@ void IncreaseClusterDataVersion(const EndpointId & aEndpointId, const ClusterId 
     EmberAfCluster * cluster = emberAfFindCluster(aEndpointId, aClusterId, CLUSTER_MASK_SERVER);
     if (cluster == nullptr)
     {
-        ChipLogError(DataManagement, "Path: Endpoint %" PRIx16 ", Cluster %" PRIx32 " not found in IncreaseClusterDataVersion!",
-                     aEndpointId, aClusterId);
+        ChipLogError(DataManagement,
+                     "Path: Endpoint %" PRIx16 ", Cluster" ChipLogFormatMEI " not found in IncreaseClusterDataVersion!",
+                     aEndpointId, ChipLogValueMEI(aClusterId));
     }
     else
     {
         (*(cluster->version))++;
-        ChipLogDetail(DataManagement, "Endpoint %" PRIx16 ", Cluster %" PRIx32 " update version to %" PRIx32, aEndpointId,
-                      aClusterId, *(cluster->version));
+        ChipLogDetail(DataManagement, "Endpoint %" PRIx16 ", Cluster" ChipLogFormatMEI " update version to %" PRIx32, aEndpointId,
+                      ChipLogValueMEI(aClusterId), *(cluster->version));
     }
     return;
 }

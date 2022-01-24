@@ -113,13 +113,14 @@ public:
          * receives an OnDone call to destroy the object.
          *
          * @param[in] apReadClient The read client object that initiated the read or subscribe transaction.
-         * @param[in] apVersion    The cluster version in report response.
+         * @param[in] aVersion    The data version for cluster in report response. The version could be omited when
+         * EnableTagCompression in the Path field is true or the current report response don't have AttributeDataIB.
          * @param[in] aPath        The attribute path field in report response.
          * @param[in] apData       The attribute data of the given path, will be a nullptr if status is not Success.
          * @param[in] aStatus      Attribute-specific status, containing an InteractionModel::Status code as well as an
          *                         optional cluster-specific status code.
          */
-        virtual void OnAttributeData(const ReadClient * apReadClient, DataVersion * apVersion,
+        virtual void OnAttributeData(const ReadClient * apReadClient, Optional<DataVersion> & aVersionn,
                                      const ConcreteDataAttributePath & aPath, TLV::TLVReader * apData, const StatusIB & aStatus)
         {}
 

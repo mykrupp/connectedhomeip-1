@@ -604,7 +604,10 @@
             /* Endpoint: 1, Cluster: Window Covering (server) */                                                                   \
             { (uint16_t) 0x14, (uint16_t) 0x0, (uint16_t) 0xF }, /* Mode */                                                        \
                                                                                                                                    \
-        /* Endpoint: 2, Cluster: Window Covering (server) */ { (uint16_t) 0x0, (uint16_t) 0x0, (uint16_t) 0xF } /* Mode */         \
+        /* Endpoint: 2, Cluster: Window Covering (server) */                                                                       \
+        {                                                                                                                          \
+            (uint16_t) 0x0, (uint16_t) 0x0, (uint16_t) 0xF                                                                         \
+        } /* Mode */                                                                                                               \
     }
 
 #define ZAP_ATTRIBUTE_MASK(mask) ATTRIBUTE_MASK_##mask
@@ -908,7 +911,7 @@
 #define ZAP_ATTRIBUTE_INDEX(index) ((EmberAfAttributeMetadata *) (&generatedAttributes[index]))
 
 // This is an array of EmberAfCluster structures.
-#define ZAP_CLUSTER_VERSION_INDEX(index) ((uint32_t *) (&clusterVersions[index]))
+#define ZAP_CLUSTER_VERSION_INDEX(index) (&clusterVersions[index])
 
 // Cluster function static arrays
 #define GENERATED_FUNCTION_ARRAYS                                                                                                  \

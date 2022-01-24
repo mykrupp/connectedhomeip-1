@@ -100,7 +100,7 @@ void AttributeCache::OnReportEnd(const ReadClient * apReadClient)
     mCallback.OnReportEnd(apReadClient);
 }
 
-void AttributeCache::OnAttributeData(const ReadClient * apReadClient, DataVersion * apVersion,
+void AttributeCache::OnAttributeData(const ReadClient * apReadClient, Optional<DataVersion> & aVersion,
                                      const ConcreteDataAttributePath & aPath, TLV::TLVReader * apData, const StatusIB & aStatus)
 {
     //
@@ -121,7 +121,7 @@ void AttributeCache::OnAttributeData(const ReadClient * apReadClient, DataVersio
     //
     // Forward the call through.
     //
-    mCallback.OnAttributeData(apReadClient, apVersion, aPath, apData, aStatus);
+    mCallback.OnAttributeData(apReadClient, aVersion, aPath, apData, aStatus);
 }
 
 CHIP_ERROR AttributeCache::Get(const ConcreteAttributePath & path, TLV::TLVReader & reader)

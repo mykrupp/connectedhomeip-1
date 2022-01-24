@@ -499,11 +499,11 @@ CHIP_ERROR ReadClient::ProcessAttributeReportIBs(TLV::TLVReader & aAttributeRepo
         AttributePathIB::Parser path;
         ConcreteDataAttributePath attributePath;
         StatusIB statusIB;
-        DataVersion version = 0;
 
         TLV::TLVReader reader = aAttributeReportIBsReader;
         ReturnErrorOnFailure(report.Init(reader));
 
+        Optional<DataVersion> dataVersion;
         err = report.GetAttributeStatus(&status);
         if (CHIP_NO_ERROR == err)
         {
@@ -512,14 +512,24 @@ CHIP_ERROR ReadClient::ProcessAttributeReportIBs(TLV::TLVReader & aAttributeRepo
             ReturnErrorOnFailure(ProcessAttributePath(path, attributePath));
             ReturnErrorOnFailure(status.GetErrorStatus(&errorStatus));
             ReturnErrorOnFailure(errorStatus.DecodeStatusIB(statusIB));
-            mpCallback.OnAttributeData(this, nullptr, attributePath, nullptr, statusIB);
+            mpCallback.OnAttributeData(this, dataVersion, attributePath, nullptr, statusIB);
         }
         else if (CHIP_END_OF_TLV == err)
         {
             ReturnErrorOnFailure(report.GetAttributeData(&data));
             ReturnErrorOnFailure(data.GetPath(&path));
             ReturnErrorOnFailure(ProcessAttributePath(path, attributePath));
-            ReturnErrorOnFailure(data.GetDataVersion(&version));
+            DataVersion version = 0;
+            err                 = data.GetDataVersion(&version);
+            if (err == CHIP_NO_ERROR)
+            {
+                dataVersion.SetValue(version);
+            }
+            else if (err == CHIP_END_OF_TLV)
+            {
+                err = CHIP_NO_ERROR;
+            }
+            ReturnErrorOnFailure(err);
             ReturnErrorOnFailure(data.GetData(&dataReader));
 
             // The element in an array may be another array -- so we should only set the list operation when we are handling the
@@ -529,7 +539,7 @@ CHIP_ERROR ReadClient::ProcessAttributeReportIBs(TLV::TLVReader & aAttributeRepo
                 attributePath.mListOp = ConcreteDataAttributePath::ListOperation::ReplaceAll;
             }
 
-            mpCallback.OnAttributeData(this, &version, attributePath, &dataReader, statusIB);
+            mpCallback.OnAttributeData(this, dataVersion, attributePath, &dataReader, statusIB);
         }
     }
 
