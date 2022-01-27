@@ -466,7 +466,7 @@ void TestReadInteraction::TestSubscribeAttributeResponse(nlTestSuite * apSuite, 
     };
 
     chip::Controller::SubscribeAttribute<TestCluster::Attributes::ListStructOctetString::TypeInfo>(
-            &ctx.GetExchangeManager(), sessionHandle, kTestEndpointId, onSuccessCb, onFailureCb, 2, 4);
+        &ctx.GetExchangeManager(), sessionHandle, kTestEndpointId, onSuccessCb, onFailureCb, 2, 4);
 
     ctx.DrainAndServiceIO();
     chip::app::InteractionModelEngine::GetInstance()->GetReportingEngine().Run();

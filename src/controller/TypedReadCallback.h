@@ -18,12 +18,12 @@
 
 #pragma once
 
-#include <lib/support/CHIPMem.h>
 #include <app/BufferedReadCallback.h>
 #include <app/ConcreteAttributePath.h>
 #include <app/InteractionModelDelegate.h>
 #include <app/data-model/Decode.h>
 #include <functional>
+#include <lib/support/CHIPMem.h>
 
 namespace chip {
 namespace Controller {
@@ -162,7 +162,6 @@ private:
             {
                 chip::Platform::Delete<app::AttributePathParams>(&aReadPrepareParams.mpAttributePathParamsList[i]);
             }
-
         }
 
         if (aReadPrepareParams.mpEventPathParamsList != nullptr)
