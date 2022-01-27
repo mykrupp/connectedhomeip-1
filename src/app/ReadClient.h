@@ -250,7 +250,7 @@ public:
     // a) allocate a ReadPrepareParams object that will have fields mpEventPathParamsList and mpAttributePathParamsList with
     // lifetimes as long as the ReadClient itself and b) free' those up later in the call to OnDeallocatePaths. Note: At a given
     // time in the system, you can either have a single subscription with re-sub enabled that that has mKeepSubscriptions = false,
-    // OR, multiple subs with re-sub enabled with mKeepSubscriptions = true.
+    // OR, multiple subs with re-sub enabled with mKeepSubscriptions = true. You shall not have a mix of both simultaneously.
     CHIP_ERROR SendAutoResubscribeRequest(ReadPrepareParams && aReadPrepareParams);
 
 private:

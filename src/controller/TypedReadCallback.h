@@ -18,6 +18,7 @@
 
 #pragma once
 
+#include <lib/support/CHIPMem.h>
 #include <app/BufferedReadCallback.h>
 #include <app/ConcreteAttributePath.h>
 #include <app/InteractionModelDelegate.h>
@@ -157,12 +158,19 @@ private:
     {
         if (aReadPrepareParams.mpAttributePathParamsList != nullptr)
         {
-            delete[] aReadPrepareParams.mpAttributePathParamsList;
+            for (size_t i = 0; i < aReadPrepareParams.mAttributePathParamsListSize; i++)
+            {
+                chip::Platform::Delete<app::AttributePathParams>(&aReadPrepareParams.mpAttributePathParamsList[i]);
+            }
+
         }
 
         if (aReadPrepareParams.mpEventPathParamsList != nullptr)
         {
-            delete[] aReadPrepareParams.mpEventPathParamsList;
+            for (size_t i = 0; i < aReadPrepareParams.mEventPathParamsListSize; i++)
+            {
+                chip::Platform::Delete<app::EventPathParams>(&aReadPrepareParams.mpEventPathParamsList[i]);
+            }
         }
     }
 

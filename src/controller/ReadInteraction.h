@@ -48,7 +48,8 @@ CHIP_ERROR ReportAttribute(Messaging::ExchangeManager * exchangeMgr, EndpointId 
     app::InteractionModelEngine * engine = app::InteractionModelEngine::GetInstance();
     CHIP_ERROR err                       = CHIP_NO_ERROR;
 
-    readParams.mpAttributePathParamsList    = new app::AttributePathParams[1];
+    std::unique_ptr<app::AttributePathParams[]> readPaths(Platform::New<app::AttributePathParams>());
+    readParams.mpAttributePathParamsList    = readPaths.get();
     readParams.mpAttributePathParamsList[0] = app::AttributePathParams(endpointId, clusterId, attributeId);
     readParams.mAttributePathParamsListSize = 1;
 
@@ -80,6 +81,7 @@ CHIP_ERROR ReportAttribute(Messaging::ExchangeManager * exchangeMgr, EndpointId 
     // of the read operation to permit us to free up the callback object. So, release ownership of the callback
     // object now to prevent it from being reclaimed at the end of this scoped block.
     //
+    readPaths.release();
     callback.release();
     readClient.release();
 
@@ -191,7 +193,8 @@ CHIP_ERROR ReportEvent(Messaging::ExchangeManager * apExchangeMgr, EndpointId en
     app::InteractionModelEngine * engine = app::InteractionModelEngine::GetInstance();
     CHIP_ERROR err                       = CHIP_NO_ERROR;
 
-    readParams.mpEventPathParamsList    = new app::EventPathParams[1];
+    std::unique_ptr<app::EventPathParams[]> readPaths(Platform::New<app::EventPathParams>());
+    readParams.mpEventPathParamsList    = readPaths.get();
     readParams.mpEventPathParamsList[0] = app::EventPathParams(endpointId, clusterId, eventId);
     readParams.mEventPathParamsListSize = 1;
 
@@ -222,6 +225,7 @@ CHIP_ERROR ReportEvent(Messaging::ExchangeManager * apExchangeMgr, EndpointId en
     // of the read operation to permit us to free up the callback object. So, release ownership of the callback
     // object now to prevent it from being reclaimed at the end of this scoped block.
     //
+    readPaths.release();
     callback.release();
     readClient.release();
 

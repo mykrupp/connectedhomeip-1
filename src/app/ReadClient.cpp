@@ -126,16 +126,6 @@ ReadClient::~ReadClient()
 
 void ReadClient::Close(CHIP_ERROR aError)
 {
-    if (aError != CHIP_NO_ERROR)
-    {
-        if (mReadPrepareParams.mResubscribePolicy != nullptr && Resubscribe())
-        {
-            ResubscribeClear();
-            return;
-        }
-        mpCallback.OnError(this, aError);
-    }
-
     // OnDone below can destroy us before we unwind all the way back into the
     // exchange code and it tries to close itself.  Make sure that it doesn't
     // try to notify us that it's closing, since we will be dead.
@@ -147,6 +137,16 @@ void ReadClient::Close(CHIP_ERROR aError)
     }
 
     mpExchangeCtx = nullptr;
+
+    if (aError != CHIP_NO_ERROR)
+    {
+        if (mReadPrepareParams.mResubscribePolicy != nullptr && Resubscribe())
+        {
+            ResubscribeClear();
+            return;
+        }
+        mpCallback.OnError(this, aError);
+    }
     mpCallback.OnDone(this);
 }
 
