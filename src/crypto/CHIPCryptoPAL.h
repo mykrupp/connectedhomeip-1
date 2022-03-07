@@ -1252,8 +1252,8 @@ public:
     uint8_t mW0[kP256_FE_Length];
     uint8_t mL[kP256_Point_Length];
 
-    CHIP_ERROR Serialize(MutableByteSpan & outSerialized);
-    CHIP_ERROR Deserialize(ByteSpan inSerialized);
+    CHIP_ERROR Serialize(MutableByteSpan & outSerialized) const;
+    CHIP_ERROR Deserialize(const ByteSpan & inSerialized);
 
     /**
      * @brief Generate the Spake2+ verifier.
@@ -1482,7 +1482,7 @@ public:
  The buffer size must be at least CHIP_CRYPTO_SYMMETRIC_KEY_LENGTH_BYTES bytes length.
  * @return Returns a CHIP_NO_ERROR on succcess, or CHIP_ERROR_INTERNAL if the provided key is invalid.
  **/
-CHIP_ERROR DeriveGroupOperationalKey(const ByteSpan & epoch_key, MutableByteSpan & out_key);
+CHIP_ERROR DeriveGroupOperationalKey(const ByteSpan & epoch_key, const ByteSpan & compressed_fabric_id, MutableByteSpan & out_key);
 
 /**
  *  @brief Derives the Group Session ID from a given operational group key using

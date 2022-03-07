@@ -41,21 +41,6 @@ namespace chip {
 namespace app {
 namespace {
 
-bool HaveOperationalCredentials()
-{
-    // Look for any fabric info that has a useful operational identity.
-    for (const FabricInfo & fabricInfo : Server::GetInstance().GetFabricTable())
-    {
-        if (fabricInfo.IsInitialized())
-        {
-            return true;
-        }
-    }
-
-    ChipLogProgress(Discovery, "Failed to find a valid admin pairing. Node ID unknown");
-    return false;
-}
-
 void OnPlatformEvent(const DeviceLayer::ChipDeviceEvent * event)
 {
     if (event->Type == DeviceLayer::DeviceEventType::kDnssdPlatformInitialized
@@ -77,6 +62,23 @@ void OnPlatformEventWrapper(const DeviceLayer::ChipDeviceEvent * event, intptr_t
 } // namespace
 
 constexpr System::Clock::Timestamp DnssdServer::kTimeoutCleared;
+
+bool DnssdServer::HaveOperationalCredentials()
+{
+    VerifyOrDie(mFabricTable != nullptr);
+
+    // Look for any fabric info that has a useful operational identity.
+    for (const FabricInfo & fabricInfo : *mFabricTable)
+    {
+        if (fabricInfo.IsInitialized())
+        {
+            return true;
+        }
+    }
+
+    ChipLogProgress(Discovery, "Failed to find a valid admin pairing. Node ID unknown");
+    return false;
+}
 
 #if CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY
 
@@ -250,7 +252,9 @@ CHIP_ERROR DnssdServer::GetCommissionableInstanceName(char * buffer, size_t buff
 /// Set MDNS operational advertisement
 CHIP_ERROR DnssdServer::AdvertiseOperational()
 {
-    for (const FabricInfo & fabricInfo : Server::GetInstance().GetFabricTable())
+    VerifyOrDie(mFabricTable != nullptr);
+
+    for (const FabricInfo & fabricInfo : *mFabricTable)
     {
         if (fabricInfo.IsInitialized())
         {
@@ -414,20 +418,17 @@ CHIP_ERROR DnssdServer::AdvertiseCommissionableNode(chip::Dnssd::CommissioningMo
 
 void DnssdServer::StartServer()
 {
-    return StartServer(NullOptional);
+    Dnssd::CommissioningMode mode = Dnssd::CommissioningMode::kDisabled;
+    if (mCommissioningModeProvider)
+    {
+        mode = mCommissioningModeProvider->GetCommissioningMode();
+    }
+    return StartServer(mode);
 }
 
 void DnssdServer::StartServer(Dnssd::CommissioningMode mode)
 {
-    return StartServer(MakeOptional(mode));
-}
-
-void DnssdServer::StartServer(Optional<Dnssd::CommissioningMode> mode)
-{
-    // Default to CommissioningMode::kDisabled if no value is provided.
-    Dnssd::CommissioningMode modeValue = mode.ValueOr(Dnssd::CommissioningMode::kDisabled);
-
-    ChipLogDetail(Discovery, "DNS-SD StartServer modeHasValue=%d modeValue=%d", mode.HasValue(), static_cast<int>(modeValue));
+    ChipLogDetail(Discovery, "DNS-SD StartServer mode=%d", static_cast<int>(mode));
 
     ClearTimeouts();
 
@@ -454,9 +455,9 @@ void DnssdServer::StartServer(Optional<Dnssd::CommissioningMode> mode)
     if (HaveOperationalCredentials())
     {
         ChipLogProgress(Discovery, "Have operational credentials");
-        if (modeValue != chip::Dnssd::CommissioningMode::kDisabled)
+        if (mode != chip::Dnssd::CommissioningMode::kDisabled)
         {
-            err = AdvertiseCommissionableNode(modeValue);
+            err = AdvertiseCommissionableNode(mode);
             if (err != CHIP_NO_ERROR)
             {
                 ChipLogError(Discovery, "Failed to advertise commissionable node: %s", chip::ErrorStr(err));
@@ -466,7 +467,7 @@ void DnssdServer::StartServer(Optional<Dnssd::CommissioningMode> mode)
 #if CHIP_DEVICE_CONFIG_ENABLE_EXTENDED_DISCOVERY
         else if (GetExtendedDiscoveryTimeoutSecs() != CHIP_DEVICE_CONFIG_DISCOVERY_DISABLED)
         {
-            err = AdvertiseCommissionableNode(modeValue);
+            err = AdvertiseCommissionableNode(mode);
             if (err != CHIP_NO_ERROR)
             {
                 ChipLogError(Discovery, "Failed to advertise extended commissionable node: %s", chip::ErrorStr(err));
@@ -480,7 +481,7 @@ void DnssdServer::StartServer(Optional<Dnssd::CommissioningMode> mode)
     {
 #if CHIP_DEVICE_CONFIG_ENABLE_COMMISSIONABLE_DISCOVERY
         ChipLogProgress(Discovery, "Start dns-sd server - no current nodeId");
-        err = AdvertiseCommissionableNode(mode.ValueOr(chip::Dnssd::CommissioningMode::kEnabledBasic));
+        err = AdvertiseCommissionableNode(mode);
         if (err != CHIP_NO_ERROR)
         {
             ChipLogError(Discovery, "Failed to advertise unprovisioned commissionable node: %s", chip::ErrorStr(err));

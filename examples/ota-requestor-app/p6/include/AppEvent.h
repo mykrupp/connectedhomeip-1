@@ -1,6 +1,8 @@
 /*
  *
  *    Copyright (c) 2021 Project CHIP Authors
+ *    Copyright (c) 2018 Nest Labs, Inc.
+ *    Copyright 2021, Cypress Semiconductor Corporation (an Infineon company)
  *    All rights reserved.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,19 +20,33 @@
 
 #pragma once
 
-#include <lib/support/DLLUtil.h>
-#include <transport/raw/MessageHeader.h>
+struct AppEvent;
+typedef void (*EventHandler)(AppEvent *);
 
-namespace chip {
-namespace Controller {
-
-/// Callbacks for CHIP device address resolution
-class DLL_EXPORT DeviceAddressUpdateDelegate
+struct AppEvent
 {
-public:
-    virtual ~DeviceAddressUpdateDelegate() {}
-    virtual void OnAddressUpdateComplete(NodeId nodeId, CHIP_ERROR error) = 0;
-};
+    enum AppEventTypes
+    {
+        kEventType_Button = 0,
+        kEventType_Timer,
+        kEventType_Light,
+        kEventType_Install,
+    };
 
-} // namespace Controller
-} // namespace chip
+    uint16_t Type;
+
+    union
+    {
+        struct
+        {
+            uint8_t ButtonIdx;
+            uint8_t Action;
+        } ButtonEvent;
+        struct
+        {
+            void * Context;
+        } TimerEvent;
+    };
+
+    EventHandler Handler;
+};

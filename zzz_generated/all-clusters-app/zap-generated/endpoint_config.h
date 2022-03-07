@@ -263,7 +263,7 @@
             /* Endpoint: 1, Cluster: On/Off (server), big-endian */                                                                \
                                                                                                                                    \
             /* 355 - FeatureMap, */                                                                                                \
-            0x00, 0x00, 0x00, 0x00,                                                                                                \
+            0x00, 0x00, 0x00, 0x01,                                                                                                \
                                                                                                                                    \
             /* Endpoint: 1, Cluster: Level Control (server), big-endian */                                                         \
                                                                                                                                    \
@@ -715,7 +715,7 @@
             /* Endpoint: 1, Cluster: On/Off (server), little-endian */                                                             \
                                                                                                                                    \
             /* 355 - FeatureMap, */                                                                                                \
-            0x00, 0x00, 0x00, 0x00,                                                                                                \
+            0x01, 0x00, 0x00, 0x00,                                                                                                \
                                                                                                                                    \
             /* Endpoint: 1, Cluster: Level Control (server), little-endian */                                                      \
                                                                                                                                    \
@@ -1367,7 +1367,7 @@
             { 0x00000010, ZAP_TYPE(INT16U), 2, ZAP_ATTRIBUTE_MASK(WRITABLE),                                                       \
               ZAP_SIMPLE_DEFAULT(0x0000) }, /* on off transition time */                                                           \
             { 0x00000011, ZAP_TYPE(INT8U), 1, ZAP_ATTRIBUTE_MASK(WRITABLE) | ZAP_ATTRIBUTE_MASK(NULLABLE),                         \
-              ZAP_SIMPLE_DEFAULT(0xFE) }, /* on level */                                                                           \
+              ZAP_SIMPLE_DEFAULT(0xFF) }, /* on level */                                                                           \
             { 0x00000012, ZAP_TYPE(INT16U), 2, ZAP_ATTRIBUTE_MASK(WRITABLE) | ZAP_ATTRIBUTE_MASK(NULLABLE),                        \
               ZAP_EMPTY_DEFAULT() }, /* on transition time */                                                                      \
             { 0x00000013, ZAP_TYPE(INT16U), 2, ZAP_ATTRIBUTE_MASK(WRITABLE) | ZAP_ATTRIBUTE_MASK(NULLABLE),                        \
@@ -1678,11 +1678,11 @@
             { 0x0000FFFD, ZAP_TYPE(INT16U), 2, 0, ZAP_SIMPLE_DEFAULT(2) },                                 /* ClusterRevision */   \
                                                                                                                                    \
             /* Endpoint: 1, Cluster: Temperature Measurement (server) */                                                           \
-            { 0x00000000, ZAP_TYPE(INT16S), 2, 0, ZAP_SIMPLE_DEFAULT(0x8000) }, /* MeasuredValue */                                \
-            { 0x00000001, ZAP_TYPE(INT16S), 2, 0, ZAP_SIMPLE_DEFAULT(0x8000) }, /* MinMeasuredValue */                             \
-            { 0x00000002, ZAP_TYPE(INT16S), 2, 0, ZAP_SIMPLE_DEFAULT(0x8000) }, /* MaxMeasuredValue */                             \
-            { 0x00000003, ZAP_TYPE(INT16U), 2, 0, ZAP_EMPTY_DEFAULT() },        /* Tolerance */                                    \
-            { 0x0000FFFD, ZAP_TYPE(INT16U), 2, 0, ZAP_SIMPLE_DEFAULT(3) },      /* ClusterRevision */                              \
+            { 0x00000000, ZAP_TYPE(INT16S), 2, ZAP_ATTRIBUTE_MASK(NULLABLE), ZAP_SIMPLE_DEFAULT(0x8000) }, /* MeasuredValue */     \
+            { 0x00000001, ZAP_TYPE(INT16S), 2, ZAP_ATTRIBUTE_MASK(NULLABLE), ZAP_SIMPLE_DEFAULT(0x8000) }, /* MinMeasuredValue */  \
+            { 0x00000002, ZAP_TYPE(INT16S), 2, ZAP_ATTRIBUTE_MASK(NULLABLE), ZAP_SIMPLE_DEFAULT(0x8000) }, /* MaxMeasuredValue */  \
+            { 0x00000003, ZAP_TYPE(INT16U), 2, 0, ZAP_EMPTY_DEFAULT() },                                   /* Tolerance */         \
+            { 0x0000FFFD, ZAP_TYPE(INT16U), 2, 0, ZAP_SIMPLE_DEFAULT(3) },                                 /* ClusterRevision */   \
                                                                                                                                    \
             /* Endpoint: 1, Cluster: Pressure Measurement (server) */                                                              \
             { 0x00000000, ZAP_TYPE(INT16S), 2, ZAP_ATTRIBUTE_MASK(NULLABLE), ZAP_SIMPLE_DEFAULT(0x0000) }, /* MeasuredValue */     \
@@ -1836,7 +1836,7 @@
               ZAP_MIN_MAX_DEFAULTS_INDEX(35) }, /* range_restricted_int16s */                                                      \
             { 0x0000002A, ZAP_TYPE(ARRAY), 0, ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE) | ZAP_ATTRIBUTE_MASK(WRITABLE),                 \
               ZAP_EMPTY_DEFAULT() }, /* list_long_octet_string */                                                                  \
-            { 0x0000002B, ZAP_TYPE(ARRAY), 0, ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE),                                                \
+            { 0x0000002B, ZAP_TYPE(ARRAY), 0, ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE) | ZAP_ATTRIBUTE_MASK(WRITABLE),                 \
               ZAP_EMPTY_DEFAULT() }, /* list_fabric_scoped */                                                                      \
             { 0x00000030, ZAP_TYPE(BOOLEAN), 1, ZAP_ATTRIBUTE_MASK(WRITABLE) | ZAP_ATTRIBUTE_MASK(MUST_USE_TIMED_WRITE),           \
               ZAP_EMPTY_DEFAULT() }, /* timed_write_boolean */                                                                     \

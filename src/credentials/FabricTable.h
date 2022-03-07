@@ -30,6 +30,7 @@
 #if CHIP_CRYPTO_HSM
 #include <crypto/hsm/CHIPCryptoPALHsm.h>
 #endif
+#include <lib/core/CHIPEncoding.h>
 #include <lib/core/CHIPSafeCasts.h>
 #include <lib/core/Optional.h>
 #include <lib/support/CHIPMem.h>
@@ -154,6 +155,16 @@ public:
 
     FabricId GetFabricId() const { return mFabricId; }
     FabricIndex GetFabricIndex() const { return mFabric; }
+
+    CompressedFabricId GetCompressedId() const { return mOperationalId.GetCompressedFabricId(); }
+
+    CHIP_ERROR GetCompressedId(MutableByteSpan & compressedFabricId) const
+    {
+        ReturnErrorCodeIf(compressedFabricId.size() != sizeof(uint64_t), CHIP_ERROR_INVALID_ARGUMENT);
+        Encoding::BigEndian::Put64(compressedFabricId.data(), GetCompressedId());
+        return CHIP_NO_ERROR;
+    }
+
     uint16_t GetVendorId() const { return mVendorId; }
 
     void SetVendorId(uint16_t vendorId) { mVendorId = vendorId; }
@@ -252,7 +263,7 @@ public:
     /* Generate a compressed peer ID (containing compressed fabric ID) using provided fabric ID, node ID and
        root public key of the fabric. The generated compressed ID is returned via compressedPeerId
        output parameter */
-    CHIP_ERROR GetCompressedId(FabricId fabricId, NodeId nodeId, PeerId * compressedPeerId) const;
+    CHIP_ERROR GeneratePeerId(FabricId fabricId, NodeId nodeId, PeerId * compressedPeerId) const;
 
     friend class FabricTable;
 
@@ -295,9 +306,7 @@ private:
 
     struct StorableFabricInfo
     {
-        uint16_t mFabric;   /* This field is serialized in LittleEndian byte order */
-        uint64_t mNodeId;   /* This field is serialized in LittleEndian byte order */
-        uint64_t mFabricId; /* This field is serialized in LittleEndian byte order */
+        uint8_t mFabricIndex;
         uint16_t mVendorId; /* This field is serialized in LittleEndian byte order */
 
         uint16_t mRootCertLen; /* This field is serialized in LittleEndian byte order */

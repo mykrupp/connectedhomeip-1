@@ -1,6 +1,7 @@
 /*
  *
- *    Copyright (c) 2021 Project CHIP Authors
+ *    Copyright (c) 2022 Project CHIP Authors
+ *    All rights reserved.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -14,26 +15,23 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-
 #pragma once
-
-#include <controller/DeviceAddressUpdateDelegate.h>
+#include <platform/UserConsentDelegate.h>
 
 namespace chip {
-namespace Controller {
+namespace ota {
 
-extern "C" using DeviceAddressUpdateDelegate_OnUpdateComplete = void(*)(NodeId, ChipError::StorageType);
-
-class ScriptDeviceAddressUpdateDelegate final : public Controller::DeviceAddressUpdateDelegate
+class OTARequestorUserConsentDelegate : public UserConsentDelegate
 {
 public:
-    void SetOnAddressUpdateComplete(DeviceAddressUpdateDelegate_OnUpdateComplete cb) { mOnAddressUpdateComplete = cb; }
+    virtual ~OTARequestorUserConsentDelegate() = default;
 
-private:
-    void OnAddressUpdateComplete(NodeId nodeId, CHIP_ERROR error) override;
+    virtual UserConsentState GetUserConsentState(const UserConsentSubject & subject) = 0;
 
-    DeviceAddressUpdateDelegate_OnUpdateComplete mOnAddressUpdateComplete = nullptr;
+    // When GetUserConsentState() returns kObtaining this will be called to
+    // check if the user consent is granted or denied.
+    virtual UserConsentState CheckDeferredUserConsentState() = 0;
 };
 
-} // namespace Controller
+} // namespace ota
 } // namespace chip
